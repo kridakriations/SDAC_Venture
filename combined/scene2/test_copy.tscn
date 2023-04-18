@@ -1,0 +1,1099 @@
+[gd_scene load_steps=53 format=2]
+
+[ext_resource path="res://assets/sounds/landing.mp3" type="AudioStream" id=1]
+[ext_resource path="res://assets/sounds/jump_2.mp3" type="AudioStream" id=2]
+[ext_resource path="res://assets/sounds/foot_steps_cut.mp3" type="AudioStream" id=3]
+[ext_resource path="res://scene2/abhishek.gd" type="Script" id=4]
+[ext_resource path="res://scripts/world.gd" type="Script" id=5]
+[ext_resource path="res://fonts/eurocine/Eurocine Regular.otf" type="DynamicFontData" id=6]
+[ext_resource path="res://scripts/death_screen.gd" type="Script" id=7]
+[ext_resource path="res://scripts/message_log.gd" type="Script" id=8]
+[ext_resource path="res://assets/guns/glock.tscn" type="PackedScene" id=10]
+[ext_resource path="res://scripts/game_end_screen.gd" type="Script" id=11]
+[ext_resource path="res://assets/sprites/GRADE_CARD.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprites/pointer.png" type="Texture" id=16]
+[ext_resource path="res://assets/guns/assault_rifle.tscn" type="PackedScene" id=20]
+
+[sub_resource type="BoxShape" id=389]
+extents = Vector3( 50, 1, 50 )
+
+[sub_resource type="SpatialMaterial" id=387]
+albedo_color = Color( 0.266667, 0.882353, 0.137255, 1 )
+
+[sub_resource type="CubeMesh" id=388]
+material = SubResource( 387 )
+size = Vector3( 100, 2, 100 )
+
+[sub_resource type="CubeMesh" id=406]
+
+[sub_resource type="ConcavePolygonShape" id=407]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=439]
+size = Vector3( 2, 1, 2 )
+
+[sub_resource type="ConcavePolygonShape" id=440]
+data = PoolVector3Array( -1, 0.5, 1, 1, 0.5, 1, -1, -0.5, 1, 1, 0.5, 1, 1, -0.5, 1, -1, -0.5, 1, 1, 0.5, -1, -1, 0.5, -1, 1, -0.5, -1, -1, 0.5, -1, -1, -0.5, -1, 1, -0.5, -1, 1, 0.5, 1, 1, 0.5, -1, 1, -0.5, 1, 1, 0.5, -1, 1, -0.5, -1, 1, -0.5, 1, -1, 0.5, -1, -1, 0.5, 1, -1, -0.5, -1, -1, 0.5, 1, -1, -0.5, 1, -1, -0.5, -1, 1, 0.5, 1, -1, 0.5, 1, 1, 0.5, -1, -1, 0.5, 1, -1, 0.5, -1, 1, 0.5, -1, -1, -0.5, 1, 1, -0.5, 1, -1, -0.5, -1, 1, -0.5, 1, 1, -0.5, -1, -1, -0.5, -1 )
+
+[sub_resource type="CubeMesh" id=441]
+size = Vector3( 3, 3, 3 )
+
+[sub_resource type="ConcavePolygonShape" id=442]
+data = PoolVector3Array( -1.5, 1.5, 1.5, 1.5, 1.5, 1.5, -1.5, -1.5, 1.5, 1.5, 1.5, 1.5, 1.5, -1.5, 1.5, -1.5, -1.5, 1.5, 1.5, 1.5, -1.5, -1.5, 1.5, -1.5, 1.5, -1.5, -1.5, -1.5, 1.5, -1.5, -1.5, -1.5, -1.5, 1.5, -1.5, -1.5, 1.5, 1.5, 1.5, 1.5, 1.5, -1.5, 1.5, -1.5, 1.5, 1.5, 1.5, -1.5, 1.5, -1.5, -1.5, 1.5, -1.5, 1.5, -1.5, 1.5, -1.5, -1.5, 1.5, 1.5, -1.5, -1.5, -1.5, -1.5, 1.5, 1.5, -1.5, -1.5, 1.5, -1.5, -1.5, -1.5, 1.5, 1.5, 1.5, -1.5, 1.5, 1.5, 1.5, 1.5, -1.5, -1.5, 1.5, 1.5, -1.5, 1.5, -1.5, 1.5, 1.5, -1.5, -1.5, -1.5, 1.5, 1.5, -1.5, 1.5, -1.5, -1.5, -1.5, 1.5, -1.5, 1.5, 1.5, -1.5, -1.5, -1.5, -1.5, -1.5 )
+
+[sub_resource type="CubeMesh" id=443]
+size = Vector3( 20, 1, 3 )
+
+[sub_resource type="ConcavePolygonShape" id=444]
+data = PoolVector3Array( -10, 0.5, 1.5, 10, 0.5, 1.5, -10, -0.5, 1.5, 10, 0.5, 1.5, 10, -0.5, 1.5, -10, -0.5, 1.5, 10, 0.5, -1.5, -10, 0.5, -1.5, 10, -0.5, -1.5, -10, 0.5, -1.5, -10, -0.5, -1.5, 10, -0.5, -1.5, 10, 0.5, 1.5, 10, 0.5, -1.5, 10, -0.5, 1.5, 10, 0.5, -1.5, 10, -0.5, -1.5, 10, -0.5, 1.5, -10, 0.5, -1.5, -10, 0.5, 1.5, -10, -0.5, -1.5, -10, 0.5, 1.5, -10, -0.5, 1.5, -10, -0.5, -1.5, 10, 0.5, 1.5, -10, 0.5, 1.5, 10, 0.5, -1.5, -10, 0.5, 1.5, -10, 0.5, -1.5, 10, 0.5, -1.5, -10, -0.5, 1.5, 10, -0.5, 1.5, -10, -0.5, -1.5, 10, -0.5, 1.5, 10, -0.5, -1.5, -10, -0.5, -1.5 )
+
+[sub_resource type="CapsuleShape" id=421]
+radius = 0.6
+height = 2.32609
+
+[sub_resource type="BoxShape" id=422]
+extents = Vector3( 0.46305, 0.227045, 0.749345 )
+
+[sub_resource type="SphereShape" id=423]
+radius = 0.5
+
+[sub_resource type="Animation" id=424]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("Camera:rotation_degrees:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("Camera:rotation_degrees:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 180, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/2/type = "bezier"
+tracks/2/path = NodePath("Camera:rotation_degrees:z")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Camera:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( 0, 180, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("front_ray:rotation_degrees")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( 90, 0, 0 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Camera:translation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0.502, 0 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("front_ray:translation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0.502365, 0 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Camera:fov")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 60.0 ]
+}
+
+[sub_resource type="Animation" id=425]
+resource_name = "recoil"
+length = 0.25
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Camera:rotation_degrees")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.15, 0.25 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 180, 0 ), Vector3( 0.3, 180, 0 ), Vector3( 0, 180, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("front_ray:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.15, 0.25 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 90, 0, 0 ), Vector3( 90.3, 0, 0 ), Vector3( 90, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=426]
+resource_name = "sniper_recoil"
+length = 0.57
+step = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("Camera:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.57 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0.502, 0 ), Vector3( 0, 0.77, 0 ), Vector3( 0, 0.502, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Camera:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.57 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 180, 0 ), Vector3( 3.433, 180, 0 ), Vector3( 0, 180, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("front_ray:translation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.1, 0.57 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0.502365, 0 ), Vector3( 0, 0.77, 0 ), Vector3( 0, 0.502365, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("front_ray:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.1, 0.57 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 90, 0, 0 ), Vector3( 86.678, 0, 0 ), Vector3( 90, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=427]
+resource_name = "sniper_scope"
+length = 0.11
+step = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("Camera:fov")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.11 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 90.0, 60.0 ]
+}
+
+[sub_resource type="Animation" id=428]
+resource_name = "sniper_unscope"
+length = 0.11
+step = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("Camera:fov")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.11 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 60.0, 90.0 ]
+}
+
+[sub_resource type="SphereMesh" id=429]
+radius = 0.1
+height = 0.2
+
+[sub_resource type="BoxShape" id=445]
+extents = Vector3( 0.597335, 0.146679, 0.598086 )
+
+[sub_resource type="Animation" id=430]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("damage_shower:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=431]
+resource_name = "damage"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("damage_shower:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="StyleBoxFlat" id=432]
+bg_color = Color( 0.662745, 0.639216, 0.0352941, 1 )
+
+[sub_resource type="StyleBoxFlat" id=433]
+bg_color = Color( 0.745098, 0.129412, 0.129412, 1 )
+
+[sub_resource type="DynamicFont" id=434]
+size = 29
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=435]
+use_filter = true
+font_data = ExtResource( 6 )
+
+[sub_resource type="StreamTexture" id=447]
+flags = 4
+load_path = "res://.import/assaul_rifle_logo.png-28d38f8b170226f793d7194bb58bf8cb.stex"
+
+[sub_resource type="StreamTexture" id=448]
+flags = 4
+load_path = "res://.import/glock_logo.png-c3f03f708ecadfff2c1a061ab6cbd9ef.stex"
+
+[sub_resource type="StreamTexture" id=449]
+flags = 4
+load_path = "res://.import/damage_cover.png-9573bf578004c36e30ab166862337e2c.stex"
+
+[sub_resource type="DynamicFont" id=436]
+size = 29
+use_filter = true
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=437]
+size = 70
+use_filter = true
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=438]
+size = 17
+use_filter = true
+font_data = ExtResource( 6 )
+
+[sub_resource type="BoxShape" id=446]
+extents = Vector3( 0.59499, 1.91797, 0.599075 )
+
+[sub_resource type="DynamicFont" id=413]
+size = 15
+use_filter = true
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=420]
+size = 18
+use_filter = true
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=411]
+size = 29
+use_filter = true
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=419]
+size = 17
+use_filter = true
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=390]
+size = 14
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 6 )
+
+[node name="world" type="Spatial"]
+script = ExtResource( 5 )
+
+[node name="level" type="Spatial" parent="."]
+visible = false
+
+[node name="StaticBody" type="StaticBody" parent="level"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 0 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape" type="CollisionShape" parent="level/StaticBody"]
+shape = SubResource( 389 )
+
+[node name="MeshInstance" type="MeshInstance" parent="level"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 0 )
+mesh = SubResource( 388 )
+
+[node name="MeshInstance2" type="MeshInstance" parent="level"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -6 )
+mesh = SubResource( 406 )
+
+[node name="StaticBody" type="StaticBody" parent="level/MeshInstance2"]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape" type="CollisionShape" parent="level/MeshInstance2/StaticBody"]
+shape = SubResource( 407 )
+
+[node name="MeshInstance3" type="MeshInstance" parent="level"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.50838, -5.96076 )
+mesh = SubResource( 439 )
+
+[node name="StaticBody" type="StaticBody" parent="level/MeshInstance3"]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape" type="CollisionShape" parent="level/MeshInstance3/StaticBody"]
+shape = SubResource( 440 )
+
+[node name="MeshInstance4" type="MeshInstance" parent="level"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.77624, 0.520895, -6 )
+mesh = SubResource( 441 )
+
+[node name="base" type="StaticBody" parent="level/MeshInstance4"]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape" type="CollisionShape" parent="level/MeshInstance4/base"]
+shape = SubResource( 442 )
+
+[node name="MeshInstance5" type="MeshInstance" parent="level"]
+transform = Transform( 0.919287, -0.393589, 0, 0.393589, 0.919287, 0, 0, 0, 1, 15, 2.11784, 0 )
+mesh = SubResource( 443 )
+
+[node name="slope_1" type="StaticBody" parent="level/MeshInstance5"]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape" type="CollisionShape" parent="level/MeshInstance5/slope_1"]
+shape = SubResource( 444 )
+
+[node name="MeshInstance6" type="MeshInstance" parent="level"]
+transform = Transform( 0.850499, -0.525976, 0, 0.525976, 0.850499, 0, 0, 0, 1, 15, 2.11784, 8 )
+mesh = SubResource( 443 )
+
+[node name="slope_2" type="StaticBody" parent="level/MeshInstance6"]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape" type="CollisionShape" parent="level/MeshInstance6/slope_2"]
+shape = SubResource( 444 )
+
+[node name="MeshInstance7" type="MeshInstance" parent="level"]
+transform = Transform( 0.685386, -0.72818, 0, 0.72818, 0.685386, 0, 0, 0, 1, 15, 2.11784, 18 )
+mesh = SubResource( 443 )
+
+[node name="slope_3" type="StaticBody" parent="level/MeshInstance7"]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape" type="CollisionShape" parent="level/MeshInstance7/slope_3"]
+shape = SubResource( 444 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( -1, 5.93796e-08, -6.41623e-08, 0, 0.733931, 0.679224, 8.74228e-08, 0.679224, -0.733931, 0, 26.5671, 0 )
+shadow_enabled = true
+directional_shadow_mode = 0
+directional_shadow_depth_range = 1
+directional_shadow_max_distance = 50.0
+
+[node name="abhishek" type="KinematicBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.611332, 1.12168, -3.2654 )
+collision_layer = 2
+collision_mask = 2
+script = ExtResource( 4 )
+__meta__ = {
+"_editor_description_": ""
+}
+leg_rotation_snap = 2
+
+[node name="CollisionShape" type="CollisionShape" parent="abhishek"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, -0.2209, 0 )
+shape = SubResource( 421 )
+disabled = true
+
+[node name="body" type="Area" parent="abhishek"]
+unique_name_in_owner = true
+collision_mask = 3
+
+[node name="front_loc" type="Position3D" parent="abhishek/body"]
+unique_name_in_owner = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.74324, 3 )
+
+[node name="back_loc" type="Position3D" parent="abhishek/body"]
+unique_name_in_owner = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.74324, 0 )
+
+[node name="left_loc" type="Position3D" parent="abhishek/body"]
+unique_name_in_owner = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1.74324, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="abhishek/body"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.614321, 0 )
+shape = SubResource( 422 )
+disabled = true
+
+[node name="head" type="Area" parent="abhishek/body"]
+unique_name_in_owner = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.24088, 2.38419e-07 )
+collision_mask = 3
+
+[node name="CollisionShape" type="CollisionShape" parent="abhishek/body/head"]
+shape = SubResource( 423 )
+disabled = true
+
+[node name="animation" type="AnimationPlayer" parent="abhishek/body/head"]
+anims/RESET = SubResource( 424 )
+anims/recoil = SubResource( 425 )
+anims/sniper_recoil = SubResource( 426 )
+anims/sniper_scope = SubResource( 427 )
+anims/sniper_unscope = SubResource( 428 )
+
+[node name="front_ray" type="RayCast" parent="abhishek/body/head"]
+unique_name_in_owner = true
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.502365, 0 )
+enabled = true
+cast_to = Vector3( 0, 200, 0 )
+collide_with_areas = true
+
+[node name="Camera" type="Camera" parent="abhishek/body/head"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.502, 0 )
+doppler_tracking = 2
+fov = 60.0
+far = 200.0
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="MeshInstance" type="MeshInstance" parent="abhishek/body/head/Camera"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6.753 )
+visible = false
+mesh = SubResource( 429 )
+
+[node name="head_front" type="Position3D" parent="abhishek/body/head"]
+unique_name_in_owner = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.502, 200 )
+
+[node name="gun_node" type="Spatial" parent="abhishek/body/head"]
+unique_name_in_owner = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.492186, -0.15833, 0.320309 )
+
+[node name="assault_rifle" parent="abhishek/body/head/gun_node" instance=ExtResource( 20 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.108, 0.383, -0.437 )
+
+[node name="glock" parent="abhishek/body/head/gun_node" instance=ExtResource( 10 )]
+
+[node name="legs_node" type="Spatial" parent="abhishek/body"]
+unique_name_in_owner = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.15228, 0 )
+visible = false
+
+[node name="left_leg" type="Spatial" parent="abhishek/body/legs_node"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 0, 0 )
+
+[node name="left_lower_leg" type="Spatial" parent="abhishek/body/legs_node/left_leg"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.781, 0 )
+
+[node name="right_leg" type="Spatial" parent="abhishek/body/legs_node"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0, 0 )
+
+[node name="right_lower_leg" type="Spatial" parent="abhishek/body/legs_node/right_leg"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.781, 0 )
+
+[node name="RayCast" type="RayCast" parent="abhishek/body"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.587896, -1.76308, -0.590974 )
+enabled = true
+cast_to = Vector3( 0, -0.28, 0 )
+collision_mask = 2
+
+[node name="RayCast2" type="RayCast" parent="abhishek/body"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.590974, -1.76308, -0.594052 )
+enabled = true
+cast_to = Vector3( 0, -0.28, 0 )
+collision_mask = 2
+
+[node name="RayCast3" type="RayCast" parent="abhishek/body"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.59713, -1.76308, 0.590973 )
+enabled = true
+cast_to = Vector3( 0, -0.28, 0 )
+collision_mask = 2
+
+[node name="RayCast4" type="RayCast" parent="abhishek/body"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.603286, -1.76308, 0.584817 )
+enabled = true
+cast_to = Vector3( 0, -0.28, 0 )
+collision_mask = 2
+
+[node name="jump_ray" type="RayCast" parent="abhishek/body"]
+unique_name_in_owner = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.99631, 0 )
+cast_to = Vector3( 0, -100, 0 )
+collision_mask = 2
+
+[node name="low_foot_ray" type="RayCast" parent="abhishek/body"]
+unique_name_in_owner = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.97622, 0 )
+enabled = true
+cast_to = Vector3( 0, 0, 1.5 )
+
+[node name="high_foot_ray" type="RayCast" parent="abhishek/body"]
+unique_name_in_owner = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.623605, 0 )
+enabled = true
+cast_to = Vector3( 0, 0, 1.5 )
+
+[node name="foot_area" type="Area" parent="abhishek/body"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.90126, 0 )
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape" type="CollisionShape" parent="abhishek/body/foot_area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0556073, 0 )
+shape = SubResource( 445 )
+disabled = true
+
+[node name="land_sound" type="AudioStreamPlayer3D" parent="abhishek"]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0 )
+stream = ExtResource( 1 )
+unit_db = 80.0
+
+[node name="jump_sound" type="AudioStreamPlayer3D" parent="abhishek"]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0 )
+stream = ExtResource( 2 )
+unit_db = 80.0
+
+[node name="steps" type="AudioStreamPlayer3D" parent="abhishek"]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0 )
+stream = ExtResource( 3 )
+attenuation_model = 2
+unit_db = 75.0
+unit_size = 0.1
+doppler_tracking = 2
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="ColorRect" type="ColorRect" parent="abhishek"]
+margin_left = 512.0
+margin_top = 300.0
+margin_right = 522.0
+margin_bottom = 310.0
+rect_pivot_offset = Vector2( 5, 5 )
+color = Color( 0, 0, 0, 0 )
+
+[node name="damage_animation" type="AnimationPlayer" parent="abhishek/ColorRect"]
+anims/RESET = SubResource( 430 )
+anims/damage = SubResource( 431 )
+
+[node name="health_bar" type="ProgressBar" parent="abhishek/ColorRect"]
+margin_left = -157.0
+margin_top = 217.0
+margin_right = 165.0
+margin_bottom = 233.0
+custom_styles/fg = SubResource( 432 )
+custom_styles/bg = SubResource( 433 )
+value = 50.0
+rounded = true
+percent_visible = false
+
+[node name="user_name" type="Label" parent="abhishek/ColorRect"]
+margin_left = -512.0
+margin_top = -300.0
+margin_right = -327.0
+margin_bottom = -257.0
+custom_fonts/font = SubResource( 434 )
+text = "Kingslayer"
+valign = 1
+
+[node name="gun_tab" type="ColorRect" parent="abhishek/ColorRect"]
+margin_left = -157.0
+margin_top = 237.0
+margin_right = 165.0
+margin_bottom = 300.0
+color = Color( 0.521569, 0.490196, 0.490196, 0 )
+
+[node name="main_gun" type="Control" parent="abhishek/ColorRect/gun_tab"]
+margin_right = 160.0
+margin_bottom = 63.0
+
+[node name="ammo" type="Label" parent="abhishek/ColorRect/gun_tab/main_gun"]
+margin_top = 42.0
+margin_right = 34.0
+margin_bottom = 62.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 435 )
+text = "0"
+align = 1
+valign = 1
+
+[node name="image_logo" type="TextureRect" parent="abhishek/ColorRect/gun_tab/main_gun"]
+self_modulate = Color( 1, 1, 1, 0.447059 )
+margin_left = -29.0
+margin_top = -4.0
+margin_right = 161.0
+margin_bottom = 63.0
+texture = SubResource( 447 )
+expand = true
+
+[node name="side_arm" type="Control" parent="abhishek/ColorRect/gun_tab"]
+margin_left = 161.0
+margin_right = 319.0
+margin_bottom = 63.0
+
+[node name="ammo" type="Label" parent="abhishek/ColorRect/gun_tab/side_arm"]
+margin_top = 42.0
+margin_right = 35.0
+margin_bottom = 62.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 435 )
+text = "0"
+align = 1
+valign = 1
+
+[node name="image_logo" type="TextureRect" parent="abhishek/ColorRect/gun_tab/side_arm"]
+self_modulate = Color( 1, 1, 1, 0.447059 )
+margin_left = 1.0
+margin_top = -4.0
+margin_right = 196.0
+margin_bottom = 62.0
+texture = SubResource( 448 )
+expand = true
+
+[node name="damage_shower" type="TextureRect" parent="abhishek/ColorRect"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = -512.0
+margin_top = -295.0
+margin_right = 512.0
+margin_bottom = 294.0
+texture = SubResource( 449 )
+expand = true
+
+[node name="death_screen" type="ColorRect" parent="abhishek"]
+visible = false
+margin_right = 1024.0
+margin_bottom = 600.0
+color = Color( 0, 0, 0, 0.454902 )
+script = ExtResource( 7 )
+
+[node name="text_label" type="Label" parent="abhishek/death_screen"]
+margin_top = -19.0
+margin_right = 1024.0
+margin_bottom = 96.0
+custom_fonts/font = SubResource( 436 )
+text = "You Died"
+align = 1
+valign = 1
+
+[node name="Timer" type="Timer" parent="abhishek/death_screen"]
+wait_time = 5.0
+one_shot = true
+
+[node name="time_label" type="Label" parent="abhishek/death_screen"]
+margin_left = 473.0
+margin_top = 40.0
+margin_right = 551.0
+margin_bottom = 160.0
+rect_pivot_offset = Vector2( 39, 60 )
+custom_fonts/font = SubResource( 437 )
+text = "0"
+align = 1
+valign = 1
+
+[node name="list" type="VBoxContainer" parent="abhishek/death_screen"]
+margin_left = 290.0
+margin_top = 147.0
+margin_right = 737.0
+margin_bottom = 517.0
+
+[node name="heading" type="HBoxContainer" parent="abhishek/death_screen/list"]
+margin_right = 447.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 40 )
+
+[node name="name" type="Label" parent="abhishek/death_screen/list/heading"]
+margin_right = 108.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 40 )
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 438 )
+text = "NAME"
+align = 1
+valign = 1
+
+[node name="kills" type="Label" parent="abhishek/death_screen/list/heading"]
+margin_left = 112.0
+margin_right = 221.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 40 )
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 438 )
+text = "KILLS"
+align = 1
+valign = 1
+
+[node name="death" type="Label" parent="abhishek/death_screen/list/heading"]
+margin_left = 225.0
+margin_right = 334.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 40 )
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 438 )
+text = "DEATH"
+align = 1
+valign = 1
+
+[node name="score" type="Label" parent="abhishek/death_screen/list/heading"]
+margin_left = 338.0
+margin_right = 447.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 40 )
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 438 )
+text = "SCORE"
+align = 1
+valign = 1
+
+[node name="pointer_sprite" type="Sprite" parent="abhishek"]
+position = Vector2( 512, 300 )
+texture = ExtResource( 16 )
+
+[node name="low_ray" type="Label" parent="abhishek"]
+margin_left = 402.0
+margin_top = 43.0
+margin_right = 570.0
+margin_bottom = 69.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "ff"
+align = 1
+valign = 1
+
+[node name="high_ray" type="Label" parent="abhishek"]
+margin_left = 402.0
+margin_top = 69.0
+margin_right = 570.0
+margin_bottom = 95.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "fff"
+align = 1
+valign = 1
+
+[node name="on_floor" type="Label" parent="abhishek"]
+margin_left = 402.0
+margin_top = 96.0
+margin_right = 570.0
+margin_bottom = 122.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "ff"
+align = 1
+valign = 1
+
+[node name="CollisionShape2" type="CollisionShape" parent="abhishek"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0580652, 0 )
+shape = SubResource( 446 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 899.0
+margin_top = 94.0
+margin_right = 935.0
+margin_bottom = 112.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 413 )
+text = "ffffff"
+align = 1
+valign = 1
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 902.0
+margin_top = 69.0
+margin_right = 926.0
+margin_bottom = 83.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "ffffff"
+align = 1
+valign = 1
+
+[node name="message_log" type="Control" parent="."]
+margin_top = 462.0
+margin_right = 234.0
+margin_bottom = 600.0
+script = ExtResource( 8 )
+
+[node name="message_container" type="VBoxContainer" parent="message_log"]
+margin_top = -315.0
+margin_right = 234.0
+margin_bottom = 138.0
+custom_constants/separation = 6
+
+[node name="demo_node" type="Label" parent="message_log/message_container"]
+margin_right = 234.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 0, 50 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 420 )
+text = "111111111 >>> 111111111"
+autowrap = true
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="time_label" type="Label" parent="."]
+margin_left = 933.0
+margin_top = -19.0
+margin_right = 1011.0
+margin_bottom = 101.0
+rect_pivot_offset = Vector2( 39, 60 )
+custom_fonts/font = SubResource( 413 )
+text = "0"
+align = 1
+valign = 1
+
+[node name="game_end_screen" type="ColorRect" parent="."]
+visible = false
+margin_right = 1024.0
+margin_bottom = 600.0
+color = Color( 0, 0, 0, 0.454902 )
+script = ExtResource( 11 )
+
+[node name="text_label" type="Label" parent="game_end_screen"]
+margin_top = -19.0
+margin_right = 562.0
+margin_bottom = 96.0
+custom_fonts/font = SubResource( 411 )
+text = "GAME ENDED"
+align = 1
+valign = 1
+
+[node name="list" type="VBoxContainer" parent="game_end_screen"]
+margin_left = 60.0
+margin_top = 147.0
+margin_right = 507.0
+margin_bottom = 517.0
+
+[node name="heading" type="HBoxContainer" parent="game_end_screen/list"]
+margin_right = 447.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 40 )
+
+[node name="name" type="Label" parent="game_end_screen/list/heading"]
+margin_right = 108.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 40 )
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 419 )
+text = "NAME"
+align = 1
+valign = 1
+
+[node name="kills" type="Label" parent="game_end_screen/list/heading"]
+margin_left = 112.0
+margin_right = 221.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 40 )
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 419 )
+text = "KILLS"
+align = 1
+valign = 1
+
+[node name="death" type="Label" parent="game_end_screen/list/heading"]
+margin_left = 225.0
+margin_right = 334.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 40 )
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 419 )
+text = "DEATH"
+align = 1
+valign = 1
+
+[node name="score" type="Label" parent="game_end_screen/list/heading"]
+margin_left = 338.0
+margin_right = 447.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 40 )
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 419 )
+text = "SCORE"
+align = 1
+valign = 1
+
+[node name="grade_card" type="Control" parent="game_end_screen"]
+margin_left = 563.0
+margin_top = 69.0
+margin_right = 1011.0
+margin_bottom = 599.0
+
+[node name="image" type="TextureRect" parent="game_end_screen/grade_card"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -64.0
+margin_right = 6.0
+margin_bottom = -5.0
+texture = ExtResource( 12 )
+expand = true
+
+[node name="kills" type="Label" parent="game_end_screen/grade_card"]
+margin_left = 383.0
+margin_top = 220.0
+margin_right = 412.0
+margin_bottom = 237.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 390 )
+text = "100"
+align = 1
+valign = 1
+
+[node name="name" type="Label" parent="game_end_screen/grade_card"]
+margin_left = 156.0
+margin_top = 95.0
+margin_right = 224.0
+margin_bottom = 112.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 390 )
+text = "Abhshek kumar"
+valign = 1
+
+[node name="deaths" type="Label" parent="game_end_screen/grade_card"]
+margin_left = 383.0
+margin_top = 247.0
+margin_right = 412.0
+margin_bottom = 264.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 390 )
+text = "100"
+align = 1
+valign = 1
+
+[node name="headshots" type="Label" parent="game_end_screen/grade_card"]
+margin_left = 383.0
+margin_top = 273.0
+margin_right = 412.0
+margin_bottom = 290.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 390 )
+text = "100"
+align = 1
+valign = 1
+
+[node name="accuracy" type="Label" parent="game_end_screen/grade_card"]
+margin_left = 383.0
+margin_top = 297.0
+margin_right = 412.0
+margin_bottom = 314.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 390 )
+text = "100"
+align = 1
+valign = 1
+
+[node name="shots_fired" type="Label" parent="game_end_screen/grade_card"]
+margin_left = 383.0
+margin_top = 325.0
+margin_right = 412.0
+margin_bottom = 342.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 390 )
+text = "100"
+align = 1
+valign = 1
+
+[node name="outfit" type="Label" parent="game_end_screen/grade_card"]
+margin_left = 156.0
+margin_top = 115.0
+margin_right = 276.0
+margin_bottom = 132.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 390 )
+text = "Barbarian"
+valign = 1
+
+[node name="primary_gun" type="Label" parent="game_end_screen/grade_card"]
+margin_left = 156.0
+margin_top = 133.0
+margin_right = 276.0
+margin_bottom = 150.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 390 )
+text = "AK - 47	"
+valign = 1
+
+[node name="secondary_gun" type="Label" parent="game_end_screen/grade_card"]
+margin_left = 156.0
+margin_top = 153.0
+margin_right = 276.0
+margin_bottom = 170.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 390 )
+text = "Pistol"
+valign = 1

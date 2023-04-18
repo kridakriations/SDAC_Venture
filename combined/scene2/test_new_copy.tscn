@@ -1,0 +1,1852 @@
+[gd_scene load_steps=87 format=2]
+
+[ext_resource path="res://assets/sounds/landing.mp3" type="AudioStream" id=1]
+[ext_resource path="res://assets/sounds/jump_2.mp3" type="AudioStream" id=2]
+[ext_resource path="res://assets/sounds/foot_step_sound_one_foot.mp3" type="AudioStream" id=3]
+[ext_resource path="res://scene2/abhishek.gd" type="Script" id=4]
+[ext_resource path="res://scripts/world.gd" type="Script" id=5]
+[ext_resource path="res://fonts/eurocine/Eurocine Regular.otf" type="DynamicFontData" id=6]
+[ext_resource path="res://scripts/death_screen.gd" type="Script" id=7]
+[ext_resource path="res://scripts/message_log.gd" type="Script" id=8]
+[ext_resource path="res://scene2/ena_map_scene-COPY.tscn" type="PackedScene" id=9]
+[ext_resource path="res://assets/guns/assault_rifle.tscn" type="PackedScene" id=10]
+[ext_resource path="res://scripts/game_end_screen.gd" type="Script" id=11]
+[ext_resource path="res://assets/sprites/GRADE_CARD.png" type="Texture" id=12]
+[ext_resource path="res://assets/ui_assets/setting/Rectangle 8.png" type="Texture" id=13]
+[ext_resource path="res://scene2/pause_screen.gd" type="Script" id=14]
+[ext_resource path="res://assets/ui_assets/Lobby UI/Lobby UI/cancle button after.png" type="Texture" id=15]
+[ext_resource path="res://assets/sprites/aim cross.png" type="Texture" id=16]
+[ext_resource path="res://fonts/Chakra_Petch/ChakraPetch-Bold.ttf" type="DynamicFontData" id=17]
+[ext_resource path="res://fonts/Chakra_Petch/ChakraPetch-Regular.ttf" type="DynamicFontData" id=18]
+[ext_resource path="res://assets/grenade_indicator.tres" type="Material" id=19]
+[ext_resource path="res://assets/sprites/grenade logo.png" type="Texture" id=20]
+[ext_resource path="res://assets/sprites/Player Perspective ui.png" type="Texture" id=21]
+[ext_resource path="res://scripts/bullet_instances.gd" type="Script" id=26]
+[ext_resource path="res://assets/sprites/SDAC Venture_logo.png" type="Texture" id=27]
+[ext_resource path="res://assets/sprites/checked2.png" type="Texture" id=28]
+[ext_resource path="res://assets/sprites/unchcked2.png" type="Texture" id=29]
+[ext_resource path="res://assets/guns/glock.tscn" type="PackedScene" id=35]
+[ext_resource path="res://assets/sprites/reload symbol.png" type="Texture" id=41]
+
+[sub_resource type="CubeMesh" id=772]
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_color = Color( 1, 0.968627, 0, 1 )
+emission_enabled = true
+emission = Color( 0.996078, 0.980392, 0.054902, 1 )
+emission_energy = 1.0
+emission_operator = 0
+emission_on_uv2 = false
+
+[sub_resource type="CubeMesh" id=1]
+material = SubResource( 2 )
+size = Vector3( 0.1, 0.1, 2 )
+
+[sub_resource type="MultiMesh" id=758]
+transform_format = 1
+mesh = SubResource( 1 )
+
+[sub_resource type="DynamicFont" id=748]
+size = 95
+use_filter = true
+font_data = ExtResource( 17 )
+
+[sub_resource type="CapsuleShape" id=384]
+radius = 0.449715
+height = 0.977741
+
+[sub_resource type="Animation" id=44]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("Camera:rotation_degrees:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("Camera:rotation_degrees:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 180, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/2/type = "bezier"
+tracks/2/path = NodePath("Camera:rotation_degrees:z")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Camera:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( 0, 180, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("front_ray:rotation_degrees")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( 90, 0, 0 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Camera:translation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0.502, 0 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("front_ray:translation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0.502365, 0 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Camera:fov")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 90.0 ]
+}
+
+[sub_resource type="Animation" id=798]
+resource_name = "camera_bobbing"
+length = 0.5
+loop = true
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Camera:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = false
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.25, 0.5, 0.75, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0.502, 0 ), Vector3( 0, 0.49, 0 ), Vector3( 0, 0.502, 0 ), Vector3( 0, 0.51, 0 ), Vector3( 0, 0.502, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Camera:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.25, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 180, 0 ), Vector3( 1.56, 180, 0 ), Vector3( 0, 180, 0 ) ]
+}
+
+[sub_resource type="Animation" id=799]
+resource_name = "camera_bobbing2"
+length = 3.0
+loop = true
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Camera:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = false
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 2, 2.5, 3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0.03, 0.51, 0 ), Vector3( 0, 0.502, 0 ), Vector3( -0.03, 0.49, 0 ), Vector3( -0.03, 0.51, 0 ), Vector3( 0, 0.502, 0 ), Vector3( 0.03, 0.49, 0 ), Vector3( 0.03, 0.51, 0 ) ]
+}
+
+[sub_resource type="Animation" id=752]
+resource_name = "gun_scope"
+length = 0.11
+step = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("Camera:fov")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.11 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 90.0, 80.0 ]
+}
+
+[sub_resource type="Animation" id=753]
+resource_name = "gun_unscope"
+length = 0.11
+step = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("Camera:fov")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.11 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 80.0, 90.0 ]
+}
+
+[sub_resource type="Animation" id=45]
+resource_name = "recoil"
+length = 0.25
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Camera:rotation_degrees")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.15, 0.25 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 180, 0 ), Vector3( 0.3, 180, 0 ), Vector3( 0, 180, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("front_ray:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.15, 0.25 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 90, 0, 0 ), Vector3( 90.3, 0, 0 ), Vector3( 90, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=424]
+resource_name = "sniper_recoil"
+length = 0.57
+step = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("Camera:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.57 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0.502, 0 ), Vector3( 0, 0.77, 0 ), Vector3( 0, 0.502, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Camera:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.57 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 180, 0 ), Vector3( 3.433, 180, 0 ), Vector3( 0, 180, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("front_ray:translation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.1, 0.57 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0.502365, 0 ), Vector3( 0, 0.77, 0 ), Vector3( 0, 0.502365, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("front_ray:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.1, 0.57 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 90, 0, 0 ), Vector3( 86.678, 0, 0 ), Vector3( 90, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=426]
+resource_name = "sniper_scope"
+length = 0.11
+step = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("Camera:fov")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.11 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 90.0, 60.0 ]
+}
+
+[sub_resource type="Animation" id=427]
+resource_name = "sniper_unscope"
+length = 0.11
+step = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("Camera:fov")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.11 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 60.0, 90.0 ]
+}
+
+[sub_resource type="SphereMesh" id=806]
+radius = 0.1
+height = 0.2
+
+[sub_resource type="SphereShape" id=809]
+radius = 0.1
+
+[sub_resource type="DynamicFont" id=784]
+size = 25
+use_filter = true
+font_data = ExtResource( 17 )
+
+[sub_resource type="Theme" id=743]
+Label/fonts/font = SubResource( 784 )
+
+[sub_resource type="Animation" id=404]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("reload_symbol:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 989, 355 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("reload_symbol:rect_rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -90.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("reload_symbol:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=405]
+resource_name = "damage"
+length = 0.1
+
+[sub_resource type="Animation" id=750]
+resource_name = "hide_reload"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("reload_symbol:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 872, 355 ), Vector2( 989, 355 ) ]
+}
+
+[sub_resource type="Animation" id=751]
+resource_name = "show_reload"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("reload_symbol:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1004, 355 ), Vector2( 872, 355 ) ]
+}
+
+[sub_resource type="StyleBoxFlat" id=47]
+bg_color = Color( 1, 1, 1, 0.768627 )
+border_color = Color( 1, 1, 1, 0.364706 )
+
+[sub_resource type="StyleBoxFlat" id=409]
+bg_color = Color( 1, 1, 1, 0 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 1, 1, 1, 0.768627 )
+
+[sub_resource type="DynamicFont" id=749]
+size = 33
+outline_size = 1
+use_filter = true
+font_data = ExtResource( 18 )
+
+[sub_resource type="DynamicFont" id=747]
+size = 36
+use_filter = true
+font_data = ExtResource( 17 )
+
+[sub_resource type="DynamicFont" id=746]
+size = 103
+outline_size = 1
+outline_color = Color( 0.384314, 0, 0.619608, 1 )
+use_filter = true
+font_data = ExtResource( 18 )
+
+[sub_resource type="DynamicFont" id=744]
+size = 93
+use_filter = true
+font_data = ExtResource( 17 )
+
+[sub_resource type="DynamicFont" id=745]
+size = 93
+outline_color = Color( 0.384314, 0, 0.619608, 1 )
+use_filter = true
+font_data = ExtResource( 17 )
+
+[sub_resource type="DynamicFont" id=774]
+size = 25
+use_filter = true
+font_data = ExtResource( 17 )
+
+[sub_resource type="StyleBoxFlat" id=759]
+bg_color = Color( 0, 0, 0, 0.52549 )
+corner_radius_top_right = 24
+corner_radius_bottom_left = 24
+
+[sub_resource type="DynamicFont" id=760]
+size = 40
+use_filter = true
+font_data = ExtResource( 17 )
+
+[sub_resource type="DynamicFont" id=810]
+size = 32
+use_filter = true
+font_data = ExtResource( 17 )
+
+[sub_resource type="Theme" id=762]
+default_font = SubResource( 810 )
+
+[sub_resource type="DynamicFont" id=811]
+size = 30
+use_filter = true
+font_data = ExtResource( 18 )
+
+[sub_resource type="Theme" id=764]
+default_font = SubResource( 811 )
+
+[sub_resource type="DynamicFont" id=413]
+size = 15
+use_filter = true
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=788]
+size = 34
+use_filter = true
+font_data = ExtResource( 17 )
+
+[sub_resource type="DynamicFont" id=775]
+size = 27
+use_filter = true
+font_data = ExtResource( 17 )
+
+[sub_resource type="DynamicFont" id=776]
+use_filter = true
+font_data = ExtResource( 18 )
+
+[sub_resource type="StyleBoxFlat" id=787]
+bg_color = Color( 0, 0, 0, 1 )
+corner_radius_top_right = 24
+corner_radius_bottom_left = 24
+
+[sub_resource type="DynamicFont" id=765]
+size = 46
+use_filter = true
+font_data = ExtResource( 17 )
+
+[sub_resource type="DynamicFont" id=390]
+size = 14
+outline_color = Color( 0, 0, 0, 1 )
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=803]
+size = 32
+use_filter = true
+font_data = ExtResource( 6 )
+
+[sub_resource type="StyleBoxTexture" id=812]
+texture = ExtResource( 15 )
+region_rect = Rect2( 0, 0, 434, 93 )
+expand_margin_left = 5.0
+expand_margin_right = 5.0
+expand_margin_top = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxTexture" id=813]
+texture = ExtResource( 15 )
+region_rect = Rect2( 0, 0, 434, 93 )
+expand_margin_left = 5.0
+expand_margin_right = 5.0
+expand_margin_top = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id=814]
+bg_color = Color( 1, 1, 1, 0 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 1, 1, 1, 1 )
+corner_radius_top_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id=804]
+content_margin_top = 1.0
+content_margin_bottom = 1.0
+bg_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="DynamicFont" id=805]
+size = 32
+font_data = ExtResource( 18 )
+
+[sub_resource type="StyleBoxFlat" id=807]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 0.384314, 0, 0.619608, 1 )
+corner_radius_top_right = 24
+corner_radius_bottom_left = 24
+
+[sub_resource type="StyleBoxFlat" id=808]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+corner_radius_top_right = 24
+corner_radius_bottom_left = 24
+
+[sub_resource type="DynamicFont" id=789]
+size = 32
+use_filter = true
+font_data = ExtResource( 17 )
+
+[sub_resource type="StyleBoxFlat" id=790]
+content_margin_top = 1.0
+content_margin_bottom = 1.0
+bg_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="DynamicFont" id=791]
+size = 32
+extra_spacing_char = 2
+font_data = ExtResource( 18 )
+
+[sub_resource type="StyleBoxFlat" id=792]
+content_margin_top = 1.0
+content_margin_bottom = 1.0
+bg_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="DynamicFont" id=793]
+size = 32
+extra_spacing_char = 2
+font_data = ExtResource( 18 )
+
+[sub_resource type="DynamicFont" id=794]
+size = 32
+font_data = ExtResource( 17 )
+
+[sub_resource type="DynamicFont" id=795]
+size = 32
+use_filter = true
+font_data = ExtResource( 18 )
+
+[node name="world" type="Spatial"]
+script = ExtResource( 5 )
+
+[node name="PlayerPerspectiveUi" type="Sprite" parent="."]
+visible = false
+position = Vector2( 960, 539 )
+scale = Vector2( 1, 0.999074 )
+texture = ExtResource( 21 )
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.428855, 0, 0 )
+visible = false
+mesh = SubResource( 772 )
+material/0 = ExtResource( 19 )
+
+[node name="bullet_instances" type="MultiMeshInstance" parent="."]
+cast_shadow = 0
+multimesh = SubResource( 758 )
+script = ExtResource( 26 )
+
+[node name="level" type="Spatial" parent="."]
+
+[node name="Spatial" parent="level" instance=ExtResource( 9 )]
+
+[node name="spawn_points" type="Spatial" parent="level"]
+
+[node name="Position3D" type="Position3D" parent="level/spawn_points"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.86209, 80.4476 )
+
+[node name="Position3D2" type="Position3D" parent="level/spawn_points"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.326586, 80.4476 )
+
+[node name="Position3D3" type="Position3D" parent="level/spawn_points"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.51722, -0.326586, -86.7766 )
+
+[node name="Position3D4" type="Position3D" parent="level/spawn_points"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.51722, 12.4816, -86.7766 )
+
+[node name="Position3D5" type="Position3D" parent="level/spawn_points"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -55.2814, 12.4816, -86.7766 )
+
+[node name="Position3D6" type="Position3D" parent="level/spawn_points"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -55.2814, 12.4816, 71.9071 )
+
+[node name="Position3D7" type="Position3D" parent="level/spawn_points"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 29.6062, 12.4816, 71.9071 )
+
+[node name="Position3D8" type="Position3D" parent="level/spawn_points"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 95.8686, 12.4816, -35.2113 )
+
+[node name="time_label" type="Label" parent="."]
+margin_left = 18.0
+margin_top = 964.0
+margin_right = 203.0
+margin_bottom = 1089.0
+rect_pivot_offset = Vector2( 39, 60 )
+custom_fonts/font = SubResource( 748 )
+text = "800"
+align = 2
+valign = 1
+
+[node name="abhishek" type="KinematicBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.23996, 1.49026, -14.7506 )
+collision_layer = 0
+collision_mask = 4
+script = ExtResource( 4 )
+leg_rotation_snap = 2
+
+[node name="CollisionShape" type="CollisionShape" parent="abhishek"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, -0.899188, 0 )
+shape = SubResource( 384 )
+
+[node name="body" type="Spatial" parent="abhishek"]
+unique_name_in_owner = true
+
+[node name="head" type="Spatial" parent="abhishek/body"]
+unique_name_in_owner = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.24088, 2.38419e-07 )
+
+[node name="animation" type="AnimationPlayer" parent="abhishek/body/head"]
+anims/RESET = SubResource( 44 )
+anims/camera_bobbing = SubResource( 798 )
+anims/camera_bobbing2 = SubResource( 799 )
+anims/gun_scope = SubResource( 752 )
+anims/gun_unscope = SubResource( 753 )
+anims/recoil = SubResource( 45 )
+anims/sniper_recoil = SubResource( 424 )
+anims/sniper_scope = SubResource( 426 )
+anims/sniper_unscope = SubResource( 427 )
+
+[node name="front_ray" type="RayCast" parent="abhishek/body/head"]
+unique_name_in_owner = true
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.502365, 0 )
+enabled = true
+cast_to = Vector3( 0, 200, 0 )
+collision_mask = 5
+collide_with_areas = true
+
+[node name="Camera" type="Camera" parent="abhishek/body/head"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.502, 0 )
+doppler_tracking = 1
+current = true
+fov = 90.0
+far = 150.0
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="MeshInstance" type="MeshInstance" parent="abhishek/body/head/Camera"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.07288e-06, 0, -7.06276 )
+visible = false
+mesh = SubResource( 806 )
+
+[node name="head_front" type="Position3D" parent="abhishek/body/head"]
+unique_name_in_owner = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.502, 200 )
+
+[node name="gun_node" type="Spatial" parent="abhishek/body/head"]
+unique_name_in_owner = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.492186, -0.15833, 0.320309 )
+
+[node name="assault_rifle" parent="abhishek/body/head/gun_node" instance=ExtResource( 10 )]
+
+[node name="glock" parent="abhishek/body/head/gun_node" instance=ExtResource( 35 )]
+
+[node name="head_area" type="Area" parent="abhishek/body/head" groups=["player_head"]]
+collision_layer = 8
+collision_mask = 0
+monitoring = false
+
+[node name="CollisionShape" type="CollisionShape" parent="abhishek/body/head/head_area"]
+shape = SubResource( 809 )
+
+[node name="grenade_spawn_point" type="Position3D" parent="abhishek/body/head"]
+unique_name_in_owner = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.254397 )
+
+[node name="low_foot_ray" type="RayCast" parent="abhishek/body"]
+unique_name_in_owner = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.65444, 0 )
+exclude_parent = false
+cast_to = Vector3( 0, 0, 1.5 )
+collision_mask = 0
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="high_foot_ray" type="RayCast" parent="abhishek/body"]
+unique_name_in_owner = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.764776, 0 )
+cast_to = Vector3( 0, 0, 1.5 )
+collision_mask = 0
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="clipping_ray" type="RayCast" parent="abhishek/body"]
+unique_name_in_owner = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.23522, 0.706432 )
+cast_to = Vector3( 0, 0, 1.73 )
+collision_mask = 0
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="land_sound" type="AudioStreamPlayer3D" parent="abhishek"]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0 )
+stream = ExtResource( 1 )
+unit_db = 24.0
+bus = "sfx"
+
+[node name="jump_sound" type="AudioStreamPlayer3D" parent="abhishek"]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0 )
+stream = ExtResource( 2 )
+unit_db = 24.0
+bus = "sfx"
+
+[node name="steps" type="AudioStreamPlayer3D" parent="abhishek"]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0 )
+stream = ExtResource( 3 )
+attenuation_model = 2
+unit_db = 24.0
+unit_size = 100.0
+max_db = 6.0
+bus = "sfx"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="ColorRect" type="ColorRect" parent="abhishek"]
+margin_left = 960.0
+margin_top = 540.0
+margin_right = 970.0
+margin_bottom = 550.0
+rect_pivot_offset = Vector2( 5, 5 )
+theme = SubResource( 743 )
+color = Color( 0, 0, 0, 0 )
+
+[node name="damage_animation" type="AnimationPlayer" parent="abhishek/ColorRect"]
+anims/RESET = SubResource( 404 )
+anims/damage = SubResource( 405 )
+anims/hide_reload = SubResource( 750 )
+anims/show_reload = SubResource( 751 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="health_bar" type="ProgressBar" parent="abhishek/ColorRect"]
+margin_left = -157.0
+margin_top = 473.0
+margin_right = 166.485
+margin_bottom = 517.0
+custom_styles/fg = SubResource( 47 )
+custom_styles/bg = SubResource( 409 )
+value = 50.0
+rounded = true
+percent_visible = false
+
+[node name="health" type="Label" parent="abhishek/ColorRect"]
+margin_left = 36.0
+margin_top = 432.0
+margin_right = 160.0
+margin_bottom = 476.0
+custom_fonts/font = SubResource( 749 )
+text = "40"
+align = 2
+valign = 1
+
+[node name="user_name" type="Label" parent="abhishek/ColorRect"]
+margin_left = -943.0
+margin_top = -526.0
+margin_right = -727.0
+margin_bottom = -478.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 747 )
+text = "Kingslayer"
+uppercase = true
+
+[node name="health_written" type="Label" parent="abhishek/ColorRect"]
+margin_left = 177.0
+margin_top = 490.0
+margin_right = 303.0
+margin_bottom = 523.0
+text = "health"
+clip_text = true
+uppercase = true
+
+[node name="ammo" type="Label" parent="abhishek/ColorRect"]
+margin_left = 582.0
+margin_top = 490.0
+margin_right = 662.0
+margin_bottom = 523.0
+text = "AMMO"
+clip_text = true
+uppercase = true
+
+[node name="slash" type="Label" parent="abhishek/ColorRect"]
+margin_left = 776.0
+margin_top = 414.0
+margin_right = 826.0
+margin_bottom = 554.0
+custom_colors/font_color = Color( 0.384314, 0, 0.619608, 1 )
+custom_fonts/font = SubResource( 746 )
+text = "/"
+align = 1
+valign = 1
+
+[node name="gun_tab" type="ColorRect" parent="abhishek/ColorRect"]
+margin_left = 196.0
+margin_top = 450.0
+margin_right = 518.0
+margin_bottom = 513.0
+color = Color( 0.521569, 0.490196, 0.490196, 0 )
+
+[node name="main_gun" type="Control" parent="abhishek/ColorRect/gun_tab"]
+margin_left = 509.0
+margin_top = -3.0
+margin_right = 669.0
+margin_bottom = 63.0
+
+[node name="ammo" type="Label" parent="abhishek/ColorRect/gun_tab/main_gun"]
+margin_left = -31.0
+margin_top = -28.0
+margin_right = 68.0
+margin_bottom = 94.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 744 )
+text = "12"
+align = 2
+valign = 1
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="max_ammo" type="Label" parent="abhishek/ColorRect/gun_tab/main_gun"]
+margin_left = 122.0
+margin_top = -28.0
+margin_right = 249.0
+margin_bottom = 94.0
+custom_colors/font_color = Color( 0.384314, 0, 0.619608, 1 )
+custom_fonts/font = SubResource( 745 )
+text = "24"
+valign = 1
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="gun_name" type="Label" parent="abhishek/ColorRect/gun_tab/main_gun"]
+margin_left = -133.0
+margin_top = -60.0
+margin_right = 230.0
+margin_bottom = -3.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 747 )
+text = "m-57"
+align = 2
+valign = 1
+uppercase = true
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="side_arm" type="Control" parent="abhishek/ColorRect/gun_tab"]
+margin_left = 509.0
+margin_right = 667.0
+margin_bottom = 63.0
+
+[node name="ammo" type="Label" parent="abhishek/ColorRect/gun_tab/side_arm"]
+margin_left = -31.0
+margin_top = -28.0
+margin_right = 68.0
+margin_bottom = 94.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 744 )
+text = "12"
+align = 2
+valign = 1
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="max_ammo" type="Label" parent="abhishek/ColorRect/gun_tab/side_arm"]
+margin_left = 122.0
+margin_top = -28.0
+margin_right = 249.0
+margin_bottom = 94.0
+custom_colors/font_color = Color( 0.384314, 0, 0.619608, 1 )
+custom_fonts/font = SubResource( 745 )
+text = "24"
+valign = 1
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="gun_name" type="Label" parent="abhishek/ColorRect/gun_tab/side_arm"]
+margin_left = -107.0
+margin_top = -60.0
+margin_right = 230.0
+margin_bottom = -3.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 747 )
+text = "m-57"
+align = 2
+valign = 1
+uppercase = true
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="reload_symbol" type="TextureRect" parent="abhishek/ColorRect"]
+margin_left = 989.0
+margin_top = 355.0
+margin_right = 1057.0
+margin_bottom = 423.0
+rect_rotation = -90.0
+rect_pivot_offset = Vector2( 20, 20 )
+texture = ExtResource( 41 )
+expand = true
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="TextureRect" type="TextureRect" parent="abhishek/ColorRect"]
+margin_left = 872.0
+margin_top = 257.0
+margin_right = 940.0
+margin_bottom = 325.0
+texture = ExtResource( 20 )
+expand = true
+
+[node name="grenade_count" type="Label" parent="abhishek/ColorRect"]
+margin_left = 882.0
+margin_top = 221.0
+margin_right = 957.0
+margin_bottom = 287.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 774 )
+text = "10"
+align = 2
+valign = 1
+
+[node name="death_screen" type="Panel" parent="abhishek"]
+visible = false
+margin_left = 542.0
+margin_top = 236.0
+margin_right = 1386.0
+margin_bottom = 788.0
+custom_styles/panel = SubResource( 759 )
+script = ExtResource( 7 )
+
+[node name="text_label" type="Label" parent="abhishek/death_screen"]
+margin_left = 4.0
+margin_top = -1.0
+margin_right = 93.0
+margin_bottom = 52.0
+custom_colors/font_color = Color( 0.384314, 0, 0.619608, 1 )
+custom_fonts/font = SubResource( 760 )
+text = "You"
+align = 1
+valign = 1
+
+[node name="text_label2" type="Label" parent="abhishek/death_screen"]
+margin_left = 91.0
+margin_top = -1.0
+margin_right = 176.0
+margin_bottom = 52.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 760 )
+text = "Died"
+align = 1
+valign = 1
+
+[node name="Timer" type="Timer" parent="abhishek/death_screen"]
+wait_time = 5.0
+one_shot = true
+
+[node name="time_label" type="Label" parent="abhishek/death_screen"]
+margin_left = 741.0
+margin_top = -13.0
+margin_right = 843.0
+margin_bottom = 71.0
+rect_pivot_offset = Vector2( 39, 60 )
+custom_colors/font_color = Color( 0.384314, 0, 0.619608, 1 )
+custom_fonts/font = SubResource( 760 )
+text = "0"
+align = 1
+valign = 1
+
+[node name="heading2" type="HBoxContainer" parent="abhishek/death_screen"]
+margin_left = 53.0
+margin_top = 51.0
+margin_right = 818.0
+margin_bottom = 91.0
+rect_min_size = Vector2( 0, 40 )
+theme = SubResource( 762 )
+custom_constants/separation = 70
+
+[node name="name" type="Label" parent="abhishek/death_screen/heading2"]
+margin_right = 138.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 40 )
+size_flags_horizontal = 3
+text = "NAME"
+valign = 1
+
+[node name="kills" type="Label" parent="abhishek/death_screen/heading2"]
+margin_left = 208.0
+margin_right = 347.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 40 )
+size_flags_horizontal = 3
+custom_colors/font_color = Color( 0.384314, 0, 0.619608, 1 )
+text = "KILLS"
+valign = 1
+
+[node name="death" type="Label" parent="abhishek/death_screen/heading2"]
+margin_left = 417.0
+margin_right = 556.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 40 )
+size_flags_horizontal = 3
+text = "DEATH"
+valign = 1
+
+[node name="score" type="Label" parent="abhishek/death_screen/heading2"]
+margin_left = 626.0
+margin_right = 765.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 40 )
+size_flags_horizontal = 3
+text = "SCORE"
+valign = 1
+
+[node name="list" type="VBoxContainer" parent="abhishek/death_screen"]
+margin_left = 53.0
+margin_top = 88.0
+margin_right = 819.0
+margin_bottom = 458.0
+theme = SubResource( 764 )
+
+[node name="heading" type="HBoxContainer" parent="abhishek/death_screen/list"]
+margin_right = 766.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 0, 30 )
+custom_constants/separation = 70
+
+[node name="name" type="Label" parent="abhishek/death_screen/list/heading"]
+margin_right = 139.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 0, 25 )
+size_flags_horizontal = 3
+text = "NAME"
+valign = 1
+clip_text = true
+
+[node name="kills" type="Label" parent="abhishek/death_screen/list/heading"]
+margin_left = 209.0
+margin_right = 348.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 0, 25 )
+size_flags_horizontal = 3
+text = "KILLS"
+valign = 1
+clip_text = true
+
+[node name="death" type="Label" parent="abhishek/death_screen/list/heading"]
+margin_left = 418.0
+margin_right = 557.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 0, 25 )
+size_flags_horizontal = 3
+text = "DEATH"
+valign = 1
+clip_text = true
+
+[node name="score" type="Label" parent="abhishek/death_screen/list/heading"]
+margin_left = 627.0
+margin_right = 766.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 0, 25 )
+size_flags_horizontal = 3
+text = "SCORE"
+valign = 1
+clip_text = true
+
+[node name="pointer_sprite" type="Sprite" parent="abhishek"]
+self_modulate = Color( 1, 1, 1, 0.713726 )
+position = Vector2( 960, 540 )
+texture = ExtResource( 16 )
+
+[node name="low_ray" type="Label" parent="abhishek"]
+visible = false
+margin_left = 402.0
+margin_top = 43.0
+margin_right = 570.0
+margin_bottom = 69.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "ff"
+align = 1
+valign = 1
+
+[node name="high_ray" type="Label" parent="abhishek"]
+visible = false
+margin_left = 402.0
+margin_top = 69.0
+margin_right = 570.0
+margin_bottom = 95.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "fff"
+align = 1
+valign = 1
+
+[node name="on_floor" type="Label" parent="abhishek"]
+visible = false
+margin_left = 402.0
+margin_top = 96.0
+margin_right = 570.0
+margin_bottom = 122.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "ff"
+align = 1
+valign = 1
+
+[node name="Label" type="Label" parent="."]
+visible = false
+margin_left = 1734.0
+margin_top = 230.0
+margin_right = 1814.0
+margin_bottom = 273.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 413 )
+text = "ffffff"
+align = 1
+valign = 1
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 1675.0
+margin_top = 14.0
+margin_right = 1907.0
+margin_bottom = 78.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 788 )
+text = "Latency "
+valign = 1
+
+[node name="message_log" type="Control" parent="."]
+margin_top = 779.0
+margin_right = 299.0
+margin_bottom = 974.0
+script = ExtResource( 8 )
+
+[node name="message_container" type="VBoxContainer" parent="message_log"]
+margin_left = 32.0
+margin_top = -222.0
+margin_right = 926.0
+margin_bottom = 188.0
+grow_vertical = 0
+custom_constants/separation = 6
+alignment = 2
+
+[node name="demo_node" type="RichTextLabel" parent="message_log/message_container"]
+visible = false
+margin_top = 380.0
+margin_right = 894.0
+margin_bottom = 410.0
+rect_min_size = Vector2( 0, 30 )
+custom_fonts/bold_font = SubResource( 775 )
+custom_fonts/normal_font = SubResource( 776 )
+bbcode_enabled = true
+bbcode_text = "[b][color=white]Abhinav Annad![/color][/b] [color=black]KILLED[/color] [b][color=#62009e]Abhishek kumar![/color][/b]
+"
+text = "Abhinav Annad! KILLED Abhishek kumar!
+"
+scroll_active = false
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="sec_label" type="Label" parent="."]
+margin_left = 205.0
+margin_top = 1035.0
+margin_right = 255.0
+margin_bottom = 1068.0
+custom_colors/font_color = Color( 0.384314, 0, 0.619608, 1 )
+custom_fonts/font = SubResource( 784 )
+text = "sec"
+clip_text = true
+uppercase = true
+
+[node name="game_end_screen" type="Panel" parent="."]
+visible = false
+self_modulate = Color( 1, 1, 1, 0.47451 )
+margin_left = 310.0
+margin_top = 153.0
+margin_right = 1160.0
+margin_bottom = 865.0
+custom_styles/panel = SubResource( 787 )
+script = ExtResource( 11 )
+
+[node name="text_label" type="Label" parent="game_end_screen"]
+margin_left = 536.0
+margin_top = -64.0
+margin_right = 820.0
+margin_bottom = 5.0
+custom_fonts/font = SubResource( 765 )
+text = "ENDED"
+align = 1
+valign = 1
+
+[node name="text_label2" type="Label" parent="game_end_screen"]
+margin_left = 401.0
+margin_top = -64.0
+margin_right = 644.0
+margin_bottom = 5.0
+custom_colors/font_color = Color( 0.384314, 0, 0.619608, 1 )
+custom_fonts/font = SubResource( 765 )
+text = "GAME"
+align = 1
+valign = 1
+
+[node name="grade_card" type="Control" parent="game_end_screen"]
+margin_left = 641.0
+margin_top = 69.0
+margin_right = 1089.0
+margin_bottom = 599.0
+
+[node name="image" type="TextureRect" parent="game_end_screen/grade_card"]
+self_modulate = Color( 1, 1, 1, 0.768627 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 271.0
+margin_top = -69.0
+margin_right = 287.0
+margin_bottom = 113.0
+texture = ExtResource( 12 )
+expand = true
+
+[node name="name" type="Label" parent="game_end_screen/grade_card"]
+margin_left = 419.0
+margin_top = 122.0
+margin_right = 536.0
+margin_bottom = 139.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 390 )
+text = "Abhshek kumar"
+valign = 1
+
+[node name="outfit" type="Label" parent="game_end_screen/grade_card"]
+margin_left = 419.0
+margin_top = 146.0
+margin_right = 545.0
+margin_bottom = 163.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 390 )
+text = "You look amazing"
+valign = 1
+
+[node name="primary_gun" type="Label" parent="game_end_screen/grade_card"]
+margin_left = 419.0
+margin_top = 170.0
+margin_right = 539.0
+margin_bottom = 187.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 390 )
+text = "AK - 47	"
+valign = 1
+
+[node name="secondary_gun" type="Label" parent="game_end_screen/grade_card"]
+margin_left = 419.0
+margin_top = 193.0
+margin_right = 539.0
+margin_bottom = 210.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 390 )
+text = "Pistol"
+valign = 1
+
+[node name="kills" type="Label" parent="game_end_screen/grade_card"]
+margin_left = 657.0
+margin_top = 284.0
+margin_right = 686.0
+margin_bottom = 301.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 390 )
+text = "100"
+align = 1
+valign = 1
+
+[node name="deaths" type="Label" parent="game_end_screen/grade_card"]
+margin_left = 658.0
+margin_top = 316.0
+margin_right = 687.0
+margin_bottom = 333.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 390 )
+text = "100"
+align = 1
+valign = 1
+
+[node name="headshots" type="Label" parent="game_end_screen/grade_card"]
+margin_left = 658.0
+margin_top = 346.0
+margin_right = 687.0
+margin_bottom = 363.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 390 )
+text = "100"
+align = 1
+valign = 1
+
+[node name="accuracy" type="Label" parent="game_end_screen/grade_card"]
+margin_left = 658.0
+margin_top = 374.0
+margin_right = 687.0
+margin_bottom = 391.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 390 )
+text = "100"
+align = 1
+valign = 1
+
+[node name="shots_fired" type="Label" parent="game_end_screen/grade_card"]
+margin_left = 658.0
+margin_top = 406.0
+margin_right = 687.0
+margin_bottom = 423.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 390 )
+text = "100"
+align = 1
+valign = 1
+
+[node name="SdacVentureLogo" type="Sprite" parent="game_end_screen/grade_card"]
+position = Vector2( 370.072, -32.125 )
+scale = Vector2( 0.373265, 0.38603 )
+texture = ExtResource( 27 )
+
+[node name="to_lobby_button" type="Button" parent="game_end_screen"]
+margin_left = 119.0
+margin_top = 579.0
+margin_right = 381.0
+margin_bottom = 634.0
+custom_fonts/font = SubResource( 803 )
+custom_styles/hover = SubResource( 812 )
+custom_styles/pressed = SubResource( 813 )
+custom_styles/normal = SubResource( 814 )
+text = "LOBBY"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="to_main_menu" type="Button" parent="game_end_screen"]
+margin_left = 479.0
+margin_top = 579.0
+margin_right = 741.0
+margin_bottom = 634.0
+custom_fonts/font = SubResource( 803 )
+custom_styles/hover = SubResource( 812 )
+custom_styles/pressed = SubResource( 812 )
+custom_styles/normal = SubResource( 814 )
+text = "MAIN MENU"
+
+[node name="heading2" type="HBoxContainer" parent="game_end_screen"]
+margin_left = 140.0
+margin_top = 90.0
+margin_right = 732.0
+margin_bottom = 132.0
+rect_min_size = Vector2( 0, 40 )
+theme = SubResource( 762 )
+custom_constants/separation = 70
+
+[node name="name" type="Label" parent="game_end_screen/heading2"]
+margin_right = 87.0
+margin_bottom = 42.0
+rect_min_size = Vector2( 0, 40 )
+size_flags_horizontal = 3
+text = "NAME"
+valign = 1
+
+[node name="kills" type="Label" parent="game_end_screen/heading2"]
+margin_left = 157.0
+margin_right = 243.0
+margin_bottom = 42.0
+rect_min_size = Vector2( 0, 40 )
+size_flags_horizontal = 3
+custom_colors/font_color = Color( 0.384314, 0, 0.619608, 1 )
+text = "KILLS"
+valign = 1
+
+[node name="death" type="Label" parent="game_end_screen/heading2"]
+margin_left = 313.0
+margin_right = 417.0
+margin_bottom = 42.0
+rect_min_size = Vector2( 0, 40 )
+size_flags_horizontal = 3
+text = "DEATH"
+valign = 1
+
+[node name="score" type="Label" parent="game_end_screen/heading2"]
+margin_left = 487.0
+margin_right = 592.0
+margin_bottom = 42.0
+rect_min_size = Vector2( 0, 40 )
+size_flags_horizontal = 3
+text = "SCORE"
+valign = 1
+
+[node name="list" type="VBoxContainer" parent="game_end_screen"]
+margin_left = 140.0
+margin_top = 154.0
+margin_right = 732.0
+margin_bottom = 524.0
+theme = SubResource( 764 )
+
+[node name="heading" type="HBoxContainer" parent="game_end_screen/list"]
+margin_right = 592.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 30 )
+custom_constants/separation = 70
+
+[node name="name" type="Label" parent="game_end_screen/list/heading"]
+margin_right = 95.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 25 )
+size_flags_horizontal = 3
+text = "NAME"
+valign = 1
+clip_text = true
+
+[node name="kills" type="Label" parent="game_end_screen/list/heading"]
+margin_left = 165.0
+margin_right = 261.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 25 )
+size_flags_horizontal = 3
+text = "KILLS"
+valign = 1
+clip_text = true
+
+[node name="death" type="Label" parent="game_end_screen/list/heading"]
+margin_left = 331.0
+margin_right = 426.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 25 )
+size_flags_horizontal = 3
+text = "DEATH"
+valign = 1
+clip_text = true
+
+[node name="score" type="Label" parent="game_end_screen/list/heading"]
+margin_left = 496.0
+margin_right = 592.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 25 )
+size_flags_horizontal = 3
+text = "SCORE"
+valign = 1
+clip_text = true
+
+[node name="pause_screen" type="Control" parent="."]
+visible = false
+margin_left = 433.0
+margin_top = 232.0
+margin_right = 1457.0
+margin_bottom = 832.0
+script = ExtResource( 14 )
+
+[node name="panel" type="Panel" parent="pause_screen"]
+margin_left = -134.0
+margin_top = -110.0
+margin_right = 1253.0
+margin_bottom = 660.0
+custom_styles/panel = SubResource( 759 )
+
+[node name="senstivity_slider" type="HSlider" parent="pause_screen/panel"]
+margin_left = 652.0
+margin_top = 103.0
+margin_right = 983.0
+margin_bottom = 179.0
+rect_scale = Vector2( 0.8, 0.8 )
+custom_icons/grabber_highlight = ExtResource( 13 )
+custom_icons/grabber = ExtResource( 13 )
+custom_styles/slider = SubResource( 804 )
+custom_styles/grabber_area_highlight = SubResource( 804 )
+custom_styles/grabber_area = SubResource( 804 )
+min_value = 0.2
+max_value = 5.0
+step = 0.2
+value = 1.2
+
+[node name="senstivity_label" type="Label" parent="pause_screen/panel"]
+margin_left = 307.0
+margin_top = 100.0
+margin_right = 516.0
+margin_bottom = 161.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 805 )
+text = "Senstivity"
+valign = 1
+
+[node name="senstivity_value" type="Label" parent="pause_screen/panel"]
+margin_left = 953.0
+margin_top = 103.0
+margin_right = 1125.0
+margin_bottom = 164.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 805 )
+text = "1.5"
+valign = 1
+
+[node name="to_main_menu" type="Button" parent="pause_screen/panel"]
+margin_left = 103.0
+margin_top = 610.0
+margin_right = 422.0
+margin_bottom = 676.0
+custom_colors/font_color_hover = Color( 0.384314, 0, 0.619608, 1 )
+custom_colors/font_color_pressed = Color( 0.384314, 0, 0.619608, 1 )
+custom_fonts/font = SubResource( 803 )
+custom_styles/hover = SubResource( 807 )
+custom_styles/pressed = SubResource( 807 )
+custom_styles/normal = SubResource( 808 )
+text = "Main Menu"
+
+[node name="mouse_label" type="Label" parent="pause_screen/panel"]
+margin_left = 250.0
+margin_top = 55.0
+margin_right = 440.0
+margin_bottom = 121.0
+custom_colors/font_color = Color( 0.384314, 0, 0.619608, 1 )
+custom_fonts/font = SubResource( 789 )
+text = "MOUSE"
+valign = 1
+
+[node name="mouse_label2" type="Label" parent="pause_screen/panel"]
+margin_left = 250.0
+margin_top = 150.0
+margin_right = 485.0
+margin_bottom = 216.0
+custom_colors/font_color = Color( 0.384314, 0, 0.619608, 1 )
+custom_fonts/font = SubResource( 789 )
+text = "GRAPHICS"
+valign = 1
+
+[node name="render_distance_slider" type="HSlider" parent="pause_screen/panel"]
+margin_left = 652.0
+margin_top = 322.0
+margin_right = 983.0
+margin_bottom = 367.0
+rect_scale = Vector2( 0.8, 0.8 )
+custom_icons/grabber_highlight = ExtResource( 13 )
+custom_icons/grabber = ExtResource( 13 )
+custom_styles/slider = SubResource( 790 )
+custom_styles/grabber_area_highlight = SubResource( 790 )
+custom_styles/grabber_area = SubResource( 790 )
+min_value = 50.0
+max_value = 500.0
+step = 10.0
+value = 150.0
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="render_distance_value" type="Label" parent="pause_screen/panel"]
+margin_left = 953.0
+margin_top = 306.0
+margin_right = 1125.0
+margin_bottom = 369.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 791 )
+text = "150"
+valign = 1
+
+[node name="shaded_label" type="Label" parent="pause_screen/panel"]
+margin_left = 307.0
+margin_top = 198.0
+margin_right = 657.0
+margin_bottom = 261.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 791 )
+text = "Shading"
+valign = 1
+
+[node name="shading_checkbox" type="CheckBox" parent="pause_screen/panel"]
+margin_left = 652.0
+margin_top = 216.0
+margin_right = 682.0
+margin_bottom = 246.0
+custom_icons/checked = ExtResource( 28 )
+custom_icons/unchecked = ExtResource( 29 )
+
+[node name="shaded_label2" type="Label" parent="pause_screen/panel"]
+margin_left = 307.0
+margin_top = 251.0
+margin_right = 657.0
+margin_bottom = 314.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 791 )
+text = "Shadows"
+valign = 1
+
+[node name="shadows_check_box" type="CheckBox" parent="pause_screen/panel"]
+margin_left = 652.0
+margin_top = 261.0
+margin_right = 682.0
+margin_bottom = 291.0
+custom_icons/checked = ExtResource( 28 )
+custom_icons/unchecked = ExtResource( 29 )
+
+[node name="shaded_label3" type="Label" parent="pause_screen/panel"]
+margin_left = 307.0
+margin_top = 306.0
+margin_right = 695.0
+margin_bottom = 369.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 791 )
+text = "Render Distance"
+valign = 1
+
+[node name="music_sound_slider" type="HSlider" parent="pause_screen/panel"]
+margin_left = 652.0
+margin_top = 419.0
+margin_right = 983.0
+margin_bottom = 464.0
+rect_scale = Vector2( 0.8, 0.8 )
+custom_icons/grabber_highlight = ExtResource( 13 )
+custom_icons/grabber = ExtResource( 13 )
+custom_styles/slider = SubResource( 792 )
+custom_styles/grabber_area_highlight = SubResource( 792 )
+custom_styles/grabber_area = SubResource( 792 )
+value = 50.0
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="sound_effect_slider" type="HSlider" parent="pause_screen/panel"]
+margin_left = 652.0
+margin_top = 470.0
+margin_right = 983.0
+margin_bottom = 512.0
+rect_scale = Vector2( 0.8, 0.8 )
+custom_icons/grabber_highlight = ExtResource( 13 )
+custom_icons/grabber = ExtResource( 13 )
+custom_styles/slider = SubResource( 792 )
+custom_styles/grabber_area_highlight = SubResource( 792 )
+custom_styles/grabber_area = SubResource( 792 )
+min_value = 0.3
+max_value = 2.0
+step = 0.1
+value = 2.0
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="music_volume_value" type="Label" parent="pause_screen/panel"]
+margin_left = 953.0
+margin_top = 406.0
+margin_right = 1125.0
+margin_bottom = 469.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 793 )
+text = "50"
+valign = 1
+
+[node name="sfx_volume_value" type="Label" parent="pause_screen/panel"]
+margin_left = 999.0
+margin_top = 457.0
+margin_right = 1171.0
+margin_bottom = 520.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 793 )
+text = "Mute"
+valign = 1
+
+[node name="senstivity_label2" type="Label" parent="pause_screen/panel"]
+margin_left = 307.0
+margin_top = 403.0
+margin_right = 479.0
+margin_bottom = 466.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 793 )
+text = "Music"
+valign = 1
+
+[node name="sound_effects_labal" type="Label" parent="pause_screen/panel"]
+margin_left = 307.0
+margin_top = 454.0
+margin_right = 657.0
+margin_bottom = 517.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 793 )
+text = "Sound Effects"
+valign = 1
+
+[node name="audio_label" type="Label" parent="pause_screen/panel"]
+margin_left = 250.0
+margin_top = 358.0
+margin_right = 422.0
+margin_bottom = 421.0
+custom_colors/font_color = Color( 0.384314, 0, 0.619608, 1 )
+custom_fonts/font = SubResource( 794 )
+text = "AUDIO"
+valign = 1
+
+[node name="sfx_mute_button" type="CheckBox" parent="pause_screen/panel"]
+margin_left = 954.0
+margin_top = 472.0
+margin_right = 984.0
+margin_bottom = 502.0
+custom_icons/checked = ExtResource( 28 )
+custom_icons/unchecked = ExtResource( 29 )
+
+[node name="apply_button" type="Button" parent="pause_screen/panel"]
+margin_left = 990.0
+margin_top = 610.0
+margin_right = 1309.0
+margin_bottom = 676.0
+custom_colors/font_color_hover = Color( 0.384314, 0, 0.619608, 1 )
+custom_colors/font_color_pressed = Color( 0.384314, 0, 0.619608, 1 )
+custom_fonts/font = SubResource( 795 )
+custom_styles/hover = SubResource( 807 )
+custom_styles/pressed = SubResource( 807 )
+custom_styles/normal = SubResource( 808 )
+text = "Apply"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="reset_button" type="Button" parent="pause_screen/panel"]
+margin_left = 542.0
+margin_top = 610.0
+margin_right = 861.0
+margin_bottom = 676.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0.384314, 0, 0.619608, 1 )
+custom_colors/font_color_pressed = Color( 0.384314, 0, 0.619608, 1 )
+custom_fonts/font = SubResource( 795 )
+custom_styles/hover = SubResource( 807 )
+custom_styles/pressed = SubResource( 807 )
+custom_styles/normal = SubResource( 808 )
+text = "Reset Defaults"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[connection signal="pressed" from="game_end_screen/to_lobby_button" to="game_end_screen" method="_on_Button_pressed"]
+[connection signal="pressed" from="game_end_screen/to_main_menu" to="game_end_screen" method="_on_to_main_menu_pressed"]
+[connection signal="visibility_changed" from="pause_screen" to="pause_screen" method="_on_pause_screen_visibility_changed"]
+[connection signal="value_changed" from="pause_screen/panel/senstivity_slider" to="pause_screen" method="_on_senstivity_slider_value_changed"]
+[connection signal="pressed" from="pause_screen/panel/to_main_menu" to="game_end_screen" method="_on_to_main_menu_pressed"]
+[connection signal="value_changed" from="pause_screen/panel/render_distance_slider" to="pause_screen" method="_on_render_distance_slider_value_changed"]
+[connection signal="pressed" from="pause_screen/panel/apply_button" to="pause_screen" method="_on_apply_button_pressed"]
+[connection signal="pressed" from="pause_screen/panel/reset_button" to="pause_screen" method="_on_reset_button_pressed"]

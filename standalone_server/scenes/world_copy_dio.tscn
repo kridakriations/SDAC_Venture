@@ -1,0 +1,56 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scenes/world.gd" type="Script" id=1]
+[ext_resource path="res://maps/dio_server_map_scene.tscn" type="PackedScene" id=2]
+[ext_resource path="res://fonts/eurocine/Eurocine Regular.otf" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=7]
+size = 27
+font_data = ExtResource( 4 )
+
+[node name="world" type="Spatial"]
+script = ExtResource( 1 )
+current_map = 1
+
+[node name="level" type="Spatial" parent="."]
+
+[node name="dio_map_scene" parent="level" instance=ExtResource( 2 )]
+
+[node name="spawn_nodes" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.67866, 0 )
+
+[node name="Position3D" type="Position3D" parent="spawn_nodes"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.183, 8.14526, 23.1034 )
+
+[node name="Position3D5" type="Position3D" parent="spawn_nodes"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.9297, 20.0455, -22.2569 )
+
+[node name="Position3D6" type="Position3D" parent="spawn_nodes"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -28.3176, 21.4578, -13.1959 )
+
+[node name="Position3D7" type="Position3D" parent="spawn_nodes"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.9968, -0.817805, -30.2 )
+
+[node name="Position3D8" type="Position3D" parent="spawn_nodes"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -24.5237, -2.51869, -15.6453 )
+
+[node name="Position3D2" type="Position3D" parent="spawn_nodes"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22.2611, -1.66055, -1.04547 )
+
+[node name="Position3D3" type="Position3D" parent="spawn_nodes"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -25.9711, -0.377546, -10.4349 )
+
+[node name="Position3D4" type="Position3D" parent="spawn_nodes"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -29.1685, 1.11375, -14.0869 )
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="Label" type="Label" parent="."]
+margin_right = 278.0
+margin_bottom = 147.0
+custom_fonts/font = SubResource( 7 )
+text = "fps"
+align = 1
+valign = 1
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

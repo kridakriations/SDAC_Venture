@@ -1,0 +1,1148 @@
+[gd_scene load_steps=102 format=2]
+
+[ext_resource path="res://assets/sounds/click.wav" type="AudioStream" id=1]
+[ext_resource path="res://assets/ui_assets/color_box/orange box.png" type="Texture" id=2]
+[ext_resource path="res://assets/ui_assets/color_box/pink box.png" type="Texture" id=3]
+[ext_resource path="res://assets/ui_assets/Lobby UI/Lobby UI/avatar button.png" type="Texture" id=4]
+[ext_resource path="res://assets/ui_assets/color_box/purple box.png" type="Texture" id=5]
+[ext_resource path="res://assets/ui_assets/color_box/tan box.png" type="Texture" id=6]
+[ext_resource path="res://assets/ui_assets/Lobby UI/Lobby UI/back rectangle wide.png" type="Texture" id=7]
+[ext_resource path="res://assets/ui_assets/color_box/maroon box.png" type="Texture" id=8]
+[ext_resource path="res://assets/ui_assets/Lobby UI/Lobby UI/lobby buttons after/right button after.png" type="Texture" id=9]
+[ext_resource path="res://assets/ui_assets/Lobby UI/Lobby UI/start button before.png" type="Texture" id=10]
+[ext_resource path="res://assets/textures/black_gridtexture512.png" type="Texture" id=11]
+[ext_resource path="res://assets/ui_assets/Lobby UI/Lobby UI/left button before.png" type="Texture" id=12]
+[ext_resource path="res://assets/ui_assets/Lobby UI/Lobby UI/secondary weapon button.png" type="Texture" id=13]
+[ext_resource path="res://assets/ui_assets/color_box/medium blue box.png" type="Texture" id=14]
+[ext_resource path="res://assets/ui_assets/Lobby UI/Lobby UI/lobby buttons after/main menu button after.png" type="Texture" id=15]
+[ext_resource path="res://assets/ui_assets/color_box/olive box.png" type="Texture" id=16]
+[ext_resource path="res://assets/ui_assets/color_box/violet box.png" type="Texture" id=17]
+[ext_resource path="res://assets/ui_assets/color_box/yellow box.png" type="Texture" id=18]
+[ext_resource path="res://assets/ui_assets/Lobby UI/Lobby UI/primary weapon button.png" type="Texture" id=19]
+[ext_resource path="res://assets/ui_assets/color_box/avatar button box.png" type="Texture" id=20]
+[ext_resource path="res://assets/ui_assets/color_box/green box.png" type="Texture" id=21]
+[ext_resource path="res://assets/ui_assets/color_box/grey box.png" type="Texture" id=22]
+[ext_resource path="res://assets/ui_assets/Lobby UI/Lobby UI/back rectangle thin.png" type="Texture" id=23]
+[ext_resource path="res://assets/ui_assets/Lobby UI/Lobby UI/main menu button before.png" type="Texture" id=24]
+[ext_resource path="res://assets/ui_assets/Lobby UI/Lobby UI/lobby buttons after/start button after.png" type="Texture" id=25]
+[ext_resource path="res://assets/ui_assets/Lobby UI/Lobby UI/lobby buttons after/left button after.png" type="Texture" id=26]
+[ext_resource path="res://assets/ui_assets/color_box/black box.png" type="Texture" id=27]
+[ext_resource path="res://assets/sounds/click2.wav" type="AudioStream" id=28]
+[ext_resource path="res://assets/ui_assets/color_box/light blue box.png" type="Texture" id=29]
+[ext_resource path="res://assets/ui_assets/color_box/none box.png" type="Texture" id=30]
+[ext_resource path="res://assets/ui_assets/color_box/navy box.png" type="Texture" id=31]
+[ext_resource path="res://assets/ui_assets/Lobby UI/Lobby UI/right button before.png" type="Texture" id=32]
+[ext_resource path="res://assets/ui_assets/Lobby UI/Lobby UI/Lobby frame UI.png" type="Texture" id=33]
+[ext_resource path="res://assets/ui_assets/color_box/red box.png" type="Texture" id=34]
+[ext_resource path="res://assets/ui_assets/color_box/white box.png" type="Texture" id=35]
+[ext_resource path="res://assets/ui_assets/color_box/brown box.png" type="Texture" id=36]
+[ext_resource path="res://fonts/Chakra_Petch/ChakraPetch-Regular.ttf" type="DynamicFontData" id=37]
+[ext_resource path="res://dress.gd" type="Script" id=38]
+[ext_resource path="res://scripts/id_card.gd" type="Script" id=39]
+[ext_resource path="res://scenes/player_demostration.tscn" type="PackedScene" id=40]
+[ext_resource path="res://main_scene.gd" type="Script" id=41]
+[ext_resource path="res://scripts/ready_panel.gd" type="Script" id=42]
+[ext_resource path="res://assets/sprites/outfit Save Button.png" type="Texture" id=43]
+[ext_resource path="res://assets/model/watercoller.obj" type="ArrayMesh" id=44]
+[ext_resource path="res://assets/model/laptop.obj" type="ArrayMesh" id=45]
+[ext_resource path="res://assets/model/bed.obj" type="ArrayMesh" id=46]
+[ext_resource path="res://assets/ui_assets/Lobby UI/Lobby UI/lobby buttons after/player list button after.png" type="Texture" id=47]
+[ext_resource path="res://assets/ui_assets/Lobby UI/Lobby UI/cancle button after.png" type="Texture" id=48]
+[ext_resource path="res://assets/ui_assets/Lobby UI/Lobby UI/Player List button before.png" type="Texture" id=49]
+[ext_resource path="res://assets/textures/black_gridtexture128.png" type="Texture" id=52]
+[ext_resource path="res://assets/model/ak47.obj" type="ArrayMesh" id=56]
+[ext_resource path="res://assets/model/m416.obj" type="ArrayMesh" id=57]
+[ext_resource path="res://fonts/Chakra_Petch/ChakraPetch-Bold.ttf" type="DynamicFontData" id=58]
+
+[sub_resource type="Animation" id=2]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "connected"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, -609 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "disconnected"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -609 ), Vector2( 0, 0 ) ]
+}
+
+[sub_resource type="DynamicFont" id=73]
+size = 33
+use_filter = true
+font_data = ExtResource( 37 )
+
+[sub_resource type="Theme" id=74]
+default_font = SubResource( 73 )
+Label/colors/font_color = Color( 0.913725, 0.913725, 0.913725, 1 )
+
+[sub_resource type="StyleBoxTexture" id=76]
+texture = ExtResource( 19 )
+region_rect = Rect2( 0, 0, 434, 93 )
+
+[sub_resource type="StyleBoxTexture" id=85]
+texture = ExtResource( 12 )
+region_rect = Rect2( 0, 0, 10, 12 )
+
+[sub_resource type="StyleBoxTexture" id=84]
+texture = ExtResource( 26 )
+region_rect = Rect2( 0, 0, 10, 12 )
+
+[sub_resource type="StyleBoxTexture" id=77]
+texture = ExtResource( 13 )
+region_rect = Rect2( 0, 0, 435, 93 )
+
+[sub_resource type="StyleBoxFlat" id=57]
+bg_color = Color( 0.627451, 0, 0, 0 )
+border_width_left = 19
+border_color = Color( 0.8, 0.8, 0.8, 0 )
+shadow_color = Color( 0, 0, 0, 0 )
+
+[sub_resource type="StyleBoxFlat" id=58]
+bg_color = Color( 1, 1, 1, 0 )
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="Theme" id=56]
+Button/colors/font_color = Color( 0, 0, 0, 1 )
+Button/colors/font_color_disabled = Color( 0, 0, 0, 1 )
+Button/colors/font_color_focus = Color( 0, 0, 0, 1 )
+Button/colors/font_color_hover = Color( 0, 0, 0, 1 )
+Button/colors/font_color_pressed = Color( 0, 0, 0, 1 )
+CheckBox/colors/font_color = Color( 0, 0, 0, 1 )
+CheckBox/colors/font_color_disabled = Color( 0, 0, 0, 1 )
+CheckBox/colors/font_color_focus = Color( 0, 0, 0, 1 )
+CheckBox/colors/font_color_hover = Color( 0, 0, 0, 1 )
+CheckBox/colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+CheckBox/colors/font_color_pressed = Color( 0, 0, 0, 1 )
+CheckButton/colors/font_color = Color( 0, 0, 0, 1 )
+CheckButton/colors/font_color_disabled = Color( 0, 0, 0, 1 )
+CheckButton/colors/font_color_focus = Color( 0, 0, 0, 1 )
+CheckButton/colors/font_color_hover = Color( 0, 0, 0, 1 )
+CheckButton/colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+CheckButton/colors/font_color_pressed = Color( 0, 0, 0, 1 )
+ColorPickerButton/colors/font_color = Color( 0, 0, 0, 1 )
+ColorPickerButton/colors/font_color_disabled = Color( 0, 0, 0, 1 )
+ColorPickerButton/colors/font_color_focus = Color( 0, 0, 0, 1 )
+ColorPickerButton/colors/font_color_hover = Color( 0, 0, 0, 1 )
+ColorPickerButton/colors/font_color_pressed = Color( 0, 0, 0, 1 )
+FileDialog/colors/file_icon_modulate = Color( 0, 0, 0, 1 )
+FileDialog/colors/files_disabled = Color( 0, 0, 0, 1 )
+FileDialog/colors/folder_icon_modulate = Color( 0, 0, 0, 1 )
+GraphEdit/colors/activity = Color( 0, 0, 0, 1 )
+GraphEdit/colors/grid_major = Color( 0, 0, 0, 1 )
+GraphEdit/colors/grid_minor = Color( 0, 0, 0, 1 )
+GraphEdit/colors/selection_fill = Color( 0, 0, 0, 1 )
+GraphEdit/colors/selection_stroke = Color( 0, 0, 0, 1 )
+GraphEditMinimap/colors/resizer_color = Color( 0, 0, 0, 1 )
+GraphNode/colors/close_color = Color( 0, 0, 0, 1 )
+GraphNode/colors/resizer_color = Color( 0, 0, 0, 1 )
+GraphNode/colors/title_color = Color( 0, 0, 0, 1 )
+ItemList/colors/font_color = Color( 0, 0, 0, 1 )
+ItemList/colors/font_color_selected = Color( 0, 0, 0, 1 )
+ItemList/colors/guide_color = Color( 0, 0, 0, 1 )
+ItemList/constants/hseparation = 4
+ItemList/constants/icon_margin = 4
+ItemList/constants/line_separation = 2
+ItemList/constants/vseparation = 2
+ItemList/fonts/font = null
+ItemList/styles/bg = SubResource( 57 )
+ItemList/styles/bg_focus = SubResource( 58 )
+ItemList/styles/cursor = null
+ItemList/styles/cursor_unfocused = null
+ItemList/styles/selected = SubResource( 58 )
+ItemList/styles/selected_focus = null
+Label/colors/font_color = Color( 0, 0, 0, 1 )
+Label/colors/font_color_shadow = Color( 0, 0, 0, 1 )
+Label/colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+LineEdit/colors/clear_button_color = Color( 0, 0, 0, 1 )
+LineEdit/colors/clear_button_color_pressed = Color( 0, 0, 0, 1 )
+LineEdit/colors/cursor_color = Color( 0, 0, 0, 1 )
+LineEdit/colors/font_color = Color( 0, 0, 0, 1 )
+LineEdit/colors/font_color_selected = Color( 0, 0, 0, 1 )
+LineEdit/colors/font_color_uneditable = Color( 0, 0, 0, 1 )
+LineEdit/colors/selection_color = Color( 0, 0, 0, 1 )
+LinkButton/colors/font_color = Color( 0, 0, 0, 1 )
+LinkButton/colors/font_color_focus = Color( 0, 0, 0, 1 )
+LinkButton/colors/font_color_hover = Color( 0, 0, 0, 1 )
+LinkButton/colors/font_color_pressed = Color( 0, 0, 0, 1 )
+MenuButton/colors/font_color = Color( 0, 0, 0, 1 )
+MenuButton/colors/font_color_disabled = Color( 0, 0, 0, 1 )
+MenuButton/colors/font_color_focus = Color( 0, 0, 0, 1 )
+MenuButton/colors/font_color_hover = Color( 0, 0, 0, 1 )
+MenuButton/colors/font_color_pressed = Color( 0, 0, 0, 1 )
+OptionButton/colors/font_color = Color( 0, 0, 0, 1 )
+OptionButton/colors/font_color_disabled = Color( 0, 0, 0, 1 )
+OptionButton/colors/font_color_focus = Color( 0, 0, 0, 1 )
+OptionButton/colors/font_color_hover = Color( 0, 0, 0, 1 )
+OptionButton/colors/font_color_pressed = Color( 0, 0, 0, 1 )
+PopupMenu/colors/font_color = Color( 0, 0, 0, 1 )
+PopupMenu/colors/font_color_accel = Color( 0, 0, 0, 1 )
+PopupMenu/colors/font_color_disabled = Color( 0, 0, 0, 1 )
+PopupMenu/colors/font_color_hover = Color( 0, 0, 0, 1 )
+PopupMenu/colors/font_color_separator = Color( 0, 0, 0, 1 )
+ProgressBar/colors/font_color = Color( 0, 0, 0, 1 )
+ProgressBar/colors/font_color_shadow = Color( 0, 0, 0, 1 )
+RichTextLabel/colors/default_color = Color( 0, 0, 0, 1 )
+RichTextLabel/colors/font_color_selected = Color( 0, 0, 0, 1 )
+RichTextLabel/colors/font_color_shadow = Color( 0, 0, 0, 1 )
+RichTextLabel/colors/selection_color = Color( 0, 0, 0, 1 )
+TabContainer/colors/font_color_bg = Color( 0, 0, 0, 1 )
+TabContainer/colors/font_color_disabled = Color( 0, 0, 0, 1 )
+TabContainer/colors/font_color_fg = Color( 0, 0, 0, 1 )
+Tabs/colors/font_color_bg = Color( 0, 0, 0, 1 )
+Tabs/colors/font_color_disabled = Color( 0, 0, 0, 1 )
+Tabs/colors/font_color_fg = Color( 0, 0, 0, 1 )
+TextEdit/colors/background_color = Color( 0, 0, 0, 1 )
+TextEdit/colors/bookmark_color = Color( 0, 0, 0, 1 )
+TextEdit/colors/brace_mismatch_color = Color( 0, 0, 0, 1 )
+TextEdit/colors/breakpoint_color = Color( 0, 0, 0, 1 )
+TextEdit/colors/caret_background_color = Color( 0, 0, 0, 1 )
+TextEdit/colors/caret_color = Color( 0, 0, 0, 1 )
+TextEdit/colors/code_folding_color = Color( 0, 0, 0, 1 )
+TextEdit/colors/completion_background_color = Color( 0, 0, 0, 1 )
+TextEdit/colors/completion_existing_color = Color( 0, 0, 0, 1 )
+TextEdit/colors/completion_font_color = Color( 0, 0, 0, 1 )
+TextEdit/colors/completion_scroll_color = Color( 0, 0, 0, 1 )
+TextEdit/colors/completion_selected_color = Color( 0, 0, 0, 1 )
+TextEdit/colors/current_line_color = Color( 0, 0, 0, 1 )
+TextEdit/colors/executing_line_color = Color( 0, 0, 0, 1 )
+TextEdit/colors/font_color = Color( 0, 0, 0, 1 )
+TextEdit/colors/font_color_readonly = Color( 0, 0, 0, 1 )
+TextEdit/colors/font_color_selected = Color( 0, 0, 0, 1 )
+TextEdit/colors/function_color = Color( 0, 0, 0, 1 )
+TextEdit/colors/line_number_color = Color( 0, 0, 0, 1 )
+TextEdit/colors/mark_color = Color( 0, 0, 0, 1 )
+TextEdit/colors/member_variable_color = Color( 0, 0, 0, 1 )
+TextEdit/colors/number_color = Color( 0, 0, 0, 1 )
+TextEdit/colors/safe_line_number_color = Color( 0, 0, 0, 1 )
+TextEdit/colors/selection_color = Color( 0, 0, 0, 1 )
+TextEdit/colors/symbol_color = Color( 0, 0, 0, 1 )
+TextEdit/colors/word_highlighted_color = Color( 0, 0, 0, 1 )
+ToolButton/colors/font_color = Color( 0, 0, 0, 1 )
+ToolButton/colors/font_color_disabled = Color( 0, 0, 0, 1 )
+ToolButton/colors/font_color_focus = Color( 0, 0, 0, 1 )
+ToolButton/colors/font_color_hover = Color( 0, 0, 0, 1 )
+ToolButton/colors/font_color_pressed = Color( 0, 0, 0, 1 )
+TooltipLabel/colors/font_color = Color( 0, 0, 0, 1 )
+TooltipLabel/colors/font_color_shadow = Color( 0, 0, 0, 1 )
+Tree/colors/custom_button_font_highlight = Color( 0, 0, 0, 1 )
+Tree/colors/drop_position_color = Color( 0, 0, 0, 1 )
+Tree/colors/font_color = Color( 0, 0, 0, 1 )
+Tree/colors/font_color_selected = Color( 0, 0, 0, 1 )
+Tree/colors/guide_color = Color( 0, 0, 0, 1 )
+Tree/colors/relationship_line_color = Color( 0, 0, 0, 1 )
+Tree/colors/title_button_color = Color( 0, 0, 0, 1 )
+VScrollBar/styles/grabber = null
+VScrollBar/styles/grabber_highlight = null
+VScrollBar/styles/grabber_pressed = null
+VScrollBar/styles/scroll = null
+VScrollBar/styles/scroll_focus = null
+WindowDialog/colors/title_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="StyleBoxTexture" id=75]
+texture = ExtResource( 4 )
+region_rect = Rect2( 0, 0, 435, 94 )
+
+[sub_resource type="StyleBoxTexture" id=87]
+texture = ExtResource( 32 )
+region_rect = Rect2( 0, 0, 11, 12 )
+
+[sub_resource type="StyleBoxTexture" id=88]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 11, 12 )
+
+[sub_resource type="StyleBoxTexture" id=96]
+texture = ExtResource( 20 )
+region_rect = Rect2( 0, 0, 187, 495 )
+margin_left = 12.0
+margin_top = 15.0
+
+[sub_resource type="StyleBoxTexture" id=94]
+texture = ExtResource( 43 )
+region_rect = Rect2( 0, 0, 236, 93 )
+expand_margin_left = 10.0
+expand_margin_right = 9.0
+expand_margin_top = 9.0
+expand_margin_bottom = 11.0
+
+[sub_resource type="StyleBoxFlat" id=92]
+bg_color = Color( 1, 1, 1, 0 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 1, 1, 1, 1 )
+corner_radius_top_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="DynamicFont" id=1]
+size = 32
+use_filter = true
+font_data = ExtResource( 37 )
+
+[sub_resource type="DynamicFont" id=78]
+size = 36
+font_data = ExtResource( 58 )
+
+[sub_resource type="DynamicFont" id=79]
+size = 32
+use_filter = true
+font_data = ExtResource( 37 )
+
+[sub_resource type="StyleBoxTexture" id=82]
+texture = ExtResource( 15 )
+region_rect = Rect2( 0, 0, 361, 81 )
+expand_margin_left = 5.0
+expand_margin_right = 5.0
+expand_margin_top = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxTexture" id=80]
+texture = ExtResource( 24 )
+region_rect = Rect2( 0, 0, 341, 61 )
+
+[sub_resource type="StyleBoxTexture" id=83]
+texture = ExtResource( 25 )
+region_rect = Rect2( 0, 0, 361, 81 )
+expand_margin_left = 5.0
+expand_margin_right = 5.0
+expand_margin_top = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxTexture" id=81]
+texture = ExtResource( 10 )
+region_rect = Rect2( 0, 0, 341, 61 )
+
+[sub_resource type="DynamicFont" id=93]
+size = 34
+use_filter = true
+font_data = ExtResource( 37 )
+
+[sub_resource type="StyleBoxTexture" id=95]
+texture = ExtResource( 47 )
+region_rect = Rect2( 0, 0, 434, 93 )
+expand_margin_left = 6.0
+expand_margin_right = 6.0
+expand_margin_top = 6.0
+expand_margin_bottom = 6.0
+
+[sub_resource type="StyleBoxTexture" id=90]
+texture = ExtResource( 49 )
+region_rect = Rect2( 0, 0, 413, 71 )
+
+[sub_resource type="DynamicFont" id=101]
+size = 28
+use_filter = true
+font_data = ExtResource( 37 )
+
+[sub_resource type="Theme" id=102]
+default_font = SubResource( 101 )
+
+[sub_resource type="StyleBoxFlat" id=91]
+bg_color = Color( 0, 0, 0, 0.701961 )
+corner_radius_top_right = 24
+corner_radius_bottom_left = 24
+
+[sub_resource type="DynamicFont" id=103]
+size = 31
+use_filter = true
+font_data = ExtResource( 37 )
+
+[sub_resource type="StyleBoxTexture" id=104]
+texture = ExtResource( 48 )
+region_rect = Rect2( 0, 0, 434, 93 )
+expand_margin_left = 5.0
+expand_margin_right = 5.0
+expand_margin_top = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id=105]
+bg_color = Color( 1, 1, 1, 0 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 1, 1, 1, 1 )
+corner_radius_top_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="SpatialMaterial" id=69]
+resource_name = "Material.001"
+params_cull_mode = 2
+albedo_color = Color( 0, 0, 0, 1 )
+metallic = 0.5
+
+[sub_resource type="SpatialMaterial" id=70]
+resource_name = "M16A1(1)"
+albedo_color = Color( 0.282353, 0.266667, 0.266667, 1 )
+
+[sub_resource type="SpatialMaterial" id=71]
+resource_name = "M16A1(2)"
+albedo_color = Color( 0.258824, 0.247059, 0.247059, 1 )
+metallic = 1.0
+
+[sub_resource type="CubeMesh" id=59]
+size = Vector3( 100, 1, 40 )
+
+[sub_resource type="SpatialMaterial" id=68]
+albedo_texture = ExtResource( 11 )
+uv1_scale = Vector3( 0.375, 0.375, 0.375 )
+uv1_triplanar = true
+uv2_triplanar = true
+
+[sub_resource type="CubeMesh" id=61]
+size = Vector3( 60, 1, 40 )
+
+[sub_resource type="CubeMesh" id=62]
+size = Vector3( 100, 1, 60 )
+
+[sub_resource type="SpatialMaterial" id=60]
+albedo_texture = ExtResource( 52 )
+uv1_scale = Vector3( 0.375, 0.375, 0.375 )
+uv1_triplanar = true
+uv2_triplanar = true
+
+[sub_resource type="CubeMesh" id=63]
+size = Vector3( 100, 1, 60 )
+
+[sub_resource type="ProceduralSky" id=64]
+
+[sub_resource type="Environment" id=65]
+background_mode = 1
+background_sky = SubResource( 64 )
+background_color = Color( 0.537255, 0.458824, 0.54902, 1 )
+ambient_light_color = Color( 0.121569, 0.113725, 0.133333, 1 )
+fog_color = Color( 0.835294, 0.517647, 0.905882, 1 )
+fog_sun_color = Color( 0.835294, 0.517647, 0.905882, 1 )
+fog_depth_curve = 0.965936
+auto_exposure_enabled = true
+ssao_enabled = true
+ssao_quality = 2
+dof_blur_far_distance = 38.21
+dof_blur_far_transition = 58.67
+dof_blur_far_amount = 0.15
+dof_blur_far_quality = 2
+glow_enabled = true
+glow_levels/1 = true
+glow_levels/2 = true
+glow_levels/4 = true
+glow_levels/6 = true
+glow_levels/7 = true
+glow_intensity = 4.0
+glow_strength = 0.31
+glow_bloom = 0.36
+glow_blend_mode = 1
+glow_hdr_threshold = 1.71
+glow_high_quality = true
+
+[sub_resource type="SpatialMaterial" id=72]
+resource_name = "Material.005"
+albedo_color = Color( 0.321569, 0.827451, 0.623529, 1 )
+emission_enabled = true
+emission = Color( 0.180392, 0.682353, 0.564706, 1 )
+emission_energy = 1.0
+emission_operator = 0
+emission_on_uv2 = false
+
+[sub_resource type="ProceduralSky" id=66]
+
+[sub_resource type="Environment" id=67]
+background_mode = 1
+background_sky = SubResource( 66 )
+background_color = Color( 0.537255, 0.458824, 0.54902, 1 )
+ambient_light_color = Color( 0.121569, 0.113725, 0.133333, 1 )
+fog_color = Color( 0.835294, 0.517647, 0.905882, 1 )
+fog_sun_color = Color( 0.835294, 0.517647, 0.905882, 1 )
+fog_depth_curve = 0.965936
+auto_exposure_enabled = true
+ssao_enabled = true
+ssao_quality = 2
+dof_blur_far_distance = 46.25
+dof_blur_far_transition = 30.2
+dof_blur_far_amount = 0.12
+dof_blur_far_quality = 2
+glow_enabled = true
+glow_levels/1 = true
+glow_levels/2 = true
+glow_levels/4 = true
+glow_levels/6 = true
+glow_levels/7 = true
+glow_intensity = 4.0
+glow_strength = 0.31
+glow_bloom = 0.36
+glow_blend_mode = 1
+glow_hdr_threshold = 1.71
+glow_high_quality = true
+
+[node name="main_scene" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 89188.0
+margin_bottom = 52782.0
+script = ExtResource( 41 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 23.0 ]
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+visible = false
+self_modulate = Color( 1, 1, 1, 0.427451 )
+margin_right = 1024.0
+margin_bottom = 600.0
+texture = ExtResource( 33 )
+expand = true
+
+[node name="anim" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 2 )
+anims/connected = SubResource( 3 )
+anims/disconnected = SubResource( 4 )
+
+[node name="id_card" type="Control" parent="."]
+margin_left = 64.0
+margin_top = 226.0
+margin_right = 290.0
+margin_bottom = 572.0
+theme = SubResource( 74 )
+script = ExtResource( 39 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="player" parent="id_card" instance=ExtResource( 40 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 0.276, 10.99, 9 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="wide" type="TextureRect" parent="id_card"]
+margin_left = -64.0
+margin_top = -75.0
+margin_right = 1856.0
+margin_bottom = 83.0
+texture = ExtResource( 7 )
+expand = true
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="primary_gun_shower" type="Label" parent="id_card"]
+margin_left = 443.0
+margin_top = -21.0
+margin_right = 878.0
+margin_bottom = 69.0
+custom_styles/normal = SubResource( 76 )
+text = "Assault rifle"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="primary_gun_prev" type="Button" parent="id_card/primary_gun_shower"]
+margin_left = 34.0
+margin_top = 41.0
+margin_right = 74.0
+margin_bottom = 86.0
+rect_scale = Vector2( 0.3, 0.3 )
+focus_mode = 0
+custom_styles/hover = SubResource( 85 )
+custom_styles/pressed = SubResource( 84 )
+custom_styles/focus = SubResource( 84 )
+custom_styles/normal = SubResource( 85 )
+enabled_focus_mode = 0
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="primary_gun_next" type="Button" parent="id_card/primary_gun_shower"]
+margin_left = 394.0
+margin_top = 54.0
+margin_right = 434.0
+margin_bottom = 99.0
+rect_rotation = -180.0
+rect_scale = Vector2( 0.3, 0.3 )
+focus_mode = 0
+custom_styles/hover = SubResource( 85 )
+custom_styles/pressed = SubResource( 84 )
+custom_styles/focus = SubResource( 84 )
+custom_styles/normal = SubResource( 85 )
+enabled_focus_mode = 0
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="secondary_gun_shower" type="Label" parent="id_card"]
+margin_left = 916.0
+margin_top = -22.0
+margin_right = 1350.0
+margin_bottom = 69.0
+custom_styles/normal = SubResource( 77 )
+text = "Glock"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="primary_gun" type="Label" parent="id_card"]
+self_modulate = Color( 1, 1, 1, 0.396078 )
+margin_left = 416.0
+margin_top = -72.0
+margin_right = 918.0
+margin_bottom = -15.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Primary Weapon"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="secondary_gun" type="Label" parent="id_card"]
+self_modulate = Color( 1, 1, 1, 0.396078 )
+margin_left = 924.0
+margin_top = -70.0
+margin_right = 1355.0
+margin_bottom = -19.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Secondary Weapon"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="dress" type="Control" parent="id_card"]
+margin_left = 239.0
+margin_top = 83.0
+margin_right = 279.0
+margin_bottom = 321.0
+theme = SubResource( 56 )
+script = ExtResource( 38 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="outfit" type="Label" parent="id_card/dress"]
+self_modulate = Color( 1, 1, 1, 0.396078 )
+margin_left = -185.0
+margin_top = -153.0
+margin_right = 90.0
+margin_bottom = -101.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Avatar
+"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="outfit_shower" type="Label" parent="id_card/dress"]
+margin_left = -267.0
+margin_top = -105.0
+margin_right = 167.0
+margin_bottom = -14.0
+mouse_filter = 1
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_styles/normal = SubResource( 75 )
+text = "Shirt"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="outfit_prev" type="Button" parent="id_card/dress/outfit_shower"]
+margin_left = 28.0
+margin_top = 42.0
+margin_right = 68.0
+margin_bottom = 87.0
+rect_scale = Vector2( 0.3, 0.3 )
+focus_mode = 0
+mouse_filter = 1
+custom_styles/hover = SubResource( 85 )
+custom_styles/pressed = SubResource( 84 )
+custom_styles/focus = SubResource( 84 )
+custom_styles/normal = SubResource( 85 )
+enabled_focus_mode = 0
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="outfit_next" type="Button" parent="id_card/dress/outfit_shower"]
+margin_left = 384.0
+margin_top = 42.0
+margin_right = 421.0
+margin_bottom = 87.0
+rect_scale = Vector2( 0.3, 0.3 )
+focus_mode = 0
+mouse_filter = 1
+custom_styles/hover = SubResource( 87 )
+custom_styles/pressed = SubResource( 88 )
+custom_styles/focus = SubResource( 88 )
+custom_styles/normal = SubResource( 87 )
+enabled_focus_mode = 0
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="tshirt" type="ItemList" parent="id_card/dress/outfit_shower"]
+margin_left = 4.0
+margin_top = 82.0
+margin_right = 209.0
+margin_bottom = 551.0
+focus_mode = 0
+mouse_filter = 1
+custom_styles/bg = SubResource( 96 )
+items = [ "", ExtResource( 30 ), false, "", ExtResource( 34 ), false, "", ExtResource( 21 ), false, "", ExtResource( 31 ), false, "", ExtResource( 22 ), false, "", ExtResource( 27 ), false, "", ExtResource( 35 ), false, "", ExtResource( 36 ), false, "", ExtResource( 29 ), false, "", ExtResource( 8 ), false, "", ExtResource( 14 ), false, "", ExtResource( 16 ), false, "", ExtResource( 2 ), false, "", ExtResource( 3 ), false, "", ExtResource( 5 ), false, "", ExtResource( 6 ), false, "", ExtResource( 17 ), false, "", ExtResource( 18 ), false ]
+max_columns = 2
+same_column_width = true
+fixed_column_width = 85
+icon_mode = 0
+fixed_icon_size = Vector2( 70, 45 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="jacket" type="ItemList" parent="id_card/dress/outfit_shower"]
+visible = false
+margin_left = 4.0
+margin_top = 82.0
+margin_right = 209.0
+margin_bottom = 551.0
+focus_mode = 0
+mouse_filter = 1
+custom_styles/bg = SubResource( 96 )
+items = [ "", ExtResource( 30 ), false, "", ExtResource( 34 ), false, "", ExtResource( 21 ), false, "", ExtResource( 31 ), false, "", ExtResource( 22 ), false, "", ExtResource( 27 ), false, "", ExtResource( 35 ), false, "", ExtResource( 36 ), false, "", ExtResource( 29 ), false, "", ExtResource( 8 ), false, "", ExtResource( 14 ), false, "", ExtResource( 16 ), false, "", ExtResource( 2 ), false, "", ExtResource( 3 ), false, "", ExtResource( 5 ), false, "", ExtResource( 6 ), false, "", ExtResource( 17 ), false, "", ExtResource( 18 ), false ]
+max_columns = 2
+same_column_width = true
+fixed_column_width = 85
+icon_mode = 0
+fixed_icon_size = Vector2( 70, 45 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="pant" type="ItemList" parent="id_card/dress/outfit_shower"]
+visible = false
+margin_left = 4.0
+margin_top = 82.0
+margin_right = 209.0
+margin_bottom = 551.0
+focus_mode = 0
+mouse_filter = 1
+custom_styles/bg = SubResource( 96 )
+items = [ "", ExtResource( 30 ), false, "", ExtResource( 34 ), false, "", ExtResource( 21 ), false, "", ExtResource( 31 ), false, "", ExtResource( 22 ), false, "", ExtResource( 27 ), false, "", ExtResource( 35 ), false, "", ExtResource( 36 ), false, "", ExtResource( 29 ), false, "", ExtResource( 8 ), false, "", ExtResource( 14 ), false, "", ExtResource( 16 ), false, "", ExtResource( 2 ), false, "", ExtResource( 3 ), false, "", ExtResource( 5 ), false, "", ExtResource( 6 ), false, "", ExtResource( 17 ), false, "", ExtResource( 18 ), false ]
+max_columns = 2
+same_column_width = true
+fixed_column_width = 85
+icon_mode = 0
+fixed_icon_size = Vector2( 70, 45 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="shoes" type="ItemList" parent="id_card/dress/outfit_shower"]
+visible = false
+margin_left = 4.0
+margin_top = 82.0
+margin_right = 209.0
+margin_bottom = 551.0
+focus_mode = 0
+mouse_filter = 1
+custom_styles/bg = SubResource( 96 )
+items = [ "", ExtResource( 30 ), false, "", ExtResource( 34 ), false, "", ExtResource( 21 ), false, "", ExtResource( 31 ), false, "", ExtResource( 22 ), false, "", ExtResource( 27 ), false, "", ExtResource( 35 ), false, "", ExtResource( 36 ), false, "", ExtResource( 29 ), false, "", ExtResource( 8 ), false, "", ExtResource( 14 ), false, "", ExtResource( 16 ), false, "", ExtResource( 2 ), false, "", ExtResource( 3 ), false, "", ExtResource( 5 ), false, "", ExtResource( 6 ), false, "", ExtResource( 17 ), false, "", ExtResource( 18 ), false ]
+max_columns = 2
+same_column_width = true
+fixed_column_width = 85
+icon_mode = 0
+fixed_icon_size = Vector2( 70, 45 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="OutfitSaveButton" type="Sprite" parent="id_card/dress"]
+visible = false
+position = Vector2( 51, 36 )
+texture = ExtResource( 43 )
+
+[node name="save_outfit_button" type="Button" parent="id_card"]
+margin_left = 181.0
+margin_top = 83.0
+margin_right = 399.0
+margin_bottom = 155.0
+custom_styles/hover = SubResource( 94 )
+custom_styles/pressed = SubResource( 94 )
+custom_styles/normal = SubResource( 92 )
+text = "Save"
+clip_text = true
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="ready_panel" type="Control" parent="."]
+margin_right = 1922.0
+margin_bottom = 1062.0
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource( 42 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="thin" type="TextureRect" parent="ready_panel"]
+margin_left = -2.0
+margin_top = -2.0
+margin_right = 1918.0
+margin_bottom = 116.0
+texture = ExtResource( 23 )
+expand = true
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="ip_address_label" type="Label" parent="ready_panel"]
+margin_left = 682.0
+margin_top = 49.0
+margin_right = 862.0
+margin_bottom = 94.0
+custom_fonts/font = SubResource( 1 )
+text = "Local IP"
+align = 1
+valign = 1
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="name_label" type="Label" parent="ready_panel"]
+margin_left = 257.0
+margin_top = 50.0
+margin_right = 422.0
+margin_bottom = 92.0
+custom_fonts/font = SubResource( 1 )
+text = "Name"
+align = 1
+valign = 1
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="LOBBY_LABEL" type="Label" parent="ready_panel"]
+margin_left = 40.0
+margin_top = 44.0
+margin_right = 156.0
+margin_bottom = 92.0
+custom_fonts/font = SubResource( 78 )
+text = "LOBBY"
+align = 1
+valign = 1
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="main_menu button" type="Button" parent="ready_panel"]
+margin_left = 1121.0
+margin_top = 41.0
+margin_right = 1462.0
+margin_bottom = 100.0
+focus_mode = 0
+custom_fonts/font = SubResource( 79 )
+custom_styles/hover = SubResource( 82 )
+custom_styles/pressed = SubResource( 82 )
+custom_styles/normal = SubResource( 80 )
+enabled_focus_mode = 0
+text = "Main Menu"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="ready" type="Button" parent="ready_panel"]
+margin_left = 1534.0
+margin_top = 41.0
+margin_right = 1874.0
+margin_bottom = 100.0
+focus_mode = 0
+custom_fonts/font = SubResource( 79 )
+custom_styles/hover = SubResource( 83 )
+custom_styles/pressed = SubResource( 83 )
+custom_styles/normal = SubResource( 81 )
+enabled_focus_mode = 0
+text = "Ready"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="open_lobby" type="Button" parent="ready_panel"]
+margin_left = 1534.0
+margin_top = 211.0
+margin_right = 1874.0
+margin_bottom = 286.0
+custom_fonts/font = SubResource( 93 )
+custom_styles/hover = SubResource( 95 )
+custom_styles/pressed = SubResource( 95 )
+custom_styles/disabled = SubResource( 90 )
+custom_styles/normal = SubResource( 90 )
+text = "Player List"
+
+[node name="players" type="Panel" parent="ready_panel"]
+visible = false
+margin_left = 470.0
+margin_top = 393.0
+margin_right = 1437.0
+margin_bottom = 927.0
+mouse_filter = 2
+theme = SubResource( 102 )
+custom_styles/panel = SubResource( 91 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="close_panel" type="Button" parent="ready_panel/players"]
+margin_left = 271.0
+margin_top = 408.0
+margin_right = 705.0
+margin_bottom = 499.0
+custom_fonts/font = SubResource( 103 )
+custom_styles/hover = SubResource( 104 )
+custom_styles/pressed = SubResource( 104 )
+custom_styles/normal = SubResource( 105 )
+text = "Cancel"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="list" type="VBoxContainer" parent="ready_panel/players"]
+margin_left = 75.0
+margin_top = 7.0
+margin_right = 889.0
+margin_bottom = 408.0
+
+[node name="demo" type="HBoxContainer" parent="ready_panel/players/list"]
+visible = false
+margin_right = 814.0
+margin_bottom = 37.0
+rect_min_size = Vector2( 0, 30 )
+
+[node name="name" type="Label" parent="ready_panel/players/list/demo"]
+margin_right = 268.0
+margin_bottom = 37.0
+size_flags_horizontal = 3
+text = "demo"
+align = 1
+
+[node name="is_ready" type="Label" parent="ready_panel/players/list/demo"]
+margin_left = 272.0
+margin_right = 541.0
+margin_bottom = 37.0
+size_flags_horizontal = 3
+text = "demo"
+align = 1
+valign = 1
+
+[node name="type" type="Label" parent="ready_panel/players/list/demo"]
+margin_left = 545.0
+margin_right = 814.0
+margin_bottom = 37.0
+size_flags_horizontal = 3
+text = "demo"
+align = 1
+valign = 1
+
+[node name="bed" type="MeshInstance" parent="."]
+transform = Transform( -0.271022, 0, -1.75349, 0, 1.8, 0, 1.16899, 0, -0.406533, -27.39, 2.772, 2.523 )
+use_in_baked_light = true
+mesh = ExtResource( 46 )
+skeleton = NodePath("")
+material/2 = SubResource( 69 )
+
+[node name="Dragunov" type="MeshInstance" parent="."]
+transform = Transform( -0.960248, 0.209719, -1.13311, 1.13643, -0.0720207, -0.976391, -0.190917, -1.48352, -0.112782, -18.5987, 4.101, -1.76031 )
+mesh = ExtResource( 57 )
+skeleton = NodePath("../ak47")
+material/0 = SubResource( 70 )
+material/1 = SubResource( 71 )
+
+[node name="ak47" type="MeshInstance" parent="."]
+transform = Transform( 1.44733, 1.3803, -6.03349e-08, 0, -8.74228e-08, -2, -1.3803, 1.44733, -6.32649e-08, 23.1226, 0.827896, 6.87573 )
+mesh = ExtResource( 56 )
+skeleton = NodePath("../id_card")
+
+[node name="MeshInstance2" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.54, 20.3886, -28.4044 )
+mesh = SubResource( 59 )
+material/0 = SubResource( 68 )
+
+[node name="MeshInstance4" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, 45, 20.389, -0.193 )
+mesh = SubResource( 61 )
+material/0 = SubResource( 68 )
+
+[node name="MeshInstance5" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -45, 20.389, -0.193 )
+mesh = SubResource( 61 )
+material/0 = SubResource( 68 )
+
+[node name="MeshInstance3" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.54, 0.0241908, 0 )
+mesh = SubResource( 62 )
+material/0 = SubResource( 60 )
+
+[node name="MeshInstance6" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.54, 40.8768, 0 )
+mesh = SubResource( 63 )
+material/0 = SubResource( 60 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.959369, 0.282157, 0, -0.282157, 0.959369, 1.09, 26.328, 40.985 )
+environment = SubResource( 65 )
+fov = 48.6
+
+[node name="SpotLight3" type="SpotLight" parent="."]
+transform = Transform( -0.919592, -0.00300276, -0.392863, -0.0526268, 0.9919, 0.115605, 0.389334, 0.126984, -0.912302, 16.3976, 3.50233, -1.47279 )
+light_color = Color( 0.0705882, 0.737255, 0.439216, 1 )
+light_energy = 10.764
+light_specular = 1.186
+shadow_enabled = true
+spot_range = 121.967
+spot_angle = 64.73
+
+[node name="laptop" type="MeshInstance" parent="."]
+transform = Transform( -4.20881, 0, -0.983572, 0, 3, 0, 1.80112, 0, -2.29839, 17.6141, 0.70585, 0.89806 )
+mesh = ExtResource( 45 )
+skeleton = NodePath("../watercoller")
+material/4 = SubResource( 72 )
+
+[node name="watercoller" type="MeshInstance" parent="."]
+transform = Transform( -1.60697, 0, -1.91511, 0, 2.5, 0, 1.91511, 0, -1.60697, 22.4391, 2.76, -13.872 )
+mesh = ExtResource( 44 )
+
+[node name="OmniLight" type="OmniLight" parent="."]
+transform = Transform( 0.956244, 0, -0.292572, 0, 1, 0, 0.292572, 0, 0.956244, 26.592, 15.555, -16.395 )
+light_color = Color( 0.666667, 0.117647, 0.8, 1 )
+light_energy = 16.0
+light_indirect_energy = 0.0
+shadow_enabled = true
+omni_range = 29.432
+
+[node name="SpotLight" type="SpotLight" parent="."]
+transform = Transform( 0.974162, 0.224169, -0.0275245, 0, 0.121869, 0.992546, 0.225852, -0.9669, 0.11872, -23.682, 30.699, -10.908 )
+light_color = Color( 0.741176, 0.560784, 0.741176, 1 )
+light_energy = 16.0
+shadow_enabled = true
+spot_range = 963.617
+spot_angle = 43.48
+
+[node name="SpotLight4" type="SpotLight" parent="."]
+transform = Transform( 0.974162, 0.224168, -0.0275244, -0.113472, 0.591158, 0.798534, 0.195277, -0.774778, 0.60132, -1.6391, 29.3959, 23.0144 )
+light_color = Color( 0.741176, 0.560784, 0.741176, 1 )
+light_energy = 1.606
+shadow_enabled = true
+spot_range = 328.692
+spot_angle = 20.2
+
+[node name="OmniLight2" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 29.9961, 0 )
+light_energy = 0.5
+shadow_enabled = true
+omni_range = 71.59
+
+[node name="SpotLight2" type="SpotLight" parent="."]
+transform = Transform( 1, 0, 0, 0, -0.908945, 0.416917, 0, -0.416917, -0.908945, 0.777962, 15.0902, -18.6644 )
+light_energy = 7.27
+shadow_enabled = true
+spot_range = 54.065
+spot_angle = 57.16
+spot_angle_attenuation = 1.36604
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 67 )
+
+[node name="Spatial" type="Spatial" parent="."]
+visible = false
+
+[node name="hover_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+bus = "sfx"
+
+[node name="press_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 28 )
+bus = "sfx"
+
+[connection signal="pressed" from="id_card/primary_gun_shower/primary_gun_prev" to="." method="press_button"]
+[connection signal="pressed" from="id_card/primary_gun_shower/primary_gun_prev" to="id_card" method="_on_primary_gun_prev_pressed"]
+[connection signal="pressed" from="id_card/primary_gun_shower/primary_gun_next" to="." method="press_button"]
+[connection signal="pressed" from="id_card/primary_gun_shower/primary_gun_next" to="id_card" method="_on_primary_gun_next_pressed"]
+[connection signal="mouse_entered" from="id_card/dress/outfit_shower" to="." method="hover_button"]
+[connection signal="mouse_entered" from="id_card/dress/outfit_shower" to="id_card/dress" method="_on_outfit_shower_mouse_entered"]
+[connection signal="mouse_exited" from="id_card/dress/outfit_shower" to="id_card/dress" method="_on_outfit_shower_mouse_exited"]
+[connection signal="pressed" from="id_card/dress/outfit_shower/outfit_prev" to="." method="press_button"]
+[connection signal="pressed" from="id_card/dress/outfit_shower/outfit_prev" to="id_card/dress" method="_on_outfit_prev_pressed"]
+[connection signal="pressed" from="id_card/dress/outfit_shower/outfit_next" to="." method="press_button"]
+[connection signal="pressed" from="id_card/dress/outfit_shower/outfit_next" to="id_card/dress" method="_on_outfit_next_pressed"]
+[connection signal="item_selected" from="id_card/dress/outfit_shower/tshirt" to="id_card" method="_on_tshirt_list_item_selected"]
+[connection signal="item_selected" from="id_card/dress/outfit_shower/jacket" to="id_card" method="_on_jacket_list_item_selected"]
+[connection signal="item_selected" from="id_card/dress/outfit_shower/pant" to="id_card" method="_on_pant_list_item_selected"]
+[connection signal="item_selected" from="id_card/dress/outfit_shower/shoes" to="id_card" method="_on_shoes_list_item_selected"]
+[connection signal="pressed" from="id_card/save_outfit_button" to="id_card" method="_on_save_outfit_button_pressed"]
+[connection signal="mouse_entered" from="ready_panel/main_menu button" to="." method="hover_button"]
+[connection signal="pressed" from="ready_panel/main_menu button" to="." method="press_button"]
+[connection signal="pressed" from="ready_panel/main_menu button" to="ready_panel" method="_on_main_menu_button_pressed"]
+[connection signal="mouse_entered" from="ready_panel/ready" to="." method="hover_button"]
+[connection signal="pressed" from="ready_panel/ready" to="." method="press_button"]
+[connection signal="pressed" from="ready_panel/ready" to="ready_panel" method="_on_ready_pressed"]
+[connection signal="mouse_entered" from="ready_panel/open_lobby" to="." method="hover_button"]
+[connection signal="pressed" from="ready_panel/open_lobby" to="." method="press_button"]
+[connection signal="pressed" from="ready_panel/open_lobby" to="ready_panel" method="_on_open_lobby_pressed"]
+[connection signal="mouse_entered" from="ready_panel/players/close_panel" to="." method="hover_button"]
+[connection signal="pressed" from="ready_panel/players/close_panel" to="." method="press_button"]
+[connection signal="pressed" from="ready_panel/players/close_panel" to="ready_panel" method="_on_close_panel_pressed"]

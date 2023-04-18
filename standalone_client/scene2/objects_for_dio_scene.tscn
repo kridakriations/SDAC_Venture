@@ -1,0 +1,1052 @@
+[gd_scene load_steps=50 format=2]
+
+[ext_resource path="res://assets/model/study table.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://assets/model/water_tank2.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://assets/model/mess chair.obj" type="ArrayMesh" id=3]
+[ext_resource path="res://assets/model/trashcan.obj" type="ArrayMesh" id=4]
+[ext_resource path="res://assets/model/triple chair_new.obj" type="ArrayMesh" id=5]
+[ext_resource path="res://assets/model/TT table (1).obj" type="ArrayMesh" id=6]
+[ext_resource path="res://assets/model/watercoller2.obj" type="ArrayMesh" id=7]
+[ext_resource path="res://assets/model/counter side table.obj" type="ArrayMesh" id=8]
+[ext_resource path="res://assets/model/washbasin_group.obj" type="ArrayMesh" id=9]
+[ext_resource path="res://assets/model/wash_basin_mirron3.obj" type="ArrayMesh" id=10]
+[ext_resource path="res://assets/model/mess_table.obj" type="ArrayMesh" id=11]
+[ext_resource path="res://assets/model/fire_hose2.obj" type="ArrayMesh" id=12]
+[ext_resource path="res://assets/model/tree_set.obj" type="ArrayMesh" id=13]
+[ext_resource path="res://assets/model/mess_table_chair3.obj" type="ArrayMesh" id=14]
+[ext_resource path="res://assets/model/generator.obj" type="ArrayMesh" id=15]
+[ext_resource path="res://assets/model/mess_group1.obj" type="ArrayMesh" id=16]
+[ext_resource path="res://assets/model/tv.obj" type="ArrayMesh" id=17]
+[ext_resource path="res://assets/model/dio_mess_cashier_counter.obj" type="ArrayMesh" id=18]
+
+[sub_resource type="BoxShape" id=62]
+extents = Vector3( 1.43162, 3.14946, 1.07293 )
+
+[sub_resource type="SpatialMaterial" id=129]
+resource_name = "Grey"
+albedo_color = Color( 0.427451, 0.415686, 0.415686, 1 )
+metallic = 0.5
+
+[sub_resource type="SpatialMaterial" id=130]
+resource_name = "table_top_wood"
+albedo_color = Color( 0.980392, 0.643137, 0.305882, 1 )
+metallic = 0.5
+
+[sub_resource type="BoxShape" id=131]
+extents = Vector3( 0.553484, 0.71893, 1 )
+
+[sub_resource type="BoxShape" id=132]
+extents = Vector3( 1.55564, 1.84472, 4.84558 )
+
+[sub_resource type="BoxShape" id=137]
+extents = Vector3( 1.43162, 3.28186, 1.61374 )
+
+[sub_resource type="SpatialMaterial" id=365]
+albedo_color = Color( 0, 0.141176, 0.592157, 1 )
+
+[sub_resource type="BoxShape" id=366]
+extents = Vector3( 5.17735, 1, 4.33617 )
+
+[sub_resource type="SpatialMaterial" id=367]
+albedo_color = Color( 1, 0.329412, 0, 1 )
+
+[sub_resource type="BoxShape" id=368]
+extents = Vector3( 1.55564, 1.84472, 4.84558 )
+
+[sub_resource type="SpatialMaterial" id=369]
+resource_name = "Grey"
+albedo_color = Color( 0.427451, 0.415686, 0.415686, 1 )
+metallic = 0.5
+
+[sub_resource type="SpatialMaterial" id=370]
+resource_name = "table_top_wood"
+albedo_color = Color( 0.980392, 0.643137, 0.305882, 1 )
+metallic = 0.5
+
+[sub_resource type="BoxShape" id=371]
+extents = Vector3( 0.553484, 0.71893, 1 )
+
+[sub_resource type="BoxShape" id=372]
+extents = Vector3( 1.69281, 0.698346, 3.09256 )
+
+[sub_resource type="SpatialMaterial" id=373]
+
+[sub_resource type="SpatialMaterial" id=374]
+albedo_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="BoxShape" id=375]
+extents = Vector3( 1.55564, 1.84472, 4.84558 )
+
+[sub_resource type="SpatialMaterial" id=376]
+resource_name = "Grey"
+albedo_color = Color( 0.427451, 0.415686, 0.415686, 1 )
+metallic = 0.5
+
+[sub_resource type="SpatialMaterial" id=377]
+resource_name = "table_top_wood"
+albedo_color = Color( 0.980392, 0.643137, 0.305882, 1 )
+metallic = 0.5
+
+[sub_resource type="BoxShape" id=378]
+extents = Vector3( 1, 0.63809, 1 )
+
+[sub_resource type="BoxShape" id=380]
+extents = Vector3( 1, 0.653337, 4.18155 )
+
+[sub_resource type="BoxShape" id=382]
+extents = Vector3( 0.667861, 0.653337, 2.54617 )
+
+[sub_resource type="BoxShape" id=383]
+extents = Vector3( 0.667861, 2.35424, 4.74173 )
+
+[sub_resource type="BoxShape" id=381]
+extents = Vector3( 1.75177, 0.766792, 0.84177 )
+
+[sub_resource type="BoxShape" id=384]
+extents = Vector3( 1.27625, 1, 7.52748 )
+
+[sub_resource type="BoxShape" id=390]
+extents = Vector3( 2.77041, 1, 4.1108 )
+
+[sub_resource type="BoxShape" id=385]
+extents = Vector3( 3.17293, 1, 4.33617 )
+
+[sub_resource type="BoxShape" id=386]
+extents = Vector3( 1, 1, 2.10851 )
+
+[sub_resource type="CylinderShape" id=387]
+height = 2.31454
+
+[sub_resource type="BoxShape" id=388]
+extents = Vector3( 3.0162, 3.09414, 4.81956 )
+
+[sub_resource type="BoxShape" id=389]
+extents = Vector3( 1.43162, 3.28186, 1.61374 )
+
+[node name="objects" type="Spatial"]
+
+[node name="watercoller10" type="MeshInstance" parent="."]
+transform = Transform( 0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, -35.0007, -2.73572, 23.3317 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 7 )
+
+[node name="watercoller10" type="StaticBody" parent="watercoller10"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="watercoller10/watercoller10"]
+transform = Transform( 1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, 0, 2.0564, 0 )
+shape = SubResource( 62 )
+
+[node name="watercoller14" type="MeshInstance" parent="."]
+transform = Transform( -1.74846e-08, 0, 0.4, 0, 0.4, 0, -0.4, 0, -1.74846e-08, -41.1938, 8.48338, 36.162 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 7 )
+
+[node name="watercoller10" type="StaticBody" parent="watercoller14"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="watercoller14/watercoller10"]
+transform = Transform( 1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, 0, 2.0564, 0 )
+shape = SubResource( 62 )
+
+[node name="watercoller18" type="MeshInstance" parent="."]
+transform = Transform( -1.74846e-08, 0, 0.4, 0, 0.4, 0, -0.4, 0, -1.74846e-08, -41.1938, 8.48338, -24.2084 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 7 )
+
+[node name="watercoller10" type="StaticBody" parent="watercoller18"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="watercoller18/watercoller10"]
+transform = Transform( 1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, 0, 2.0564, 0 )
+shape = SubResource( 62 )
+
+[node name="watercoller15" type="MeshInstance" parent="."]
+transform = Transform( -0.4, 0, -3.49691e-08, 0, 0.4, 0, 3.49691e-08, 0, -0.4, 1.17471, 8.48338, 44.5128 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 7 )
+
+[node name="watercoller10" type="StaticBody" parent="watercoller15"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="watercoller15/watercoller10"]
+transform = Transform( 1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, 0, 2.0564, 0 )
+shape = SubResource( 62 )
+
+[node name="watercoller16" type="MeshInstance" parent="."]
+transform = Transform( 0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 54.9643, 8.42527, 67.3638 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 7 )
+
+[node name="watercoller10" type="StaticBody" parent="watercoller16"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="watercoller16/watercoller10"]
+transform = Transform( 1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, 0, 2.0564, 0 )
+shape = SubResource( 62 )
+
+[node name="watercoller17" type="MeshInstance" parent="."]
+transform = Transform( -1.74846e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, -1.74846e-08, 72.2443, 8.35007, 14.7229 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 7 )
+
+[node name="watercoller10" type="StaticBody" parent="watercoller17"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="watercoller17/watercoller10"]
+transform = Transform( 1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, 0, 2.0564, 0 )
+shape = SubResource( 62 )
+
+[node name="watercoller11" type="MeshInstance" parent="."]
+transform = Transform( -1.74846e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, -1.74846e-08, -47.9682, -2.80257, -34.352 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 7 )
+
+[node name="watercoller10" type="StaticBody" parent="watercoller11"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="watercoller11/watercoller10"]
+transform = Transform( 1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, 0, 2.0564, 0 )
+shape = SubResource( 62 )
+
+[node name="watercoller12" type="MeshInstance" parent="."]
+transform = Transform( 0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, -9.82344, -2.77713, -65.8711 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 7 )
+
+[node name="watercoller10" type="StaticBody" parent="watercoller12"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="watercoller12/watercoller10"]
+transform = Transform( 1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, 0, 2.0564, 0 )
+shape = SubResource( 62 )
+
+[node name="watercoller13" type="MeshInstance" parent="."]
+transform = Transform( -1.74846e-08, 0, 0.4, 0, 0.4, 0, -0.4, 0, -1.74846e-08, -8.70208, -2.77713, 37.7829 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 7 )
+
+[node name="watercoller10" type="StaticBody" parent="watercoller13"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="watercoller13/watercoller10"]
+transform = Transform( 1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, 0, 2.0564, 0 )
+shape = SubResource( 62 )
+
+[node name="mess chair" type="MeshInstance" parent="."]
+transform = Transform( 0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 21.212, -3.13569, 36.3789 )
+generate_lightmap = false
+mesh = ExtResource( 3 )
+skeleton = NodePath("../study table")
+
+[node name="study table" type="MeshInstance" parent="."]
+transform = Transform( -7.43094e-08, 0, 1.7, 0, 1.7, 0, -1.7, 0, -7.43094e-08, 21.1597, -1.34298, 34.2437 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 1 )
+material/0 = SubResource( 129 )
+material/1 = SubResource( 130 )
+
+[node name="study table" type="StaticBody" parent="study table"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="study table/study table"]
+transform = Transform( 1, 0, -7.10543e-15, 0, 1, 0, 7.10543e-15, 0, 1, 0, -0.387465, 0 )
+shape = SubResource( 131 )
+
+[node name="study table2" type="MeshInstance" parent="."]
+transform = Transform( 1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, -35.0216, -1.34298, 18.5931 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 1 )
+material/0 = SubResource( 129 )
+material/1 = SubResource( 130 )
+
+[node name="study table" type="StaticBody" parent="study table2"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="study table2/study table"]
+transform = Transform( 1, 0, -7.10543e-15, 0, 1, 0, 7.10543e-15, 0, 1, 0, -0.387465, 0 )
+shape = SubResource( 131 )
+
+[node name="triple chair (1)4" type="MeshInstance" parent="."]
+transform = Transform( -3.0598e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.0598e-08, 26.6178, -2.44522, 36.9669 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 5 )
+
+[node name="triple chair (1)4" type="StaticBody" parent="triple chair (1)4"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="triple chair (1)4/triple chair (1)4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.665916, 0.283632, 0.0940018 )
+shape = SubResource( 132 )
+
+[node name="triple chair (1)5" type="MeshInstance" parent="."]
+transform = Transform( -3.0598e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.0598e-08, 14.4881, -2.44522, 36.9669 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 5 )
+
+[node name="triple chair (1)4" type="StaticBody" parent="triple chair (1)5"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="triple chair (1)5/triple chair (1)4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.665916, 0.283632, 0.0940018 )
+shape = SubResource( 132 )
+
+[node name="triple chair (1)6" type="MeshInstance" parent="."]
+transform = Transform( -3.0598e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.0598e-08, -24.5226, -2.44522, 36.9669 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 5 )
+
+[node name="triple chair (1)4" type="StaticBody" parent="triple chair (1)6"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="triple chair (1)6/triple chair (1)4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.665916, 0.283632, 0.0940018 )
+shape = SubResource( 132 )
+
+[node name="triple chair (1)7" type="MeshInstance" parent="."]
+transform = Transform( 0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, -34.4198, -2.44522, -19.475 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 5 )
+
+[node name="triple chair (1)4" type="StaticBody" parent="triple chair (1)7"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="triple chair (1)7/triple chair (1)4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.665916, 0.283632, 0.0940018 )
+shape = SubResource( 132 )
+
+[node name="triple chair (1)8" type="MeshInstance" parent="."]
+transform = Transform( -0.7, 0, -6.11959e-08, 0, 0.7, 0, 6.11959e-08, 0, -0.7, -26.5753, -2.44522, -19.1007 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 5 )
+
+[node name="triple chair (1)4" type="StaticBody" parent="triple chair (1)8"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="triple chair (1)8/triple chair (1)4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.665916, 0.283632, 0.0940018 )
+shape = SubResource( 132 )
+
+[node name="triple chair (1)9" type="MeshInstance" parent="."]
+transform = Transform( -3.0598e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.0598e-08, -1.84829, -2.44522, -25.3346 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 5 )
+
+[node name="triple chair (1)4" type="StaticBody" parent="triple chair (1)9"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="triple chair (1)9/triple chair (1)4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.665916, 0.283632, 0.0940018 )
+shape = SubResource( 132 )
+
+[node name="trashcan5" type="MeshInstance" parent="."]
+transform = Transform( -3.0598e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.0598e-08, -93.8374, -2.24546, -23.4493 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 4 )
+
+[node name="trashcan5" type="StaticBody" parent="trashcan5"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="trashcan5/trashcan5"]
+transform = Transform( 1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, 0, 1.63469, 0 )
+shape = SubResource( 137 )
+
+[node name="trashcan6" type="MeshInstance" parent="."]
+transform = Transform( -3.0598e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.0598e-08, -93.8374, -2.24546, 36.8673 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 4 )
+
+[node name="trashcan5" type="StaticBody" parent="trashcan6"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="trashcan6/trashcan5"]
+transform = Transform( 1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, 0, 1.63469, 0 )
+shape = SubResource( 137 )
+
+[node name="trashcan7" type="MeshInstance" parent="."]
+transform = Transform( -0.699981, 0, -0.00514349, 0, 0.7, 0, 0.00514349, 0, -0.699981, 0.47206, -2.19971, 97.061 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 4 )
+
+[node name="trashcan5" type="StaticBody" parent="trashcan7"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="trashcan7/trashcan5"]
+transform = Transform( 1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, 0, 1.63469, 0 )
+shape = SubResource( 137 )
+
+[node name="trashcan8" type="MeshInstance" parent="."]
+transform = Transform( -0.699981, 0, -0.00514349, 0, 0.7, 0, 0.00514349, 0, -0.699981, -12.6315, -2.25788, -62.687 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 4 )
+
+[node name="trashcan5" type="StaticBody" parent="trashcan8"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="trashcan8/trashcan5"]
+transform = Transform( 1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, 0, 1.63469, 0 )
+shape = SubResource( 137 )
+
+[node name="mess_table_chair6" type="MeshInstance" parent="."]
+transform = Transform( 0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 68.7825, -1.84935, 21.9872 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 14 )
+material/2 = SubResource( 365 )
+material/4 = SubResource( 365 )
+material/6 = SubResource( 365 )
+
+[node name="mess_table_chair6" type="StaticBody" parent="mess_table_chair6"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="mess_table_chair6/mess_table_chair6"]
+shape = SubResource( 366 )
+
+[node name="mess_table_chair7" type="MeshInstance" parent="."]
+transform = Transform( 0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 58.8875, -1.84935, 21.9872 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 14 )
+material/2 = SubResource( 365 )
+material/4 = SubResource( 365 )
+material/6 = SubResource( 365 )
+
+[node name="mess_table_chair6" type="StaticBody" parent="mess_table_chair7"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="mess_table_chair7/mess_table_chair6"]
+shape = SubResource( 366 )
+
+[node name="mess_table_chair9" type="MeshInstance" parent="."]
+transform = Transform( -0.7, 0, -6.11959e-08, 0, 0.7, 0, 6.11959e-08, 0, -0.7, 89.1758, -1.84935, 21.9212 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 14 )
+material/2 = SubResource( 365 )
+material/4 = SubResource( 365 )
+material/6 = SubResource( 365 )
+
+[node name="mess_table_chair6" type="StaticBody" parent="mess_table_chair9"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="mess_table_chair9/mess_table_chair6"]
+shape = SubResource( 366 )
+
+[node name="mess_table_chair10" type="MeshInstance" parent="."]
+transform = Transform( -0.7, 0, -6.11959e-08, 0, 0.7, 0, 6.11959e-08, 0, -0.7, 89.1758, -1.84935, 11.7503 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 14 )
+material/1 = SubResource( 367 )
+material/2 = SubResource( 365 )
+material/4 = SubResource( 365 )
+material/6 = SubResource( 365 )
+
+[node name="mess_table_chair6" type="StaticBody" parent="mess_table_chair10"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="mess_table_chair10/mess_table_chair6"]
+shape = SubResource( 366 )
+
+[node name="mess_table_chair11" type="MeshInstance" parent="."]
+transform = Transform( -0.7, 0, -6.11959e-08, 0, 0.7, 0, 6.11959e-08, 0, -0.7, 79.217, -1.84935, 11.7503 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 14 )
+material/1 = SubResource( 367 )
+material/2 = SubResource( 365 )
+material/4 = SubResource( 365 )
+material/6 = SubResource( 365 )
+
+[node name="mess_table_chair6" type="StaticBody" parent="mess_table_chair11"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="mess_table_chair11/mess_table_chair6"]
+shape = SubResource( 366 )
+
+[node name="mess_table_chair13" type="MeshInstance" parent="."]
+transform = Transform( -0.7, 0, -6.11959e-08, 0, 0.7, 0, 6.11959e-08, 0, -0.7, 57.904, -1.84935, 11.7503 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 14 )
+material/1 = SubResource( 367 )
+material/2 = SubResource( 365 )
+material/4 = SubResource( 365 )
+material/6 = SubResource( 365 )
+
+[node name="mess_table_chair6" type="StaticBody" parent="mess_table_chair13"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="mess_table_chair13/mess_table_chair6"]
+shape = SubResource( 366 )
+
+[node name="triple chair (1)10" type="MeshInstance" parent="."]
+transform = Transform( -0.7, 0, -1.05697e-07, 0, 0.7, 0, 1.05697e-07, 0, -0.7, 60.1339, -2.44522, -30.2683 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 5 )
+
+[node name="triple chair (1)4" type="StaticBody" parent="triple chair (1)10"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="triple chair (1)10/triple chair (1)4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.665916, 0.283632, 0.0940018 )
+shape = SubResource( 368 )
+
+[node name="triple chair (1)11" type="MeshInstance" parent="."]
+transform = Transform( 0.694097, 0, 0.0907142, 0, 0.7, 0, -0.0907142, 0, 0.694097, 41.8855, -2.44522, -34.5584 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 5 )
+
+[node name="triple chair (1)5" type="StaticBody" parent="triple chair (1)11"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="triple chair (1)11/triple chair (1)5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.665916, 0.283632, 0.0940018 )
+shape = SubResource( 368 )
+
+[node name="triple chair (1)12" type="MeshInstance" parent="."]
+transform = Transform( -0.7, 0, -1.05697e-07, 0, 0.7, 0, 1.05697e-07, 0, -0.7, 64.474, -2.37327, -40.3477 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 5 )
+
+[node name="triple chair (1)5" type="StaticBody" parent="triple chair (1)12"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="triple chair (1)12/triple chair (1)5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.665916, 0.283632, 0.0940018 )
+shape = SubResource( 368 )
+
+[node name="triple chair (1)13" type="MeshInstance" parent="."]
+transform = Transform( 0.00545022, 0, -0.699979, 0, 0.7, 0, 0.699979, 0, 0.00545022, 52.7392, -2.44522, -30.7619 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 5 )
+
+[node name="triple chair (1)5" type="StaticBody" parent="triple chair (1)13"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="triple chair (1)13/triple chair (1)5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.665916, 0.283632, 0.0940018 )
+shape = SubResource( 368 )
+
+[node name="tv" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 55.1982, 1.49616, -21.9076 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 17 )
+
+[node name="study table3" type="MeshInstance" parent="."]
+transform = Transform( -7.43094e-08, 0, 1.7, 0, 1.7, 0, -1.7, 0, -7.43094e-08, 54.8579, -1.34298, -22.6925 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 1 )
+material/0 = SubResource( 369 )
+material/1 = SubResource( 370 )
+
+[node name="study table" type="StaticBody" parent="study table3"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="study table3/study table"]
+transform = Transform( 1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, 0, -0.387465, 0 )
+shape = SubResource( 371 )
+
+[node name="TT table (1)" type="MeshInstance" parent="."]
+transform = Transform( -6.11959e-08, 0, 1.4, 0, 1.4, 0, -1.4, 0, -6.11959e-08, 52.6521, -1.72937, -45.1077 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 6 )
+
+[node name="TT table (1)" type="StaticBody" parent="TT table (1)"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="TT table (1)/TT table (1)"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.218896, 0 )
+shape = SubResource( 372 )
+
+[node name="mess chair23" type="MeshInstance" parent="."]
+transform = Transform( 2.2614e-06, 0, -0.7, 0, 0.7, 0, 0.7, 0, 2.2614e-06, 41.148, -3.97141, -19.2183 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 3 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 373 )
+material/1 = SubResource( 374 )
+
+[node name="triple chair (1)2" type="MeshInstance" parent="."]
+transform = Transform( -2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, 43.5322, -3.36411, -10.2284 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 5 )
+
+[node name="triple chair (1)2" type="StaticBody" parent="triple chair (1)2"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="triple chair (1)2/triple chair (1)2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.665916, 0.283632, 0.0940018 )
+shape = SubResource( 375 )
+
+[node name="study table4" type="MeshInstance" parent="."]
+transform = Transform( -1.7, 0, -5.41767e-06, 0, 1.7, 0, 5.41767e-06, 0, -1.7, 42.834, -2.21766, -19.3032 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 1 )
+material/0 = SubResource( 376 )
+material/1 = SubResource( 377 )
+
+[node name="study table2" type="StaticBody" parent="study table4"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="study table4/study table2"]
+transform = Transform( 1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, 0.299751, -0.511966, 0 )
+shape = SubResource( 378 )
+
+[node name="fire hose5" type="MeshInstance" parent="."]
+transform = Transform( -6.55671e-08, 0, -1.5, 0, 1.5, 0, 1.5, 0, -6.55671e-08, 27.7821, 15.6368, 25.2823 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 12 )
+
+[node name="fire hose6" type="MeshInstance" parent="."]
+transform = Transform( -6.55671e-08, 0, -1.5, 0, 1.5, 0, 1.5, 0, -6.55671e-08, -21.0046, 15.6368, 25.2823 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 12 )
+
+[node name="fire hose7" type="MeshInstance" parent="."]
+transform = Transform( 1.24589, 0, -0.835313, 0, 1.5, 0, 0.835313, 0, 1.24589, -20.6437, 14.016, -23.5204 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 12 )
+
+[node name="fire hose8" type="MeshInstance" parent="."]
+transform = Transform( -1.45712, 0, 0.356071, 0, 1.5, 0, -0.356071, 0, -1.45712, 25.3071, 14.016, -18.2223 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 12 )
+
+[node name="fire hose9" type="MeshInstance" parent="."]
+transform = Transform( 1.40566, 0, -0.52357, 0, 1.5, 0, 0.52357, 0, 1.40566, 25.4859, 2.23722, -25.899 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 12 )
+
+[node name="fire hose10" type="MeshInstance" parent="."]
+transform = Transform( -1.31785, 0, -0.716428, 0, 1.5, 0, 0.716428, 0, -1.31785, 28.6937, 2.39114, 28.6618 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 12 )
+
+[node name="fire hose11" type="MeshInstance" parent="."]
+transform = Transform( -1.30042, 0, 0.747596, 0, 1.5, 0, -0.747596, 0, -1.30042, -25.3135, 2.39114, 28.7807 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 12 )
+
+[node name="fire hose12" type="MeshInstance" parent="."]
+transform = Transform( 0.860365, 0, 1.22873, 0, 1.5, 0, -1.22873, 0, 0.860365, -26.0119, 2.06961, -25.0096 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 12 )
+
+[node name="dio_mess_cashier_counter" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 44.5894, -2.98466, 13.4505 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 18 )
+
+[node name="StaticBody" type="StaticBody" parent="dio_mess_cashier_counter"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="dio_mess_cashier_counter/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.920403, -0.174927 )
+shape = SubResource( 380 )
+
+[node name="CollisionShape4" type="CollisionShape" parent="dio_mess_cashier_counter/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.30343, 1.50163 )
+shape = SubResource( 382 )
+
+[node name="CollisionShape5" type="CollisionShape" parent="dio_mess_cashier_counter/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.65691, 2.35246, 0.174557 )
+shape = SubResource( 383 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="dio_mess_cashier_counter/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.20345, 0.81478, 4.77752 )
+shape = SubResource( 381 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="dio_mess_cashier_counter/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.82233, 0.676925, -4.00693 )
+shape = SubResource( 381 )
+
+[node name="mess_group1" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 62.3224, -2.06797, 33.7673 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 16 )
+
+[node name="mess_group1" type="StaticBody" parent="mess_group1"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="mess_group1/mess_group1"]
+shape = SubResource( 384 )
+
+[node name="mess_group3" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 87.4536, -2.06797, 33.7673 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 16 )
+
+[node name="mess_group3" type="StaticBody" parent="mess_group3"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="mess_group3/mess_group3"]
+shape = SubResource( 384 )
+
+[node name="mess_table" type="MeshInstance" parent="."]
+transform = Transform( 0.8, 0, 0, 0, 0.311389, 0.73691, 0, -0.73691, 0.311389, 70.9607, 0.571296, 75.3877 )
+generate_lightmap = false
+mesh = ExtResource( 11 )
+material/0 = SubResource( 365 )
+material/1 = SubResource( 367 )
+
+[node name="StaticBody" type="StaticBody" parent="mess_table"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.507057, 0.214268 )
+
+[node name="CollisionShape" type="CollisionShape" parent="mess_table/StaticBody"]
+shape = SubResource( 390 )
+
+[node name="mess_table2" type="MeshInstance" parent="."]
+transform = Transform( 0.673402, -0.389402, 0.186803, -0.00519719, 0.338689, 0.72475, -0.431859, -0.611274, 0.282562, 65.8975, 0.490627, 74.8318 )
+generate_lightmap = false
+mesh = ExtResource( 11 )
+material/0 = SubResource( 365 )
+material/1 = SubResource( 367 )
+
+[node name="StaticBody" type="StaticBody" parent="mess_table2"]
+transform = Transform( 1, 0, 1.49012e-08, 2.98023e-08, 1, 1.19209e-07, 2.98023e-08, 0, 1, -0.260712, -0.369011, 0.170593 )
+
+[node name="CollisionShape" type="CollisionShape" parent="mess_table2/StaticBody"]
+shape = SubResource( 390 )
+
+[node name="mess_table3" type="MeshInstance" parent="."]
+transform = Transform( -3.49691e-08, 0, -0.8, 0, 0.8, 0, 0.8, 0, -3.49691e-08, 57.5322, -1.5574, 62.0293 )
+generate_lightmap = false
+mesh = ExtResource( 11 )
+material/0 = SubResource( 365 )
+material/1 = SubResource( 367 )
+
+[node name="StaticBody" type="StaticBody" parent="mess_table3"]
+transform = Transform( 1, 0, -7.10543e-15, 0, 1, 0, 7.10543e-15, 0, 1, 0, -0.6178, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="mess_table3/StaticBody"]
+shape = SubResource( 390 )
+
+[node name="mess_table6" type="MeshInstance" parent="."]
+transform = Transform( 0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 81.4094, -1.84215, 71.1642 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 11 )
+
+[node name="mess_table_chair7_StaticBody" type="StaticBody" parent="mess_table6"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.807783, 0 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="mess_table6/mess_table_chair7_StaticBody"]
+shape = SubResource( 385 )
+
+[node name="counter side table7" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 86.8009, -3.01039, 73.8352 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 8 )
+
+[node name="mess_table_chair7_StaticBody" type="StaticBody" parent="counter side table7"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="counter side table7/mess_table_chair7_StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.625257, 0 )
+shape = SubResource( 386 )
+
+[node name="counter side table8" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 86.8009, -3.01039, 57.4886 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 8 )
+
+[node name="mess_table_chair7_static_body" type="StaticBody" parent="counter side table8"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="counter side table8/mess_table_chair7_static_body"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.625257, 0 )
+shape = SubResource( 386 )
+
+[node name="counter side table9" type="MeshInstance" parent="."]
+transform = Transform( 0.630974, 0, -0.775804, 0, 1, 0, 0.775804, 0, 0.630974, 91.938, -3.01039, 54.0904 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 8 )
+
+[node name="counter side table9_Static_body" type="StaticBody" parent="counter side table9"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="counter side table9/counter side table9_Static_body"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.625257, 0 )
+shape = SubResource( 386 )
+
+[node name="water_tank5" type="MeshInstance" parent="."]
+transform = Transform( 4, 0, 0, 0, 4, 0, 0, 0, 4, -3.18079, 19.9446, 107.264 )
+generate_lightmap = false
+mesh = ExtResource( 2 )
+
+[node name="water_tank5" type="StaticBody" parent="water_tank5"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="water_tank5/water_tank5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.54226, 0.164763, 0 )
+shape = SubResource( 387 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="water_tank5/water_tank5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.56923, 0.164763, 0 )
+shape = SubResource( 387 )
+
+[node name="water_tank6" type="MeshInstance" parent="."]
+transform = Transform( -1.74846e-07, 0, -4, 0, 4, 0, 4, 0, -1.74846e-07, -104.757, 19.9446, 28.6665 )
+generate_lightmap = false
+mesh = ExtResource( 2 )
+
+[node name="water_tank5" type="StaticBody" parent="water_tank6"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="water_tank6/water_tank5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.54226, 0.164763, 0 )
+shape = SubResource( 387 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="water_tank6/water_tank5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.56923, 0.164763, 0 )
+shape = SubResource( 387 )
+
+[node name="water_tank7" type="MeshInstance" parent="."]
+transform = Transform( -1.74846e-07, 0, -4, 0, 4, 0, 4, 0, -1.74846e-07, -104.757, 19.9446, -26.2159 )
+generate_lightmap = false
+mesh = ExtResource( 2 )
+
+[node name="water_tank5" type="StaticBody" parent="water_tank7"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="water_tank7/water_tank5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.54226, 0.164763, 0 )
+shape = SubResource( 387 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="water_tank7/water_tank5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.56923, 0.164763, 0 )
+shape = SubResource( 387 )
+
+[node name="generator" type="MeshInstance" parent="."]
+transform = Transform( -1.5, 0, -1.31134e-07, 0, 1.5, 0, 1.31134e-07, 0, -1.5, 30.6314, -4.87504, -74.6183 )
+generate_lightmap = false
+mesh = ExtResource( 15 )
+skeleton = NodePath("../..")
+
+[node name="generator" type="StaticBody" parent="generator"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="generator/generator"]
+transform = Transform( 1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 1.29556, 2.67139, 0 )
+shape = SubResource( 388 )
+
+[node name="tree_set" type="MeshInstance" parent="."]
+transform = Transform( 0.999663, 0, 0.0259506, 0, 1, 0, -0.0259506, 0, 0.999663, 92.5205, -5.18093, 115.723 )
+generate_lightmap = false
+mesh = ExtResource( 13 )
+
+[node name="tree_set2" type="MeshInstance" parent="."]
+transform = Transform( -0.999527, 0, 0.0307302, 0, 1, 0, -0.0307302, 0, -0.999527, 95.9779, -4.93924, -73.8084 )
+generate_lightmap = false
+mesh = ExtResource( 13 )
+
+[node name="tree_set3" type="MeshInstance" parent="."]
+transform = Transform( 0.703829, 0, 0.71037, 0, 1, 0, -0.71037, 0, 0.703829, -89.8044, -5.35596, -74.1509 )
+generate_lightmap = false
+mesh = ExtResource( 13 )
+
+[node name="tree_set4" type="MeshInstance" parent="."]
+transform = Transform( 0.703829, 0, 0.71037, 0, 1, 0, -0.71037, 0, 0.703829, -85.1476, -5.15526, 91.4405 )
+generate_lightmap = false
+mesh = ExtResource( 13 )
+
+[node name="tree_set5" type="MeshInstance" parent="."]
+transform = Transform( 0.766527, 0, -0.642213, 0, 1, 0, 0.642213, 0, 0.766527, -58.283, -5.15526, 108.477 )
+generate_lightmap = false
+mesh = ExtResource( 13 )
+
+[node name="trashcan" type="MeshInstance" parent="."]
+transform = Transform( -3.0598e-08, 0, -0.7, 0, 0.7, 0, 0.7, 0, -3.0598e-08, -88.8739, 8.92131, -31.7736 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 4 )
+
+[node name="trashcan" type="StaticBody" parent="trashcan"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="trashcan/trashcan"]
+transform = Transform( 1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, 0, 1.63469, 0 )
+shape = SubResource( 389 )
+
+[node name="trashcan2" type="MeshInstance" parent="."]
+transform = Transform( -3.0598e-08, 0, -0.7, 0, 0.7, 0, 0.7, 0, -3.0598e-08, -88.8739, 8.92131, 28.3822 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 4 )
+
+[node name="trashcan" type="StaticBody" parent="trashcan2"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="trashcan2/trashcan"]
+transform = Transform( 1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, 0, 1.63469, 0 )
+shape = SubResource( 389 )
+
+[node name="trashcan3" type="MeshInstance" parent="."]
+transform = Transform( -0.7, 0, 6.11959e-08, 0, 0.7, 0, -6.11959e-08, 0, -0.7, 0.549413, 8.92131, 92.3846 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 4 )
+
+[node name="trashcan" type="StaticBody" parent="trashcan3"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="trashcan3/trashcan"]
+transform = Transform( 1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, 0, 1.63469, 0 )
+shape = SubResource( 389 )
+
+[node name="wash_basin_mirron3" type="MeshInstance" parent="."]
+transform = Transform( -1.31134e-08, 0, 0.3, 0, 0.3, 0, -0.3, 0, -1.31134e-08, -12.2774, -0.474949, -52.72 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 10 )
+
+[node name="wash_basin_mirron4" type="MeshInstance" parent="."]
+transform = Transform( -1.31134e-08, 0, 0.3, 0, 0.3, 0, -0.3, 0, -1.31134e-08, 50.092, -0.474949, 50.4853 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 10 )
+
+[node name="washbasin_mirror9" type="MeshInstance" parent="."]
+transform = Transform( -1.31134e-08, 0, 0.422, 0, 0.3, 0, -0.3, 0, -1.84462e-08, 0.139736, -0.584027, 112.401 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 9 )
+skeleton = NodePath("../..")
+
+[node name="washbasin_mirror15" type="MeshInstance" parent="."]
+transform = Transform( -1.31134e-08, 0, -0.422, 0, 0.3, 0, 0.3, 0, -1.84462e-08, -18.9177, -0.584027, -68.861 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 9 )
+skeleton = NodePath("../..")
+
+[node name="washbasin_mirror11" type="MeshInstance" parent="."]
+transform = Transform( 0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.422, -110.042, -0.584027, 34.6281 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 9 )
+skeleton = NodePath("../..")
+
+[node name="washbasin_mirror12" type="MeshInstance" parent="."]
+transform = Transform( 0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.422, -110.013, 11.3859, 34.6281 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 9 )
+skeleton = NodePath("../..")
+
+[node name="washbasin_mirror13" type="MeshInstance" parent="."]
+transform = Transform( 0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.422, -110.042, -0.584027, -25.9286 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 9 )
+skeleton = NodePath("../..")
+
+[node name="washbasin_mirror14" type="MeshInstance" parent="."]
+transform = Transform( 0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.422, -110.013, 11.3859, -25.9286 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 9 )
+skeleton = NodePath("../..")
+
+[node name="washbasin_mirror10" type="MeshInstance" parent="."]
+transform = Transform( -1.31134e-08, 0, 0.422, 0, 0.3, 0, -0.3, 0, -1.84462e-08, 0.139736, 10.3519, 112.41 )
+cast_shadow = 0
+generate_lightmap = false
+mesh = ExtResource( 9 )
+skeleton = NodePath("../..")

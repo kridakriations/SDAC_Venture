@@ -1,0 +1,140 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://assets/textures/black_gridtexture128.png" type="Texture" id=1]
+[ext_resource path="res://assets/model/bed.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://scenes/player_node_new.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/model/watercoller.obj" type="ArrayMesh" id=4]
+
+[sub_resource type="CubeMesh" id=8]
+size = Vector3( 100, 1, 40 )
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_texture = ExtResource( 1 )
+uv1_scale = Vector3( 0.375, 0.375, 0.375 )
+uv1_triplanar = true
+uv2_triplanar = true
+
+[sub_resource type="CubeMesh" id=6]
+size = Vector3( 60, 1, 40 )
+
+[sub_resource type="CubeMesh" id=7]
+size = Vector3( 100, 1, 60 )
+
+[sub_resource type="CubeMesh" id=9]
+size = Vector3( 100, 1, 60 )
+
+[sub_resource type="ProceduralSky" id=10]
+
+[sub_resource type="Environment" id=3]
+background_mode = 1
+background_sky = SubResource( 10 )
+background_color = Color( 0.537255, 0.458824, 0.54902, 1 )
+background_energy = 3.06
+ambient_light_color = Color( 0.168627, 0.160784, 0.184314, 1 )
+fog_color = Color( 0.835294, 0.517647, 0.905882, 1 )
+fog_sun_color = Color( 0.835294, 0.517647, 0.905882, 1 )
+fog_depth_curve = 0.965936
+auto_exposure_enabled = true
+auto_exposure_scale = 0.1
+ssao_quality = 2
+dof_blur_far_enabled = true
+dof_blur_far_distance = 46.25
+dof_blur_far_transition = 30.2
+dof_blur_far_amount = 0.12
+dof_blur_far_quality = 2
+glow_enabled = true
+glow_levels/1 = true
+glow_levels/2 = true
+glow_levels/4 = true
+glow_levels/6 = true
+glow_levels/7 = true
+glow_intensity = 4.45
+glow_strength = 0.31
+glow_bloom = 0.36
+glow_blend_mode = 1
+glow_hdr_threshold = 1.71
+glow_high_quality = true
+
+[node name="Spatial" type="Spatial"]
+
+[node name="bed" type="MeshInstance" parent="."]
+transform = Transform( -0.225852, 0, -1.46124, 0, 1.5, 0, 0.974162, 0, -0.338778, -26.6399, 2.772, 0.791107 )
+use_in_baked_light = true
+mesh = ExtResource( 2 )
+skeleton = NodePath("")
+
+[node name="MeshInstance2" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.54, 20.3886, -28.4044 )
+mesh = SubResource( 8 )
+material/0 = SubResource( 2 )
+
+[node name="MeshInstance4" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, 45, 20.389, -0.193 )
+mesh = SubResource( 6 )
+material/0 = SubResource( 2 )
+
+[node name="MeshInstance5" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -45, 20.389, -0.193 )
+mesh = SubResource( 6 )
+material/0 = SubResource( 2 )
+
+[node name="MeshInstance3" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.54, 0.0241908, 0 )
+mesh = SubResource( 7 )
+material/0 = SubResource( 2 )
+
+[node name="MeshInstance6" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.54, 40.8768, 0 )
+mesh = SubResource( 9 )
+material/0 = SubResource( 2 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 3 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.966895, 0.255176, 0, -0.255176, 0.966895, 1.09, 22.407, 40.985 )
+environment = SubResource( 3 )
+fov = 48.6
+
+[node name="watercoller" type="MeshInstance" parent="."]
+transform = Transform( -0.663179, 0, -1.67338, 0, 1.8, 0, 1.67338, 0, -0.663179, 17.676, 2.44087, -6.15585 )
+mesh = ExtResource( 4 )
+
+[node name="OmniLight" type="OmniLight" parent="."]
+transform = Transform( 0.956244, 0, -0.292572, 0, 1, 0, 0.292572, 0, 0.956244, 18.7856, 14.9344, -5.58188 )
+visible = false
+light_color = Color( 0.666667, 0.117647, 0.8, 1 )
+light_energy = 16.0
+light_indirect_energy = 0.0
+shadow_enabled = true
+omni_range = 23.685
+
+[node name="SpotLight" type="SpotLight" parent="."]
+transform = Transform( 0.974162, 0.224169, -0.0275245, 0, 0.121869, 0.992546, 0.225852, -0.9669, 0.11872, -23.6819, 28.4313, -10.9081 )
+light_color = Color( 0.741176, 0.560784, 0.741176, 1 )
+light_energy = 16.0
+shadow_enabled = true
+spot_range = 26.721
+spot_angle = 38.248
+
+[node name="Spatial" type="Spatial" parent="."]
+transform = Transform( 4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 8.864, 11.428 )
+
+[node name="player" parent="Spatial" instance=ExtResource( 3 )]
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="OmniLight2" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 29.9961, 0 )
+light_energy = 5.54
+shadow_enabled = true
+omni_range = 71.59
+
+[node name="SpotLight2" type="SpotLight" parent="."]
+transform = Transform( 1, 0, 0, 0, -0.908945, 0.416917, 0, -0.416917, -0.908945, 0.777962, 15.0902, -18.6644 )
+light_energy = 9.432
+shadow_enabled = true
+spot_range = 239.351
+spot_angle = 44.69
+spot_angle_attenuation = 1.36604

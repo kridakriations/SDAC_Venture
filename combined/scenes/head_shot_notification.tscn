@@ -1,0 +1,96 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://fonts/Chakra_Petch/ChakraPetch-Bold.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://scenes/head_shot_notification.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=752]
+size = 64
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="Animation" id=753]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -5, -206 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=754]
+resource_name = "fade"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -1, -217 ), Vector2( -1, -217 ), Vector2( -1, -217 ), Vector2( -1, -217 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[node name="head_shot_notification" type="Control"]
+margin_left = -1.0
+margin_top = -217.0
+margin_right = 39.0
+margin_bottom = -177.0
+script = ExtResource( 2 )
+
+[node name="head_label" type="Label" parent="."]
+margin_left = -146.0
+margin_top = -269.0
+margin_right = 13.0
+margin_bottom = -190.0
+custom_colors/font_color = Color( 0.384314, 0, 0.619608, 1 )
+custom_fonts/font = SubResource( 752 )
+text = "HEAD"
+
+[node name="shot_label" type="Label" parent="."]
+margin_left = 40.0
+margin_top = -269.0
+margin_right = 207.0
+margin_bottom = -185.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 752 )
+text = "SHOT"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "fade"
+anims/RESET = SubResource( 753 )
+anims/fade = SubResource( 754 )
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]

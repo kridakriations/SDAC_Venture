@@ -1,0 +1,544 @@
+[gd_scene load_steps=22 format=2]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 1.43162, 3.14946, 1.07293 )
+
+[sub_resource type="BoxShape" id=4]
+extents = Vector3( 0.553484, 0.71893, 1 )
+
+[sub_resource type="BoxShape" id=5]
+extents = Vector3( 1.55564, 1.84472, 4.84558 )
+
+[sub_resource type="BoxShape" id=6]
+extents = Vector3( 1.43162, 3.28186, 1.61374 )
+
+[sub_resource type="BoxShape" id=8]
+extents = Vector3( 5.17735, 1, 4.33617 )
+
+[sub_resource type="BoxShape" id=10]
+extents = Vector3( 1.55564, 1.84472, 4.84558 )
+
+[sub_resource type="BoxShape" id=13]
+extents = Vector3( 0.553484, 0.71893, 1 )
+
+[sub_resource type="BoxShape" id=14]
+extents = Vector3( 1.69281, 0.698346, 3.09256 )
+
+[sub_resource type="BoxShape" id=17]
+extents = Vector3( 1.55564, 1.84472, 4.84558 )
+
+[sub_resource type="BoxShape" id=20]
+extents = Vector3( 1, 0.63809, 1 )
+
+[sub_resource type="BoxShape" id=21]
+extents = Vector3( 1, 0.653337, 4.18155 )
+
+[sub_resource type="BoxShape" id=22]
+extents = Vector3( 0.667861, 0.653337, 2.54617 )
+
+[sub_resource type="BoxShape" id=23]
+extents = Vector3( 0.667861, 2.35424, 4.74173 )
+
+[sub_resource type="BoxShape" id=24]
+extents = Vector3( 1.75177, 0.766792, 0.84177 )
+
+[sub_resource type="BoxShape" id=25]
+extents = Vector3( 1.27625, 1, 7.52748 )
+
+[sub_resource type="BoxShape" id=26]
+extents = Vector3( 2.77041, 1, 4.1108 )
+
+[sub_resource type="BoxShape" id=27]
+extents = Vector3( 3.17293, 1, 4.33617 )
+
+[sub_resource type="BoxShape" id=28]
+extents = Vector3( 1, 1, 2.10851 )
+
+[sub_resource type="CylinderShape" id=29]
+height = 2.31454
+
+[sub_resource type="BoxShape" id=30]
+extents = Vector3( 3.0162, 3.09414, 4.81956 )
+
+[sub_resource type="BoxShape" id=31]
+extents = Vector3( 1.43162, 3.28186, 1.61374 )
+
+[node name="objects" type="Spatial"]
+
+[node name="watercoller19" type="StaticBody" parent="."]
+transform = Transform( 0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, -35.0007, -2.73572, 23.3317 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="watercoller19"]
+transform = Transform( 1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, 0, 2.0564, 0 )
+shape = SubResource( 1 )
+
+[node name="watercoller20" type="StaticBody" parent="."]
+transform = Transform( -1.74846e-08, 0, 0.4, 0, 0.4, 0, -0.4, 0, -1.74846e-08, -41.1938, 8.48338, 36.162 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="watercoller20"]
+transform = Transform( 1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, 0, 2.0564, 0 )
+shape = SubResource( 1 )
+
+[node name="watercoller21" type="StaticBody" parent="."]
+transform = Transform( -1.74846e-08, 0, 0.4, 0, 0.4, 0, -0.4, 0, -1.74846e-08, -41.1938, 8.48338, -24.2084 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="watercoller21"]
+transform = Transform( 1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, 0, 2.0564, 0 )
+shape = SubResource( 1 )
+
+[node name="watercoller22" type="StaticBody" parent="."]
+transform = Transform( -0.4, 0, -3.49691e-08, 0, 0.4, 0, 3.49691e-08, 0, -0.4, 1.17471, 8.48338, 44.5128 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="watercoller22"]
+transform = Transform( 1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, 0, 2.0564, 0 )
+shape = SubResource( 1 )
+
+[node name="watercoller23" type="StaticBody" parent="."]
+transform = Transform( 0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 54.9643, 8.42527, 67.3638 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="watercoller23"]
+transform = Transform( 1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, 0, 2.0564, 0 )
+shape = SubResource( 1 )
+
+[node name="watercoller24" type="StaticBody" parent="."]
+transform = Transform( -1.74846e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, -1.74846e-08, 72.2443, 8.35007, 14.7229 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="watercoller24"]
+transform = Transform( 1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, 0, 2.0564, 0 )
+shape = SubResource( 1 )
+
+[node name="watercoller25" type="StaticBody" parent="."]
+transform = Transform( -1.74846e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, -1.74846e-08, -47.9682, -2.80257, -34.352 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="watercoller25"]
+transform = Transform( 1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, 0, 2.0564, 0 )
+shape = SubResource( 1 )
+
+[node name="watercoller26" type="StaticBody" parent="."]
+transform = Transform( 0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, -9.82344, -2.77713, -65.8711 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="watercoller26"]
+transform = Transform( 1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, 0, 2.0564, 0 )
+shape = SubResource( 1 )
+
+[node name="watercoller27" type="StaticBody" parent="."]
+transform = Transform( -1.74846e-08, 0, 0.4, 0, 0.4, 0, -0.4, 0, -1.74846e-08, -8.70208, -2.77713, 37.7829 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="watercoller27"]
+transform = Transform( 1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, 0, 2.0564, 0 )
+shape = SubResource( 1 )
+
+[node name="study table5" type="StaticBody" parent="."]
+transform = Transform( -7.43094e-08, 0, 1.7, 0, 1.7, 0, -1.7, 0, -7.43094e-08, 21.1597, -1.34298, 34.2437 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="study table5"]
+transform = Transform( 1, 0, -7.10543e-15, 0, 1, 0, 7.10543e-15, 0, 1, 0, -0.387465, 0 )
+shape = SubResource( 4 )
+
+[node name="study table6" type="StaticBody" parent="."]
+transform = Transform( 1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, -35.0216, -1.34298, 18.5931 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="study table6"]
+transform = Transform( 1, 0, -7.10543e-15, 0, 1, 0, 7.10543e-15, 0, 1, 0, -0.387465, 0 )
+shape = SubResource( 4 )
+
+[node name="triple chair (1)14" type="StaticBody" parent="."]
+transform = Transform( -3.0598e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.0598e-08, 26.6178, -2.44522, 36.9669 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="triple chair (1)14"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.665916, 0.283632, 0.0940018 )
+shape = SubResource( 5 )
+
+[node name="triple chair (1)15" type="StaticBody" parent="."]
+transform = Transform( -3.0598e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.0598e-08, 14.4881, -2.44522, 36.9669 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="triple chair (1)15"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.665916, 0.283632, 0.0940018 )
+shape = SubResource( 5 )
+
+[node name="triple chair (1)16" type="StaticBody" parent="."]
+transform = Transform( -3.0598e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.0598e-08, -24.5226, -2.44522, 36.9669 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="triple chair (1)16"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.665916, 0.283632, 0.0940018 )
+shape = SubResource( 5 )
+
+[node name="triple chair (1)17" type="StaticBody" parent="."]
+transform = Transform( 0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, -34.4198, -2.44522, -19.475 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="triple chair (1)17"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.665916, 0.283632, 0.0940018 )
+shape = SubResource( 5 )
+
+[node name="triple chair (1)18" type="StaticBody" parent="."]
+transform = Transform( -0.7, 0, -6.11959e-08, 0, 0.7, 0, 6.11959e-08, 0, -0.7, -26.5753, -2.44522, -19.1007 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="triple chair (1)18"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.665916, 0.283632, 0.0940018 )
+shape = SubResource( 5 )
+
+[node name="triple chair (1)19" type="StaticBody" parent="."]
+transform = Transform( -3.0598e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.0598e-08, -1.84829, -2.44522, -25.3346 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="triple chair (1)19"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.665916, 0.283632, 0.0940018 )
+shape = SubResource( 5 )
+
+[node name="trashcan9" type="StaticBody" parent="."]
+transform = Transform( -3.0598e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.0598e-08, -93.8374, -2.24546, -23.4493 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="trashcan9"]
+transform = Transform( 1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, 0, 1.63469, 0 )
+shape = SubResource( 6 )
+
+[node name="trashcan10" type="StaticBody" parent="."]
+transform = Transform( -3.0598e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.0598e-08, -93.8374, -2.24546, 36.8673 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="trashcan10"]
+transform = Transform( 1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, 0, 1.63469, 0 )
+shape = SubResource( 6 )
+
+[node name="trashcan11" type="StaticBody" parent="."]
+transform = Transform( -0.699981, 0, -0.00514349, 0, 0.7, 0, 0.00514349, 0, -0.699981, 0.47206, -2.19971, 97.061 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="trashcan11"]
+transform = Transform( 1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, 0, 1.63469, 0 )
+shape = SubResource( 6 )
+
+[node name="trashcan12" type="StaticBody" parent="."]
+transform = Transform( -0.699981, 0, -0.00514349, 0, 0.7, 0, 0.00514349, 0, -0.699981, -12.6315, -2.25788, -62.687 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="trashcan12"]
+transform = Transform( 1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, 0, 1.63469, 0 )
+shape = SubResource( 6 )
+
+[node name="mess_table_chair8" type="StaticBody" parent="."]
+transform = Transform( 0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 68.7825, -1.84935, 21.9872 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="mess_table_chair8"]
+shape = SubResource( 8 )
+
+[node name="mess_table_chair12" type="StaticBody" parent="."]
+transform = Transform( 0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 58.8875, -1.84935, 21.9872 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="mess_table_chair12"]
+shape = SubResource( 8 )
+
+[node name="mess_table_chair14" type="StaticBody" parent="."]
+transform = Transform( -0.7, 0, -6.11959e-08, 0, 0.7, 0, 6.11959e-08, 0, -0.7, 89.1758, -1.84935, 21.9212 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="mess_table_chair14"]
+shape = SubResource( 8 )
+
+[node name="mess_table_chair15" type="StaticBody" parent="."]
+transform = Transform( -0.7, 0, -6.11959e-08, 0, 0.7, 0, 6.11959e-08, 0, -0.7, 89.1758, -1.84935, 11.7503 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="mess_table_chair15"]
+shape = SubResource( 8 )
+
+[node name="mess_table_chair16" type="StaticBody" parent="."]
+transform = Transform( -0.7, 0, -6.11959e-08, 0, 0.7, 0, 6.11959e-08, 0, -0.7, 79.217, -1.84935, 11.7503 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="mess_table_chair16"]
+shape = SubResource( 8 )
+
+[node name="mess_table_chair17" type="StaticBody" parent="."]
+transform = Transform( -0.7, 0, -6.11959e-08, 0, 0.7, 0, 6.11959e-08, 0, -0.7, 57.904, -1.84935, 11.7503 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="mess_table_chair17"]
+shape = SubResource( 8 )
+
+[node name="triple chair (1)20" type="StaticBody" parent="."]
+transform = Transform( -0.7, 0, -1.05697e-07, 0, 0.7, 0, 1.05697e-07, 0, -0.7, 60.1339, -2.44522, -30.2683 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="triple chair (1)20"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.665916, 0.283632, 0.0940018 )
+shape = SubResource( 10 )
+
+[node name="triple chair (1)21" type="StaticBody" parent="."]
+transform = Transform( 0.694097, 0, 0.0907142, 0, 0.7, 0, -0.0907142, 0, 0.694097, 41.8855, -2.44522, -34.5584 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="triple chair (1)21"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.665916, 0.283632, 0.0940018 )
+shape = SubResource( 10 )
+
+[node name="triple chair (1)22" type="StaticBody" parent="."]
+transform = Transform( -0.7, 0, -1.05697e-07, 0, 0.7, 0, 1.05697e-07, 0, -0.7, 64.474, -2.37327, -40.3477 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="triple chair (1)22"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.665916, 0.283632, 0.0940018 )
+shape = SubResource( 10 )
+
+[node name="triple chair (1)23" type="StaticBody" parent="."]
+transform = Transform( 0.00545022, 0, -0.699979, 0, 0.7, 0, 0.699979, 0, 0.00545022, 52.7392, -2.44522, -30.7619 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="triple chair (1)23"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.665916, 0.283632, 0.0940018 )
+shape = SubResource( 10 )
+
+[node name="study table7" type="StaticBody" parent="."]
+transform = Transform( -7.43094e-08, 0, 1.7, 0, 1.7, 0, -1.7, 0, -7.43094e-08, 54.8579, -1.34298, -22.6925 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="study table7"]
+transform = Transform( 1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, 0, -0.387465, 0 )
+shape = SubResource( 13 )
+
+[node name="TT table (1)2" type="StaticBody" parent="."]
+transform = Transform( -6.11959e-08, 0, 1.4, 0, 1.4, 0, -1.4, 0, -6.11959e-08, 52.6521, -1.72937, -45.1077 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="TT table (1)2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.218896, 0 )
+shape = SubResource( 14 )
+
+[node name="triple chair (1)3" type="StaticBody" parent="."]
+transform = Transform( -2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, 43.5322, -3.36411, -10.2284 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="triple chair (1)3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.665916, 0.283632, 0.0940018 )
+shape = SubResource( 17 )
+
+[node name="study table8" type="StaticBody" parent="."]
+transform = Transform( -1.7, 0, -5.41767e-06, 0, 1.7, 0, 5.41767e-06, 0, -1.7, 42.834, -2.21766, -19.3032 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="study table8"]
+transform = Transform( 1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, 0.299751, -0.511966, 0 )
+shape = SubResource( 20 )
+
+[node name="StaticBody" type="StaticBody" parent="."]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 44.5894, -2.98466, 13.4505 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.920403, -0.174927 )
+shape = SubResource( 21 )
+
+[node name="CollisionShape4" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.30343, 1.50163 )
+shape = SubResource( 22 )
+
+[node name="CollisionShape5" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.65691, 2.35246, 0.174557 )
+shape = SubResource( 23 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.20345, 0.81478, 4.77752 )
+shape = SubResource( 24 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.82233, 0.676925, -4.00693 )
+shape = SubResource( 24 )
+
+[node name="mess_group2" type="StaticBody" parent="."]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 62.3224, -2.06797, 33.7673 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="mess_group2"]
+shape = SubResource( 25 )
+
+[node name="mess_group4" type="StaticBody" parent="."]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 87.4536, -2.06797, 33.7673 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="mess_group4"]
+shape = SubResource( 25 )
+
+[node name="StaticBody2" type="StaticBody" parent="."]
+transform = Transform( 0.8, 0, 0, 0, 0.311389, 0.73691, 0, -0.73691, 0.311389, 70.9607, 0.5713, 75.8281 )
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody2"]
+shape = SubResource( 26 )
+
+[node name="StaticBody3" type="StaticBody" parent="."]
+transform = Transform( 0.673402, -0.389402, 0.186803, -0.00519716, 0.338689, 0.72475, -0.431859, -0.611274, 0.282562, 65.8975, 0.490639, 75.2182 )
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody3"]
+shape = SubResource( 26 )
+
+[node name="StaticBody4" type="StaticBody" parent="."]
+transform = Transform( -3.49691e-08, 0, -0.8, 0, 0.8, 0, 0.8, 0, -3.49691e-08, 57.5322, -2.05164, 62.0293 )
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody4"]
+shape = SubResource( 26 )
+
+[node name="mess_table_chair7_StaticBody" type="StaticBody" parent="."]
+transform = Transform( 0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 81.4094, -2.4076, 71.1642 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="mess_table_chair7_StaticBody"]
+shape = SubResource( 27 )
+
+[node name="mess_table_chair7_StaticBody2" type="StaticBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 86.8009, -3.01039, 73.8352 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="mess_table_chair7_StaticBody2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.625257, 0 )
+shape = SubResource( 28 )
+
+[node name="mess_table_chair7_static_body" type="StaticBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 86.8009, -3.01039, 57.4886 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="mess_table_chair7_static_body"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.625257, 0 )
+shape = SubResource( 28 )
+
+[node name="counter side table9_Static_body" type="StaticBody" parent="."]
+transform = Transform( 0.630974, 0, -0.775804, 0, 1, 0, 0.775804, 0, 0.630974, 91.938, -3.01039, 54.0904 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="counter side table9_Static_body"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.625257, 0 )
+shape = SubResource( 28 )
+
+[node name="water_tank8" type="StaticBody" parent="."]
+transform = Transform( 4, 0, 0, 0, 4, 0, 0, 0, 4, -3.18079, 19.9446, 107.264 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="water_tank8"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.54226, 0.164763, 0 )
+shape = SubResource( 29 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="water_tank8"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.56923, 0.164763, 0 )
+shape = SubResource( 29 )
+
+[node name="water_tank9" type="StaticBody" parent="."]
+transform = Transform( -1.74846e-07, 0, -4, 0, 4, 0, 4, 0, -1.74846e-07, -104.757, 19.9446, 28.6665 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="water_tank9"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.54226, 0.164763, 0 )
+shape = SubResource( 29 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="water_tank9"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.56923, 0.164763, 0 )
+shape = SubResource( 29 )
+
+[node name="water_tank10" type="StaticBody" parent="."]
+transform = Transform( -1.74846e-07, 0, -4, 0, 4, 0, 4, 0, -1.74846e-07, -104.757, 19.9446, -26.2159 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="water_tank10"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.54226, 0.164763, 0 )
+shape = SubResource( 29 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="water_tank10"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.56923, 0.164763, 0 )
+shape = SubResource( 29 )
+
+[node name="generator2" type="StaticBody" parent="."]
+transform = Transform( -1.5, 0, -1.31134e-07, 0, 1.5, 0, 1.31134e-07, 0, -1.5, 30.6314, -4.87504, -74.6183 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="generator2"]
+transform = Transform( 1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 1.29556, 2.67139, 0 )
+shape = SubResource( 30 )
+
+[node name="trashcan4" type="StaticBody" parent="."]
+transform = Transform( -3.0598e-08, 0, -0.7, 0, 0.7, 0, 0.7, 0, -3.0598e-08, -88.8739, 8.92131, -31.7736 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="trashcan4"]
+transform = Transform( 1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, 0, 1.63469, 0 )
+shape = SubResource( 31 )
+
+[node name="trashcan13" type="StaticBody" parent="."]
+transform = Transform( -3.0598e-08, 0, -0.7, 0, 0.7, 0, 0.7, 0, -3.0598e-08, -88.8739, 8.92131, 28.3822 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="trashcan13"]
+transform = Transform( 1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, 0, 1.63469, 0 )
+shape = SubResource( 31 )
+
+[node name="trashcan14" type="StaticBody" parent="."]
+transform = Transform( -0.7, 0, 6.11959e-08, 0, 0.7, 0, -6.11959e-08, 0, -0.7, 0.549413, 8.92131, 92.3846 )
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="trashcan14"]
+transform = Transform( 1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, 0, 1.63469, 0 )
+shape = SubResource( 31 )

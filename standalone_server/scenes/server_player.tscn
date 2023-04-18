@@ -1,0 +1,77 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scripts/player_node.gd" type="Script" id=1]
+
+[sub_resource type="BoxShape" id=38]
+extents = Vector3( 0.658618, 0.293952, 0.865399 )
+
+[sub_resource type="BoxShape" id=53]
+extents = Vector3( 0.448134, 0.583103, 0.403072 )
+
+[sub_resource type="BoxShape" id=398]
+extents = Vector3( 0.279742, 0.892915, 0.249611 )
+
+[node name="player" type="Spatial"]
+script = ExtResource( 1 )
+
+[node name="body" type="Area" parent="." groups=["body"]]
+unique_name_in_owner = true
+collision_mask = 0
+monitoring = false
+
+[node name="CollisionShape" type="CollisionShape" parent="body"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.44787, 0 )
+shape = SubResource( 38 )
+
+[node name="head" type="Area" parent="body" groups=["head"]]
+unique_name_in_owner = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.24088, 0 )
+collision_layer = 2
+collision_mask = 0
+monitoring = false
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="CollisionShape" type="CollisionShape" parent="body/head"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.486898, 0 )
+shape = SubResource( 53 )
+
+[node name="gun_node" type="Spatial" parent="body/head"]
+unique_name_in_owner = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.492186, -0.229638, -0.0573988 )
+
+[node name="legs_node" type="Spatial" parent="body"]
+unique_name_in_owner = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.291415, 0 )
+
+[node name="left_leg" type="Spatial" parent="body/legs_node"]
+unique_name_in_owner = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.242747, 0, 0 )
+
+[node name="left_leg_area" type="Area" parent="body/legs_node/left_leg" groups=["leg"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03087, -0.0658522, 0 )
+collision_layer = 2
+collision_mask = 0
+monitoring = false
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="CollisionShape" type="CollisionShape" parent="body/legs_node/left_leg/left_leg_area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.838721, -0.0130122 )
+shape = SubResource( 398 )
+
+[node name="right_leg" type="Spatial" parent="body/legs_node"]
+unique_name_in_owner = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.330811, 0, 0 )
+
+[node name="left_leg_area" type="Area" parent="body/legs_node/right_leg" groups=["leg"]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03087, -0.0658522, 0 )
+collision_layer = 2
+collision_mask = 0
+monitoring = false
+
+[node name="CollisionShape" type="CollisionShape" parent="body/legs_node/right_leg/left_leg_area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.838721, -0.0130122 )
+shape = SubResource( 398 )

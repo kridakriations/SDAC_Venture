@@ -1,0 +1,125 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://scripts/player_node.gd" type="Script" id=1]
+[ext_resource path="res://fonts/eurocine/Eurocine Regular.otf" type="DynamicFontData" id=2]
+[ext_resource path="res://assets/outfilt/universal_outfit/body.tres" type="ArrayMesh" id=3]
+[ext_resource path="res://assets/outfilt/universal_outfit/jacket_mesh.tres" type="ArrayMesh" id=4]
+[ext_resource path="res://assets/enemy_guns/glock.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/enemy_guns/assault_rifle2.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/outfilt/universal_outfit/right_leg.tres" type="ArrayMesh" id=7]
+[ext_resource path="res://assets/outfilt/black.material" type="Material" id=8]
+[ext_resource path="res://assets/outfilt/material/skin_new.material" type="Material" id=9]
+[ext_resource path="res://assets/sounds/foot_steps_cut.mp3" type="AudioStream" id=11]
+[ext_resource path="res://assets/outfilt/universal_outfit/face.tres" type="ArrayMesh" id=18]
+[ext_resource path="res://assets/outfilt/universal_outfit/hair.tres" type="ArrayMesh" id=19]
+
+[sub_resource type="BoxShape" id=38]
+extents = Vector3( 0.698369, 0.466478, 1.77513 )
+
+[sub_resource type="BoxShape" id=53]
+extents = Vector3( 0.42977, 0.60341, 0.506864 )
+
+[sub_resource type="DynamicFont" id=46]
+size = 21
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 2 )
+
+[node name="player" type="Spatial"]
+script = ExtResource( 1 )
+
+[node name="body" type="Area" parent="." groups=["enemy", "enemy_body"]]
+unique_name_in_owner = true
+collision_mask = 0
+monitoring = false
+
+[node name="CollisionShape" type="CollisionShape" parent="body"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, -0.40831, 0 )
+shape = SubResource( 38 )
+
+[node name="head" type="Area" parent="body" groups=["enemy", "enemy_head"]]
+unique_name_in_owner = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.24088, 0 )
+collision_mask = 0
+monitoring = false
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="CollisionShape" type="CollisionShape" parent="body/head"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.423679, 0 )
+shape = SubResource( 53 )
+
+[node name="MeshInstance" type="MeshInstance" parent="body/head"]
+transform = Transform( -0.000251452, -100, -4.37114e-06, 0, -4.37114e-06, 100, -80, 0.000314315, 1.37392e-11, -0.00083518, 0.828587, 0 )
+cast_shadow = 0
+mesh = ExtResource( 19 )
+material/0 = ExtResource( 8 )
+
+[node name="face_normal" type="MeshInstance" parent="body/head"]
+transform = Transform( -3.49691e-06, 0, -120, 0, 90, 0, 80, 0, -5.24537e-06, -0.0902424, 0.333586, -0.0198717 )
+cast_shadow = 0
+mesh = ExtResource( 18 )
+material/0 = ExtResource( 9 )
+
+[node name="gun_node" type="Spatial" parent="body/head"]
+unique_name_in_owner = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.492186, -0.229638, -0.0573988 )
+
+[node name="assault_rifle2" parent="body/head/gun_node" instance=ExtResource( 6 )]
+
+[node name="glock" parent="body/head/gun_node" instance=ExtResource( 5 )]
+visible = false
+
+[node name="legs_node" type="Spatial" parent="body"]
+unique_name_in_owner = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.291415, 0 )
+
+[node name="left_leg" type="Spatial" parent="body/legs_node"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.242747, 0, 0 )
+
+[node name="left_upper_leg_mesh" type="MeshInstance" parent="body/legs_node/left_leg"]
+unique_name_in_owner = true
+transform = Transform( -4.37114e-06, 100, 4.37114e-06, 0, -4.37114e-06, 100, 100, 4.37114e-06, 1.91069e-13, 0.00339794, -0.100276, -0.0115147 )
+cast_shadow = 0
+mesh = ExtResource( 7 )
+
+[node name="right_leg" type="Spatial" parent="body/legs_node"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.330811, 0, 0 )
+
+[node name="right_upper_leg_mesh" type="MeshInstance" parent="body/legs_node/right_leg"]
+unique_name_in_owner = true
+transform = Transform( -4.37114e-06, 100, 4.37114e-06, 0, -4.37114e-06, 100, 100, 4.37114e-06, 1.91069e-13, 0.00339794, -0.100276, -0.0115147 )
+cast_shadow = 0
+mesh = ExtResource( 7 )
+
+[node name="body_mesh" type="MeshInstance" parent="body"]
+unique_name_in_owner = true
+transform = Transform( -4.37114e-06, 100, 3.57628e-05, 0, -3.57628e-05, 100, 100, 4.37114e-06, 1.56324e-12, 0, 0.62377, -0.00869083 )
+cast_shadow = 0
+mesh = ExtResource( 3 )
+skeleton = NodePath("../..")
+
+[node name="jacket_mesh" type="MeshInstance" parent="body"]
+unique_name_in_owner = true
+transform = Transform( -4.37114e-06, -100, -4.37114e-06, 0, -4.37114e-06, 100, -100, 4.37114e-06, 1.91069e-13, 0, 0.585598, 0 )
+cast_shadow = 0
+mesh = ExtResource( 4 )
+
+[node name="name_label" type="Label3D" parent="."]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 1, 0, 2.53829, 0 )
+billboard = 1
+fixed_size = true
+text = "ABHISHEK KUMAR"
+font = SubResource( 46 )
+
+[node name="steps" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0 )
+stream = ExtResource( 11 )
+attenuation_model = 1
+unit_db = 75.0
+unit_size = 100.0
+max_db = 6.0
+out_of_range_mode = 1
+doppler_tracking = 1

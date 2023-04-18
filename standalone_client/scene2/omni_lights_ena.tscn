@@ -1,0 +1,728 @@
+[gd_scene format=2]
+
+[node name="omni_lights_ena" type="Spatial"]
+
+[node name="OmniLight" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 45.5412, 3.70553, 45.1007 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight5" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 55.4516, 2.41616, 16.8903 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight28" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.981, 2.41616, 31.8103 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight35" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.344279, 2.78807, 31.8103 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight63" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.344279, 2.78807, -26.7666 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight64" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 32.8948, 2.78807, -26.7666 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight66" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 66.1955, 2.78807, -8.36237 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight65" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 33.6703, 2.78807, 0.371336 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight36" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -24.4348, 2.78807, 31.8103 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight37" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -28.3267, 2.78807, 16.3855 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight38" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -46.6742, 16.3729, 1.26926 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight69" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -64.5691, 16.3729, 1.26926 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight39" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 32.42, 15.0999, -42.9554 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight70" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 32.42, 15.0999, -86.2468 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight40" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.3289, 11.0968, -42.9554 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight41" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -29.9316, 11.0968, -42.9554 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight71" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -29.9316, 11.0968, -75.087 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight59" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -61.6425, 11.0968, -71.4455 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight60" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 42.4027, 11.0968, -81.8593 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight54" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.4692, 11.0968, -92.1529 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight55" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.1851, 11.0968, -92.1529 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight56" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.94973, 11.0968, -116.716 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight42" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -84.6838, 11.0968, -42.9554 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight43" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -84.6838, 11.0968, -18.1553 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight57" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -105.211, 11.0968, -30.6351 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight58" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -105.211, 11.0968, 31.7551 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight72" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -105.211, 21.7273, 31.7551 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight44" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -51.1442, 5.61619, -8.67511 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight45" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -51.1442, 5.61619, 12.4613 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight67" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -79.7697, 2.37751, -8.67511 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight68" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -79.7697, 5.61619, 12.4613 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight46" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -84.2961, 5.61619, 21.6061 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight47" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -84.2961, 5.61619, 47.382 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight48" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -31.926, 2.72636, 47.382 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight61" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -31.926, 2.72636, 79.4866 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight49" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28.8458, 2.72636, 47.382 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight62" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 29.2275, 2.72636, 79.985 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight52" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 86.2936, 0.764238, 44.2013 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight73" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 86.2936, 14.0051, 44.2013 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight53" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60.7948, 14.3518, 48.1411 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight50" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -17.1931, 2.72636, 96.7258 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight51" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.7781, 2.72636, 96.7258 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight27" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 95.1237, 3.70553, 16.8903 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight2" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 72.1122, 3.70553, 45.1007 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight3" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 63.612, 0.980427, 68.6388 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight4" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 90.9017, 4.40557, 68.6388 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight6" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 90.2083, 15.0077, 20.9963 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight7" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 47.7145, 14.1373, 71.9158 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight8" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 90.9017, 15.7545, 65.025 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight9" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.53076, 15.7545, 58.8409 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight10" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.61131, 14.4714, 105.323 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight74" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.61131, 20.8838, 102.113 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight11" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.53076, 2.71928, 63.8504 )
+visible = false
+light_energy = 0.125
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight12" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.61131, 1.4362, 105.323 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight13" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.61131, 1.4362, -57.0753 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight14" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.22728, 4.00672, -98.6616 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight15" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.61131, 27.3354, -57.0753 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight16" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.22728, 29.9059, -98.6616 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight17" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.61131, 13.6028, -57.0753 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight97" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.61131, 13.6028, -27.4748 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight18" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.22728, 12.4277, -98.6616 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight19" type="OmniLight" parent="."]
+transform = Transform( 0.00431091, 0, 0.999991, 0, 1, 0, -0.999991, 0, 0.00431091, -49.1789, 1.4362, -30.9755 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight20" type="OmniLight" parent="."]
+transform = Transform( 0.00431091, 0, 0.999991, 0, 1, 0, -0.999991, 0, 0.00431091, -90.7588, 4.00672, -32.5388 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight21" type="OmniLight" parent="."]
+transform = Transform( 0.00431091, 0, 0.999991, 0, 1, 0, -0.999991, 0, 0.00431091, -49.1789, 27.3354, -30.9755 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight22" type="OmniLight" parent="."]
+transform = Transform( 0.00431091, 0, 0.999991, 0, 1, 0, -0.999991, 0, 0.00431091, -90.7588, 29.9059, -32.5388 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight23" type="OmniLight" parent="."]
+transform = Transform( 0.00431091, 0, 0.999991, 0, 1, 0, -0.999991, 0, 0.00431091, -49.1789, 13.5348, -30.9755 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight24" type="OmniLight" parent="."]
+transform = Transform( 0.00431091, 0, 0.999991, 0, 1, 0, -0.999991, 0, 0.00431091, -90.7588, 12.4277, -32.5388 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight25" type="OmniLight" parent="."]
+transform = Transform( 0.00431091, 0, 0.999991, 0, 1, 0, -0.999991, 0, 0.00431091, -49.1789, 1.4362, 32.8412 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight26" type="OmniLight" parent="."]
+transform = Transform( 0.00431091, 0, 0.999991, 0, 1, 0, -0.999991, 0, 0.00431091, -90.7588, 4.00672, 31.278 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight29" type="OmniLight" parent="."]
+transform = Transform( 0.00431091, 0, 0.999991, 0, 1, 0, -0.999991, 0, 0.00431091, -49.1789, 15.4177, 32.8412 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight30" type="OmniLight" parent="."]
+transform = Transform( 0.00431091, 0, 0.999991, 0, 1, 0, -0.999991, 0, 0.00431091, -90.7588, 12.4277, 31.278 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight31" type="OmniLight" parent="."]
+transform = Transform( 0.00431091, 0, 0.999991, 0, 1, 0, -0.999991, 0, 0.00431091, 55.5806, 12.4277, -57.399 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight32" type="OmniLight" parent="."]
+transform = Transform( 0.00431091, 0, 0.999991, 0, 1, 0, -0.999991, 0, 0.00431091, 48.1939, 12.4277, -27.7918 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight33" type="OmniLight" parent="."]
+transform = Transform( 0.00431091, 0, 0.999991, 0, 1, 0, -0.999991, 0, 0.00431091, 55.5806, 1.56331, -57.399 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight34" type="OmniLight" parent="."]
+transform = Transform( 0.00431091, 0, 0.999991, 0, 1, 0, -0.999991, 0, 0.00431091, 48.1939, 1.56331, -27.7918 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight75" type="OmniLight" parent="."]
+transform = Transform( 0.00431091, 0, 0.999991, 0, 1, 0, -0.999991, 0, 0.00431091, 124.735, 1.56331, -27.7918 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight76" type="OmniLight" parent="."]
+transform = Transform( 0.00431091, 0, 0.999991, 0, 1, 0, -0.999991, 0, 0.00431091, 124.735, 1.56331, 27.3606 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight77" type="OmniLight" parent="."]
+transform = Transform( 0.00431091, 0, 0.999991, 0, 1, 0, -0.999991, 0, 0.00431091, 124.735, 1.56331, 0.988514 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight78" type="OmniLight" parent="."]
+transform = Transform( 0.00431091, 0, 0.999991, 0, 1, 0, -0.999991, 0, 0.00431091, 124.735, 1.56331, 63.0832 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight83" type="OmniLight" parent="."]
+transform = Transform( 0.00431091, 0, 0.999991, 0, 1, 0, -0.999991, 0, 0.00431091, 124.735, 1.56331, 113.375 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight85" type="OmniLight" parent="."]
+transform = Transform( 0.00431091, 0, 0.999991, 0, 1, 0, -0.999991, 0, 0.00431091, 96.0048, 1.56331, 113.375 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight86" type="OmniLight" parent="."]
+transform = Transform( 0.00431091, 0, 0.999991, 0, 1, 0, -0.999991, 0, 0.00431091, 70.2474, 1.56331, 113.375 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight87" type="OmniLight" parent="."]
+transform = Transform( 0.00431091, 0, 0.999991, 0, 1, 0, -0.999991, 0, 0.00431091, 35.8094, 1.56331, 113.375 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight92" type="OmniLight" parent="."]
+transform = Transform( 0.00431091, 0, 0.999991, 0, 1, 0, -0.999991, 0, 0.00431091, -1.09813, 12.3734, 32.1142 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight96" type="OmniLight" parent="."]
+transform = Transform( 0.00431091, 0, 0.999991, 0, 1, 0, -0.999991, 0, 0.00431091, -1.09813, 12.3734, 0.425526 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 170.749
+
+[node name="OmniLight93" type="OmniLight" parent="."]
+transform = Transform( 0.00431091, 0, 0.999991, 0, 1, 0, -0.999991, 0, 0.00431091, 27.1751, 12.3734, 32.1142 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight94" type="OmniLight" parent="."]
+transform = Transform( 0.00431091, 0, 0.999991, 0, 1, 0, -0.999991, 0, 0.00431091, 31.989, 12.3734, 9.60927 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight95" type="OmniLight" parent="."]
+transform = Transform( 0.00431091, 0, 0.999991, 0, 1, 0, -0.999991, 0, 0.00431091, 23.0078, 22.994, -31.4535 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight88" type="OmniLight" parent="."]
+transform = Transform( 0.00431091, 0, 0.999991, 0, 1, 0, -0.999991, 0, 0.00431091, -2.82475, 1.56331, 113.375 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight89" type="OmniLight" parent="."]
+transform = Transform( 0.00431091, 0, 0.999991, 0, 1, 0, -0.999991, 0, 0.00431091, -31.5549, 1.56331, 113.375 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight90" type="OmniLight" parent="."]
+transform = Transform( 0.00431091, 0, 0.999991, 0, 1, 0, -0.999991, 0, 0.00431091, -57.3123, 1.56331, 113.375 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight91" type="OmniLight" parent="."]
+transform = Transform( 0.00431091, 0, 0.999991, 0, 1, 0, -0.999991, 0, 0.00431091, -91.7503, 1.56331, 113.375 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight84" type="OmniLight" parent="."]
+transform = Transform( 0.00431091, 0, 0.999991, 0, 1, 0, -0.999991, 0, 0.00431091, 124.735, 1.56331, 81.6745 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight79" type="OmniLight" parent="."]
+transform = Transform( 0.00431091, 0, 0.999991, 0, 1, 0, -0.999991, 0, 0.00431091, 124.735, 1.56331, -112.989 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight80" type="OmniLight" parent="."]
+transform = Transform( 0.00431091, 0, 0.999991, 0, 1, 0, -0.999991, 0, 0.00431091, 124.735, 1.56331, -71.9347 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight81" type="OmniLight" parent="."]
+transform = Transform( 0.00431091, 0, 0.999991, 0, 1, 0, -0.999991, 0, 0.00431091, 124.735, 1.56331, -95.1114 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0
+
+[node name="OmniLight82" type="OmniLight" parent="."]
+transform = Transform( 0.00431091, 0, 0.999991, 0, 1, 0, -0.999991, 0, 0.00431091, 124.735, 1.56331, -62.6777 )
+visible = false
+light_energy = 0.125
+light_indirect_energy = 0.6
+light_bake_mode = 0
+omni_range = 96.0

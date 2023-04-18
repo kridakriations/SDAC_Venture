@@ -1,0 +1,338 @@
+[gd_scene load_steps=41 format=2]
+
+[ext_resource path="res://assets/sprites/pngfind.com-explosion-sprite-png-4289579.png" type="Texture" id=1]
+[ext_resource path="res://assets/sfx/Small Bomb Explosion Sound Effect.mp3" type="AudioStream" id=2]
+[ext_resource path="res://scene2/bomb.gd" type="Script" id=3]
+
+[sub_resource type="AtlasTexture" id=585]
+flags = 23
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 256, 251 )
+
+[sub_resource type="AtlasTexture" id=2]
+flags = 23
+atlas = ExtResource( 1 )
+region = Rect2( 256, 0, 256, 251 )
+
+[sub_resource type="AtlasTexture" id=3]
+flags = 23
+atlas = ExtResource( 1 )
+region = Rect2( 512, 0, 256, 251 )
+
+[sub_resource type="AtlasTexture" id=4]
+flags = 23
+atlas = ExtResource( 1 )
+region = Rect2( 768, 0, 256, 251 )
+
+[sub_resource type="AtlasTexture" id=5]
+flags = 23
+atlas = ExtResource( 1 )
+region = Rect2( 1024, 0, 256, 251 )
+
+[sub_resource type="AtlasTexture" id=6]
+flags = 23
+atlas = ExtResource( 1 )
+region = Rect2( 1280, 0, 256, 251 )
+
+[sub_resource type="AtlasTexture" id=7]
+flags = 23
+atlas = ExtResource( 1 )
+region = Rect2( 1536, 0, 256, 251 )
+
+[sub_resource type="AtlasTexture" id=8]
+flags = 23
+atlas = ExtResource( 1 )
+region = Rect2( 1792, 0, 256, 251 )
+
+[sub_resource type="AtlasTexture" id=9]
+flags = 23
+atlas = ExtResource( 1 )
+region = Rect2( 0, 251, 256, 251 )
+
+[sub_resource type="AtlasTexture" id=10]
+flags = 23
+atlas = ExtResource( 1 )
+region = Rect2( 256, 251, 256, 251 )
+
+[sub_resource type="AtlasTexture" id=11]
+flags = 23
+atlas = ExtResource( 1 )
+region = Rect2( 512, 251, 256, 251 )
+
+[sub_resource type="AtlasTexture" id=12]
+flags = 23
+atlas = ExtResource( 1 )
+region = Rect2( 768, 251, 256, 251 )
+
+[sub_resource type="AtlasTexture" id=13]
+flags = 23
+atlas = ExtResource( 1 )
+region = Rect2( 1024, 251, 256, 251 )
+
+[sub_resource type="AtlasTexture" id=14]
+flags = 23
+atlas = ExtResource( 1 )
+region = Rect2( 1280, 251, 256, 251 )
+
+[sub_resource type="AtlasTexture" id=15]
+flags = 23
+atlas = ExtResource( 1 )
+region = Rect2( 1536, 251, 256, 251 )
+
+[sub_resource type="AtlasTexture" id=16]
+flags = 23
+atlas = ExtResource( 1 )
+region = Rect2( 1792, 251, 256, 251 )
+
+[sub_resource type="AtlasTexture" id=17]
+flags = 23
+atlas = ExtResource( 1 )
+region = Rect2( 0, 502, 256, 251 )
+
+[sub_resource type="AtlasTexture" id=18]
+flags = 23
+atlas = ExtResource( 1 )
+region = Rect2( 256, 502, 256, 251 )
+
+[sub_resource type="AtlasTexture" id=19]
+flags = 23
+atlas = ExtResource( 1 )
+region = Rect2( 512, 502, 256, 251 )
+
+[sub_resource type="AtlasTexture" id=20]
+flags = 23
+atlas = ExtResource( 1 )
+region = Rect2( 768, 502, 256, 251 )
+
+[sub_resource type="AtlasTexture" id=21]
+flags = 23
+atlas = ExtResource( 1 )
+region = Rect2( 1024, 502, 256, 251 )
+
+[sub_resource type="AtlasTexture" id=22]
+flags = 23
+atlas = ExtResource( 1 )
+region = Rect2( 1280, 502, 256, 251 )
+
+[sub_resource type="AtlasTexture" id=23]
+flags = 23
+atlas = ExtResource( 1 )
+region = Rect2( 1536, 502, 256, 251 )
+
+[sub_resource type="AtlasTexture" id=24]
+flags = 23
+atlas = ExtResource( 1 )
+region = Rect2( 1792, 502, 256, 251 )
+
+[sub_resource type="AtlasTexture" id=25]
+flags = 23
+atlas = ExtResource( 1 )
+region = Rect2( 0, 753, 256, 251 )
+
+[sub_resource type="AtlasTexture" id=26]
+flags = 23
+atlas = ExtResource( 1 )
+region = Rect2( 256, 753, 256, 251 )
+
+[sub_resource type="AtlasTexture" id=27]
+flags = 23
+atlas = ExtResource( 1 )
+region = Rect2( 512, 753, 256, 251 )
+
+[sub_resource type="AtlasTexture" id=586]
+flags = 23
+atlas = ExtResource( 1 )
+region = Rect2( 768, 753, 256, 251 )
+
+[sub_resource type="AtlasTexture" id=587]
+flags = 23
+atlas = ExtResource( 1 )
+region = Rect2( 1024, 753, 256, 251 )
+
+[sub_resource type="AtlasTexture" id=588]
+flags = 23
+atlas = ExtResource( 1 )
+region = Rect2( 1280, 753, 256, 251 )
+
+[sub_resource type="AtlasTexture" id=589]
+flags = 23
+atlas = ExtResource( 1 )
+region = Rect2( 1536, 753, 256, 251 )
+
+[sub_resource type="AtlasTexture" id=590]
+flags = 23
+atlas = ExtResource( 1 )
+region = Rect2( 1792, 753, 256, 251 )
+
+[sub_resource type="SpriteFrames" id=591]
+animations = [ {
+"frames": [ SubResource( 585 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 586 ), SubResource( 587 ), SubResource( 588 ), SubResource( 589 ), SubResource( 590 ) ],
+"loop": false,
+"name": "default",
+"speed": 16.0
+} ]
+
+[sub_resource type="Animation" id=592]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("explosion_sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("explosion_sound:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("bomb mesh:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("CollisionShape:disabled")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=593]
+resource_name = "explosion"
+length = 2.0
+step = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("explosion_sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1, 1.05 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 31, 0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("explosion_sound:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.01, 1.06 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1.08 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("bomb mesh:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.01 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("CollisionShape:disabled")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.01 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
+[sub_resource type="CubeMesh" id=594]
+size = Vector3( 0.5, 0.5, 0.5 )
+
+[sub_resource type="BoxShape" id=595]
+extents = Vector3( 0.268612, 0.262958, 0.274268 )
+
+[node name="explosion" type="Area"]
+collision_layer = 0
+collision_mask = 5
+script = ExtResource( 3 )
+
+[node name="explosion_sprite" type="AnimatedSprite3D" parent="."]
+transform = Transform( 6, 0, 0, 0, 6, 0, 0, 0, 1, 0, -2.78802, 0 )
+generate_lightmap = false
+offset = Vector2( 0, 40 )
+billboard = 1
+render_priority = 2
+frames = SubResource( 591 )
+
+[node name="explosion_sound" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource( 2 )
+unit_db = 80.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 592 )
+anims/explosion = SubResource( 593 )
+
+[node name="bomb mesh" type="MeshInstance" parent="."]
+mesh = SubResource( 594 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+shape = SubResource( 595 )
+
+[connection signal="area_entered" from="." to="." method="_on_explosion_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_explosion_body_entered"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]

@@ -1,0 +1,61 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.27, 0.254, 0.437 )
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 0.227, 0.544, 0.243 )
+
+[node name="dagger" type="Spatial"]
+
+[node name="right_upper_arm" type="Area" parent="."]
+transform = Transform( 0.999999, 0, 0, 0, 0.608733, 0.793375, 0, -0.793374, 0.608734, -0.31248, 0.319707, 0.0247393 )
+collision_mask = 0
+monitoring = false
+monitorable = false
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="right_lower_arm" type="Area" parent="right_upper_arm"]
+transform = Transform( 0.895836, -0.352564, 0.270512, 0.352564, 0.934435, 0.0503066, -0.270512, 0.0503063, 0.961401, 7.15256e-07, -0.908814, -4.76837e-07 )
+collision_mask = 0
+monitoring = false
+monitorable = false
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="CollisionShape" type="CollisionShape" parent="right_upper_arm/right_lower_arm"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, -0.416, 0 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape" type="CollisionShape" parent="right_upper_arm"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.551, 0 )
+shape = SubResource( 2 )
+
+[node name="left_upper_arm" type="Area" parent="."]
+transform = Transform( 0.999999, 0, 0, 0, 0.96119, 0.275889, 0, -0.275889, 0.96119, 1.28289, 0.319232, 0.0247393 )
+collision_mask = 0
+monitoring = false
+monitorable = false
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="left_lower_arm" type="Area" parent="left_upper_arm"]
+transform = Transform( 0.297333, 0.496267, 0.815665, -0.815456, 0.576348, -0.0534044, -0.496611, -0.649262, 0.57605, 0, -0.908816, 1.72853e-06 )
+collision_mask = 0
+monitoring = false
+monitorable = false
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="CollisionShape" type="CollisionShape" parent="left_upper_arm/left_lower_arm"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, -0.416, 0 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape" type="CollisionShape" parent="left_upper_arm"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.551, 0 )
+shape = SubResource( 2 )

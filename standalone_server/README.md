@@ -11,7 +11,7 @@ this server will be running the actual game the client will be seeing only the s
 
 download the repository 
 extract it
-donwload the assets folders from this link and put it in the extracted folder
+donwload the assets folders from this [link](https://drive.google.com/drive/folders/143e5vAVDik93I1n9MEeagOgboXIzOjVP?usp=drive_link) and put it in the extracted folder
 import into godot game engine by navigating to the project.godot file
 
 # made in godot 3.5

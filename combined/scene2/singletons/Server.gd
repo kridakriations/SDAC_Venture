@@ -42,7 +42,7 @@ var choosen_spawn_points
 
 
 onready var soul_model = preload("res://scenes/death_soul.tscn")
-onready var player_model = preload("res://scenes/player_node_new.tscn")
+onready var player_model = preload("res://scenes/player_node_new.tscn")  
 
 signal lobby_changed() 
 signal all_player_ready()

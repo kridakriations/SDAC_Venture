@@ -24,9 +24,10 @@ You have to clone the repositry and then you can the run the project you like to
 The steps for cloning the repository are as follows.
 
 ### Copy the link for the repo
-![copy the link](instruction_images/link_for_Repo.png)
+<!-- ![copy the link](instruction_images/link_for_Repo.png) -->
+<img alt = "copy the link" src = "instruction_images/link_for_Repo.png" >
 
 ### Clone the repo using command prompt
 Go to the command and navigate to the folder where you want to clone the repository
 
-![use git clone command](instruction_images/clonning_repo.png)
+<!-- ![use git clone command](instruction_images/clonning_repo.png) -->

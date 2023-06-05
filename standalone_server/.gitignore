@@ -13,3 +13,10 @@ data_*/
 *.exe
 
 .exports/
+
+# SDAC_Venture specific ignores
+assets/
+fonts/
+light_maps/
+new_light_map_dio/
+textures/

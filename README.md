@@ -1,13 +1,15 @@
 # SDAC Venture game
-WiFi multiplayer game based on our college
+First person shooter WiFi multiplayer game.
 
+
+you can try the game for free [here](https://kridakriations.itch.io/sdac-venture)
 
 # Technical details
 
 All the code in written in Godot 3.5
 3D models are made in blender.
 textures are made in inkscape, illustrator and online pixel editors.
-UI was designed by utkarsh alpuria([instagram]()) in canvas and replicated in Godot.
+UI was designed by utkarsh alpuria([instagram](https://www.instagram.com/utkarsh_alpuria/)) in canvas and replicated in Godot.
 
 # How to run and edit the project
 
